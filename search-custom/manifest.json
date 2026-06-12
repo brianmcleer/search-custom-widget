@@ -1,0 +1,25 @@
+{
+  "name": "search-custom",
+  "label": "Search (Custom)",
+  "type": "widget",
+  "version": "1.20.0",
+  "exbVersion": "1.20.0",
+  "author": "",
+  "description": "Configurable, settings-driven Search widget: multi-source search, optional Arcade auto-field layer popups, and optional spatial-lookup popups - all driven from the settings panel, with XML export/import to move configurations between apps.",
+  "copyright": "",
+  "style": "runtime/widget.scss",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "defaultSize": {
+    "width": 400,
+    "height": 34,
+    "autoHeight": true
+  },
+  "properties": {
+    "hasSettingPage": true,
+    "defaultOffPanel": true,
+    "canCrossLayoutBoundary": true
+  },
+  "translatedLocales": [
+    "en"
+  ]
+}

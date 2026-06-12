@@ -1,0 +1,26 @@
+{
+  "customConfig": {
+    "enabled": true,
+    "containerWidth": 300,
+    "allPlaceholder": "Search for an address",
+    "includeDefaultSources": false,
+    "defaultZoomScale": 1000,
+    "autoSelect": true,
+    "searchAllEnabled": true,
+    "resultGraphicEnabled": true,
+    "popupEnabled": true,
+    "locationEnabled": false,
+    "suggestionsEnabled": true,
+    "minSuggestCharacters": 1,
+    "maxResults": 6,
+    "maxSuggestions": 6,
+    "initialSearchTerm": "",
+    "popupMode": "LayerTemplate",
+    "popupTitleTemplate": "{LOCATION}",
+    "arcadeFieldsToExclude": ["OBJECTID", "OBJECTID_1", "SHAPE", "GLOBALID"],
+    "spatialPopupTitle": "{result}",
+    "sources": [],
+    "lookupRules": [],
+    "urlRules": []
+  }
+}

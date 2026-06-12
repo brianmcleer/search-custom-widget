@@ -1,0 +1,17 @@
+{
+  "name": "search-custom",
+  "version": "1.20.0",
+  "description": "Configurable, settings-driven Search widget for ArcGIS Experience Builder: multi-source search, optional Arcade auto-field layer popups, web-map popup inheritance, spatial-lookup popups, full MapView popup display options, and XML export/import to move configurations between apps.",
+  "keywords": [
+    "exb-widget",
+    "experience-builder",
+    "exb",
+    "arcgis",
+    "search",
+    "geocode",
+    "gis",
+    "esri"
+  ],
+  "license": "Apache-2.0",
+  "author": "Brian McLeer"
+}
