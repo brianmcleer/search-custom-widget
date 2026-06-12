@@ -48,7 +48,7 @@ The script mirrors the widget from the EB folder into the `search-custom` subfol
 
 ## Esri Community
 
-Post: (add the Esri Community Experience Builder Custom Widgets post link here once published)
+Post: <https://community.esri.com/t5/experience-builder-custom-widgets/search-custom/ba-p/1707992>
 
 ## Credits and license
 
