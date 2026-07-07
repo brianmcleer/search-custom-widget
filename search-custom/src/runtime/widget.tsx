@@ -169,7 +169,6 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         allPlaceholder: custom?.allPlaceholder,
         includeDefaultSources: custom?.includeDefaultSources,
         defaultZoomScale: custom?.defaultZoomScale,
-        initialSearchTerm: custom?.initialSearchTerm,
         activeSourceIndex: custom?.activeSourceIndex,
         placement: custom?.placement,
         mapPosition: custom?.mapPosition
