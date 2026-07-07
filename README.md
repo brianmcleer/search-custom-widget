@@ -50,6 +50,12 @@ The script mirrors the widget from the EB folder into the `search-custom` subfol
 
 Post: <https://community.esri.com/t5/experience-builder-custom-widgets/search-custom/ba-p/1707992>
 
+## Changelog
+
+**07/07/2026:** Fixed an issue where the search bar could show up blank after importing a configuration, or drop behind the map, header, or sidebar in certain layouts. Also hardened the widget so a single bad imported setting no longer blanks the whole search box.
+
+**06/12/2026:** Initial public release on GitHub and Esri Community.
+
 ## Credits and license
 
 This widget is a derivative work based on Esri's ArcGIS Experience Builder "Search" widget (by Esri R&D Center Beijing), which Esri publishes under the Apache License, Version 2.0. It has been modified and extended by the City of Grand Junction, CO.

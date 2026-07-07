@@ -4,6 +4,12 @@
     min-height: 32px;
     margin-top: 0;
     margin-left: 0;
+    /* Establish the widget's own stacking context so the search bar is never
+       painted under the map canvas, header, or sidebar. The inner z-index on
+       .search-container only stacks WITHIN the widget and cannot lift the whole
+       widget above neighboring widgets, so it is set here on the root. */
+    position: relative;
+    z-index: 5;
 
     .search-container {
         width: 100% !important;
