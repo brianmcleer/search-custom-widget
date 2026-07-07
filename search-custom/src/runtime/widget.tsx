@@ -176,12 +176,12 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         const hasMap = !!(useMapWidgetIds && useMapWidgetIds.length)
         const view = jimuMapView?.view
 
-        if (!searchContainerRef.current) { setStatusMsg('Preparing…'); return }
+        if (!searchContainerRef.current) { setStatusMsg(''); return }
         if (!hasMap) { setStatusMsg('No map linked. Open this widget\u2019s settings and choose your map under \u201CMap widget\u201D.'); return }
         if (!custom || custom.enabled === false) { setStatusMsg('Custom search is turned off in settings.'); return }
-        if (!view) { setStatusMsg('Map linked \u2014 waiting for the map view to load\u2026'); return }
+        if (!view) { setStatusMsg(''); return }
 
-        setStatusMsg('Map view ready \u2014 building search\u2026')
+        setStatusMsg('')
 
         const dockOnMap = (custom.placement || 'widget') === 'map'
 
@@ -387,7 +387,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                     searchWidget = new Search(searchOptions)
                 } catch (err) {
                     console.error('[Search Custom] Failed to create the Search widget:', err)
-                    setStatusMsg('Search could not be created \u2014 see the browser console.')
+                    setStatusMsg('Search could not be created. See the browser console.')
                     return
                 }
 
