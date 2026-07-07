@@ -166,10 +166,8 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         arcadeMode: custom?.arcadeMode,
         arcadeExpression: custom?.arcadeExpression,
         spatialPopupTitle: custom?.spatialPopupTitle,
-        allPlaceholder: custom?.allPlaceholder,
         includeDefaultSources: custom?.includeDefaultSources,
         defaultZoomScale: custom?.defaultZoomScale,
-        activeSourceIndex: custom?.activeSourceIndex,
         placement: custom?.placement,
         mapPosition: custom?.mapPosition
     })
@@ -363,12 +361,10 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                 if (custom.maxSuggestions != null) searchOptions.maxSuggestions = custom.maxSuggestions
                 if (custom.initialSearchTerm) searchOptions.searchTerm = custom.initialSearchTerm
                 if (custom.activeSourceIndex != null) {
-                    // An imported (legacy) config can carry an index that points past the
-                    // current source list, which leaves the Search blank. Clamp it, and let
-                    // the SDK default (search all) stand if it is out of range.
-                    const maxIdx = sources.length - 1
-                    const idx = custom.activeSourceIndex as number
-                    if (idx >= 0 && idx <= maxIdx) searchOptions.activeSourceIndex = idx
+                    // activeSourceIndex is applied AFTER construction (below) and live,
+                    // never in the constructor: post-construction assignment is more
+                    // reliable for -1 (All sources), and keeping it out of the rebuild key
+                    // means changing it never tears the Search down.
                 }
                 if (custom.autoNavigate != null) searchOptions.autoNavigate = custom.autoNavigate
 
@@ -398,6 +394,18 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                 if (dockOnMap) {
                     try { view.ui.add(searchWidget, custom.mapPosition || 'top-left') } catch (e) { console.error('[Search Custom] view.ui.add failed:', e) }
                 }
+
+                // Set the active source AFTER construction. -1 selects "All" (and is what
+                // makes the "All" placeholder show); 0..maxIdx selects a specific source;
+                // an out-of-range positive index (e.g. from a legacy import) is ignored so
+                // it can never blank the box.
+                try {
+                    if (custom.activeSourceIndex != null) {
+                        const maxIdx = sources.length - 1
+                        const i = custom.activeSourceIndex as number
+                        if (i === -1 || (i >= 0 && i <= maxIdx)) searchWidget.activeSourceIndex = i
+                    }
+                } catch (e) { console.error('[Search Custom] Could not set active source:', e) }
 
                 // LayerTemplate / None: zoom to the matched result.
                 if (popupMode !== CustomPopupMode.SpatialLookup) {
@@ -540,11 +548,22 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
             w.popupEnabled = custom.popupEnabled
         }
         if (custom.autoNavigate != null) w.autoNavigate = custom.autoNavigate
+        // Placeholder and active source are volatile, display-only settings; apply
+        // them live so editing them never rebuilds (and blanks) the Search.
+        if (custom.allPlaceholder != null) w.allPlaceholder = custom.allPlaceholder
+        if (custom.activeSourceIndex != null) {
+            try {
+                const count = (w.allSources?.length ?? w.sources?.length ?? 0) as number
+                const i = custom.activeSourceIndex as number
+                if (i === -1 || (i >= 0 && i <= count - 1)) w.activeSourceIndex = i
+            } catch { /* noop */ }
+        }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [
         custom?.autoSelect, custom?.searchAllEnabled, custom?.resultGraphicEnabled,
         custom?.locationEnabled, custom?.suggestionsEnabled, custom?.minSuggestCharacters,
-        custom?.maxResults, custom?.maxSuggestions, custom?.popupEnabled, custom?.autoNavigate
+        custom?.maxResults, custom?.maxSuggestions, custom?.popupEnabled, custom?.autoNavigate,
+        custom?.allPlaceholder, custom?.activeSourceIndex
     ])
 
     const handleActiveViewChange = (view: JimuMapView): void => {
