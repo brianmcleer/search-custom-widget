@@ -23,7 +23,11 @@ import {
 import { configToXml, xmlToConfig } from './config-xml'
 import { buildArcadeExpression } from '../runtime/custom-search'
 
-type SettingProps = AllWidgetSettingProps<IMConfig>
+type SettingProps = AllWidgetSettingProps<IMConfig> & {
+  id: string
+  useMapWidgetIds?: string[]
+  useDataSources?: UseDataSource[]
+}
 
 const uid = (p: string) => `${p}_${Math.random().toString(36).slice(2, 8)}`
 

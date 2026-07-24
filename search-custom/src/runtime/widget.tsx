@@ -21,7 +21,13 @@ import './widget.scss'
 
 const { useEffect, useRef, useState } = React
 
-const Widget = (props: AllWidgetProps<IMConfig>) => {
+type WidgetProps = AllWidgetProps<IMConfig> & {
+    id: string
+    useMapWidgetIds?: string[]
+    useDataSources?: any[]
+}
+
+const Widget = (props: WidgetProps) => {
     const { useMapWidgetIds, config } = props
     const searchWidgetRef = useRef<Search | null>(null)
     const searchContainerRef = useRef<HTMLDivElement | null>(null)
