@@ -1,10 +1,11 @@
 /** @jsx jsx */
 import { React, jsx, type AllWidgetProps, DataSourceManager, DataSourceComponent } from 'jimu-core'
 import { JimuMapViewComponent, type JimuMapView } from 'jimu-arcgis'
-import Search from '@arcgis/core/widgets/Search'
-import FeatureLayer from '@arcgis/core/layers/FeatureLayer'
-import Color from '@arcgis/core/Color'
-import * as reactiveUtils from '@arcgis/core/core/reactiveUtils'
+import Search from 'esri/widgets/Search'
+import FeatureLayer from 'esri/layers/FeatureLayer'
+import Color from 'esri/Color'
+import * as reactiveUtils from 'esri/core/reactiveUtils'
+import Portal from 'esri/portal/Portal'
 import {
     type IMConfig,
     CustomPopupMode,
@@ -21,13 +22,7 @@ import './widget.scss'
 
 const { useEffect, useRef, useState } = React
 
-type WidgetProps = AllWidgetProps<IMConfig> & {
-    id: string
-    useMapWidgetIds?: string[]
-    useDataSources?: any[]
-}
-
-const Widget = (props: WidgetProps) => {
+const Widget = (props: AllWidgetProps<IMConfig>) => {
     const { useMapWidgetIds, config } = props
     const searchWidgetRef = useRef<Search | null>(null)
     const searchContainerRef = useRef<HTMLDivElement | null>(null)
@@ -203,21 +198,29 @@ const Widget = (props: WidgetProps) => {
 
         let cancelled = false
 
-        const attach = () => {
+        const attach = async () => {
             if (cancelled || !searchContainerRef.current) return
             try {
 
                 const popupMode = custom.popupMode || CustomPopupMode.None
                 const urlRules = custom.urlRules || []
 
+                // EB 1.21 migrated the map to the <arcgis-map> web component and the
+                // Popup widget to <arcgis-popup>, so jimuMapView.view.popup is no longer
+                // available there. Resolve the popup target once: the web component's
+                // popupElement on 1.21+, otherwise the classic view.popup. Everything
+                // below uses these, so the widget runs on both 1.20 and 1.21.
+                const mapComponent: any = (jimuMapView as any)?.mapComponent
+                const popupTarget: any = mapComponent?.popupElement ?? (view as any)?.popup
+
                 // Apply developer-configured MapView popup display options (docking,
                 // collapse, visible elements, highlight, navigation, inline actions).
-                // These configure the shared view.popup, so they affect popups opened by
+                // These configure the shared popup, so they affect popups opened by
                 // the search results.
-                if (popupMode !== CustomPopupMode.None && view.popup && custom.popupOptions) {
+                if (popupMode !== CustomPopupMode.None && popupTarget && custom.popupOptions) {
                     try {
                         const po: any = custom.popupOptions
-                        const popup: any = view.popup
+                        const popup: any = popupTarget
                         if (po.dockEnabled != null) popup.dockEnabled = po.dockEnabled
                         popup.dockOptions = {
                             ...(popup.dockOptions || {}),
@@ -347,8 +350,38 @@ const Widget = (props: WidgetProps) => {
                     }
                 }
 
-                const sources = (custom.sources || []).map(buildSource).filter(Boolean)
-                const useDefaultSources = sources.length === 0 ? true : (custom.includeDefaultSources ?? false)
+                // Resolve search sources. When the widget has none configured, load the
+                // portal's default geocoder(s) EXPLICITLY from props.portalUrl instead of
+                // relying on the Search widget's implicit includeDefaultSources. The implicit
+                // path needs a loaded portalSelf, which a deployed app does not always have
+                // ("No portal info" in the console), so it silently yields zero sources and no
+                // search box, even though it works in Developer Edition where you are signed
+                // in. EB always provides props.portalUrl, so loading the portal ourselves
+                // works deployed. If the portal cannot be read we fall back to the old
+                // implicit default sources so nothing regresses.
+                let sources = (custom.sources || []).map(buildSource).filter(Boolean)
+                let useDefaultSources = custom.includeDefaultSources ?? false
+
+                if (sources.length === 0) {
+                    try {
+                        const portal = new Portal(props.portalUrl ? { url: props.portalUrl } : {})
+                        await portal.load()
+                        if (cancelled || !searchContainerRef.current) return
+                        const geocoders: any[] = (portal as any)?.helperServices?.geocode || []
+                        sources = geocoders
+                            .filter((g: any) => g && g.url)
+                            .map((g: any) => ({
+                                url: g.url,
+                                singleLineFieldName: g.singleLineFieldName || 'SingleLine',
+                                name: g.name || 'Address',
+                                placeholder: custom.allPlaceholder || 'Search'
+                            }))
+                    } catch (e) {
+                        console.error('[Search Custom] Could not load portal geocoders from portalUrl:', e)
+                    }
+                    // Last-ditch: let the Search widget try its own default sources.
+                    if (sources.length === 0) useDefaultSources = true
+                }
 
                 const searchOptions: any = {
                     view,
@@ -488,7 +521,20 @@ const Widget = (props: WidgetProps) => {
                         }
                         if (!navRef.current.openPopupOnSelect) return
                         const content = `<div class="popup-details" style="padding:10px;">${sections.join('<hr/>')}</div>`
-                        view.popup.open({ title: applyTokens(custom.spatialPopupTitle || '{result}', resultName, {}), content, location })
+                        const popupArgs = { title: applyTokens(custom.spatialPopupTitle || '{result}', resultName, {}), content, location }
+                        try {
+                            if (typeof mapComponent?.openPopup === 'function') {
+                                // EB 1.21+: <arcgis-map> owns the popup.
+                                mapComponent.openPopup(popupArgs)
+                            } else if (typeof (view as any)?.popup?.open === 'function') {
+                                // EB 1.20 and earlier.
+                                ; (view as any).popup.open(popupArgs)
+                            } else {
+                                console.error('[Search Custom] No popup API available on this map; skipping popup.')
+                            }
+                        } catch (err) {
+                            console.error('[Search Custom] Could not open the spatial lookup popup:', err)
+                        }
                     })
                 }
 

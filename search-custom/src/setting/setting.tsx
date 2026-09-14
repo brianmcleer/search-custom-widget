@@ -3,7 +3,6 @@ import {
   jsx, css, React, Immutable,
   DataSourceManager, DataSourceTypes, type UseDataSource
 } from 'jimu-core'
-import { type AllWidgetSettingProps } from 'jimu-for-builder'
 import { MapWidgetSelector, SettingSection, SettingRow } from 'jimu-ui/advanced/setting-components'
 import { DataSourceSelector } from 'jimu-ui/advanced/data-source-selector'
 import {
@@ -23,10 +22,19 @@ import {
 import { configToXml, xmlToConfig } from './config-xml'
 import { buildArcadeExpression } from '../runtime/custom-search'
 
-type SettingProps = AllWidgetSettingProps<IMConfig> & {
+// Mode B leftover (WIDGETHANDOFF 12.3): AllWidgetSettingProps from
+// jimu-for-builder is a shorthand module under the shim and cannot be used as a
+// generic type (TS2709), so the setting props are declared structurally here.
+type SettingProps = {
   id: string
+  config: IMConfig
+  onSettingChange: (settings: any, ...rest: any[]) => void
   useMapWidgetIds?: string[]
   useDataSources?: UseDataSource[]
+  intl?: any
+  theme?: any
+  portalUrl?: string
+  [key: string]: any
 }
 
 const uid = (p: string) => `${p}_${Math.random().toString(36).slice(2, 8)}`
