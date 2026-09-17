@@ -46,6 +46,12 @@ location, suggestions, max results, within-view, prefix/suffix, filters, etc.).
 4. Start or restart the client (`npm start`), then hard-refresh the builder (Ctrl+Shift+R).
 5. Add **Search (Custom)** to a page, select the map widget in settings, then configure it (or import an XML configuration, see below).
 
+### The release zip and the editor shims
+
+The zip is the widget only. The Visual Studio type shims in the repo (`search-custom/src/editor-shims.d.ts`, `search-custom/src/exb-editor-shims.d.ts`) are left out on purpose: their ambient `declare module` blocks are not file-scoped and would rewrite the react, jimu and esri types for every other widget in your `your-extensions` folder.
+
+If you clone the repository instead of using the zip, delete `search-custom/src/editor-shims.d.ts` and the other shim files listed above before building; nothing else depends on them.
+
 ## Transferring configurations between apps (XML export / import)
 
 The **Transfer settings (XML)** section at the top of the settings panel lets a
