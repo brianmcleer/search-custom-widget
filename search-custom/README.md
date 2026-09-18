@@ -202,6 +202,10 @@ Usable in spatial-lookup messages and the popup title:
 - `src/setting/setting.tsx` - the custom settings panel.
 - `src/setting/config-xml.ts` - the lossless XML export/import serializer.
 
+## Usage telemetry
+
+This widget records anonymous usage counts and errors so the GIS Division can see which widgets and versions are in use and which errors users hit. It records the app id and title, widget name and version, the action name, a truncated error message, the site host name and browser family. It never records usernames, coordinates, addresses, attribute values or URLs with query strings. Where the data goes: on page load the widget asks the app's portal for a public item tagged `exb-beacon-sink` and posts to that table. If your portal has no such item, nothing is sent anywhere. To turn it off for an app, set `"telemetry": false` in the widget's config, or users can enable Do Not Track in their browser. The shared module is `src/shared/beacon.ts`.
+
 ## Troubleshooting: `search-custom is duplicated`
 
 This means the widget name is registered more than once, so a second copy is present somewhere in the install. Replacing just one folder does not fix it. Check, in order:

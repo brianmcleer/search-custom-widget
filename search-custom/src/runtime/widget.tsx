@@ -18,6 +18,8 @@ import {
     buildLookupRuleHtml,
     applyTokens
 } from './custom-search'
+import { beacon } from '../shared/beacon'
+import type { BeaconHandle } from '../shared/beacon'
 import './widget.scss'
 
 const { useEffect, useRef, useState } = React
@@ -40,6 +42,9 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
     // so changing them never forces a destroy/rebuild of the widget.
     const navRef = useRef<any>({})
     const histCfgRef = useRef<any>({})
+    const beaconRef = useRef<BeaconHandle | null>(null)
+
+    useEffect(() => { beaconRef.current = beacon.init(props) }, [])
 
     // Plain JS copy of the immutable config block.
     const custom: CustomSearchConfig | undefined = config?.customConfig
@@ -79,10 +84,12 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         })
     }
     const clearHistory = () => {
+        beaconRef.current?.action('clear-history')
         setHistory([])
         try { window.localStorage.removeItem(storageKey) } catch { /* noop */ }
     }
     const runHistorySearch = (term: string) => {
+        beaconRef.current?.action('search-recent')
         const w = searchWidgetRef.current as any
         if (!w) return
         try { w.searchTerm = term; w.search(term) } catch { /* noop */ }
@@ -483,6 +490,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                 // Always attached; gated live by the history toggle so flipping it on/off
                 // never rebuilds the widget.
                 searchWidget.on('select-result', (event: any) => {
+                    beaconRef.current?.action('search')
                     if (!histCfgRef.current.enabled) return
                     const name = event?.result?.name
                     if (name) pushHistory(name)
@@ -496,6 +504,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                         if (!ruleLayers[r.layerUrl]) ruleLayers[r.layerUrl] = new FeatureLayer({ url: r.layerUrl, outFields: ['*'] })
                     }
                     searchWidget.on('select-result', async (event: any) => {
+                        beaconRef.current?.action('lookup')
                         const resultName = event?.result?.name || 'Search result'
                         const feature = event?.result?.feature
                         const location = feature?.geometry
@@ -516,6 +525,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                                 const html = buildLookupRuleHtml(rule, resultName, attrs, layer.fields as any, urlRules)
                                 if (html) sections.push(html)
                             } catch (err) {
+                                beaconRef.current?.error(err, 'lookup')
                                 console.error('[Search Custom] Lookup rule query failed:', rule.layerUrl, err)
                             }
                         }
@@ -533,6 +543,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                                 console.error('[Search Custom] No popup API available on this map; skipping popup.')
                             }
                         } catch (err) {
+                            beaconRef.current?.error(err, 'lookup')
                             console.error('[Search Custom] Could not open the spatial lookup popup:', err)
                         }
                     })
@@ -552,6 +563,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
 
                 setStatusMsg('')
             } catch (err) {
+                beaconRef.current?.error(err, 'open')
                 console.error('[Search Custom] Build failed; showing a message instead of a blank widget.', err)
                 setStatusMsg('This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.')
             }
