@@ -1,7 +1,7 @@
 {
   // Visual Studio type-check for THIS widget. IDE-only, noEmit; the EB webpack
   // build ignores this file. Mode B (self-contained): no baseUrl, no paths,
-  // "types": [], classic jsx "react". Every module the widget imports is
+  // "types": []. jsx stays "react-jsx" + "@emotion/react" (12.3). Every module the widget imports is
   // declared ambiently in src/exb-editor-shims.d.ts (master copy) and
   // src/editor-shims.d.ts (this widget's @arcgis/core + *.scss shims).
   // See WIDGETHANDOFF Section 12.3.
@@ -10,7 +10,8 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "Node",
-    "jsx": "react",
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     "types": [],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
