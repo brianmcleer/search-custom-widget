@@ -2,7 +2,7 @@
   "name": "search-custom",
   "label": "Search (Custom)",
   "type": "widget",
-  "version": "1.21.2",
+  "version": "1.21.3",
   "exbVersion": "1.21.0",
   "author": "",
   "description": "Configurable, settings-driven Search widget: multi-source search, optional Arcade auto-field layer popups, and optional spatial-lookup popups - all driven from the settings panel, with XML export/import to move configurations between apps.",
