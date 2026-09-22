@@ -1,6 +1,6 @@
 # Search Custom widget
 
-[![License](https://img.shields.io/github/license/brianmcleer/search-custom-widget)](LICENSE) [![Release](https://img.shields.io/github/v/release/brianmcleer/=tag)](https://github.com/brianmcleer/search-custom-widget/releases) [![Issues](https://img.shields.io/github/issues/brianmcleer/search-custom-widget)](https://github.com/brianmcleer/search-custom-widget/issues)
+[![License](https://img.shields.io/github/license/brianmcleer/search-custom-widget)](LICENSE) [![Release](https://img.shields.io/github/v/release/brianmcleer/search-custom-widget?display_name=tag)](https://github.com/brianmcleer/search-custom-widget/releases) [![Issues](https://img.shields.io/github/issues/brianmcleer/search-custom-widget)](https://github.com/brianmcleer/search-custom-widget/issues)
 
 A customized ArcGIS Experience Builder Search widget for the City of Grand Junction, CO. It extends Esri's stock Search widget into a single, settings-driven widget: multi-source search (feature layers, geocoders, and app data sources), optional Arcade auto-field layer popups, web-map popup inheritance, spatial-lookup popups, a full set of MapView popup display options, and XML export/import to move whole configurations between apps without re-keying them.
 
@@ -10,20 +10,20 @@ The downloadable widget lives in the `search-custom` subfolder. Download a relea
 
 ```
 search-custom-widget/            <- this repo
-â”œâ”€â”€ README.md                    <- this file (GitHub landing page)
-â”œâ”€â”€ LICENSE                      <- Apache-2.0
-â”œâ”€â”€ NOTICE                       <- attribution for the derivative work
-â”œâ”€â”€ .gitignore                   <- ignores node_modules, .vs, dist, OS cruft
-â”œâ”€â”€ SECURITY.md                  <- how to report a vulnerability
-â”œâ”€â”€ publish.ps1                  <- one-command publish/update automation
-â””â”€â”€ search-custom/               <- the widget (drops into your-extensions/widgets)
-    â”œâ”€â”€ package.json
-    â”œâ”€â”€ package-lock.json        <- generated in the EB environment
-    â”œâ”€â”€ manifest.json
-    â”œâ”€â”€ README.md                <- install steps and feature list
-    â”œâ”€â”€ LICENSE
-    â”œâ”€â”€ NOTICE
-    â””â”€â”€ src/ ...
+├── README.md                    <- this file (GitHub landing page)
+├── LICENSE                      <- Apache-2.0
+├── NOTICE                       <- attribution for the derivative work
+├── .gitignore                   <- ignores node_modules, .vs, dist, OS cruft
+├── SECURITY.md                  <- how to report a vulnerability
+├── publish.ps1                  <- one-command publish/update automation
+└── search-custom/               <- the widget (drops into your-extensions/widgets)
+    ├── package.json
+    ├── package-lock.json        <- generated in the EB environment
+    ├── manifest.json
+    ├── README.md                <- install steps and feature list
+    ├── LICENSE
+    ├── NOTICE
+    └── src/ ...
 ```
 
 ## Install (for users)
