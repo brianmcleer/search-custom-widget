@@ -150,7 +150,7 @@ const Setting = (props: SettingProps) => {
   }
 
 
-  const onMapWidgetSelected = (ids: string[]) => {
+  const onMapWidgetSelected = (ids: any) => {
     onSettingChange({ id, useMapWidgetIds: ids })
   }
 
@@ -603,7 +603,7 @@ const Setting = (props: SettingProps) => {
             {s.kind === CustomSourceKind.DataSource
               ? <div className='hint'>Bound to app data source <code>{s.dataSourceId}</code>. Manage which data sources are available in the "App data sources" picker below.</div>
               : <SettingRow flow='wrap' label='Service URL'>
-                  <UrlInput aria-label={`Service URL`} value={s.url || ''} schemes={['https', 'http']} className='w-100'
+                  <UrlInput aria-label={`Service URL`} value={s.url || ''} schemes={['https']} className='w-100'
                     onChange={(res: any) => updateSource(i, { url: (res && typeof res === 'object') ? (res.value ?? '') : (res ?? '') })} />
                 </SettingRow>}
             <SettingRow flow='wrap' label='Prefix'>
