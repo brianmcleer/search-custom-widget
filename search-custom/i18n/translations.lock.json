@@ -1,0 +1,1778 @@
+{
+  "version": 2,
+  "generator": "exb-i18n-kit",
+  "parts": {
+    "runtime": {
+      "en": "0d924bb8ea71",
+      "keys": 13,
+      "hashes": {
+        "_widgetLabel": "a74386da8c60",
+        "showResult": "d3c65022baa0",
+        "hideResult": "1e3c5136547d",
+        "allSearchSources": "614cfee441dd",
+        "noResult": "40da52f7f959",
+        "couldNotRetrieve": "77361c01e239",
+        "showMoreResult": "f4c22553694e",
+        "clearAllHistories": "eaa6381ad201",
+        "clearHistory": "53b5158bc7bd",
+        "clearThisHistories": "f71b31923e8c",
+        "clearRecentSearches": "a73d2913b829",
+        "searchIn": "309586345c48",
+        "searchResults": "88a9b07d73a2"
+      },
+      "locales": {
+        "ar": {
+          "file": "77f2df027f06",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "بحث",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "bg": {
+          "file": "52d4ceddaa72",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Търсене",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "bs": {
+          "file": "46580f52cc16",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Pretraživanje",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "ca": {
+          "file": "e46ed7175250",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Cerca",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "cs": {
+          "file": "9a0a560ea132",
+          "counts": {
+            "esri": 11,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Hledat",
+              "src": "existing",
+              "h": "a74386da8c60"
+            },
+            "searchIn": {
+              "t": "Hledat v {value}",
+              "src": "existing",
+              "h": "309586345c48"
+            }
+          }
+        },
+        "da": {
+          "file": "ddacf53369a8",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Søg",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "de": {
+          "file": "3cf16da87335",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Suchen",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "el": {
+          "file": "9fc517bb6e36",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Αναζήτηση",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "es": {
+          "file": "46d88e4cbbe7",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Buscar",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "et": {
+          "file": "0555566f0666",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Otsing",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "fi": {
+          "file": "4f8d1d75d916",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Hae",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "fr": {
+          "file": "d63af7701072",
+          "counts": {
+            "esri": 11,
+            "esri-check": 1,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Rechercher",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "he": {
+          "file": "517675dbd1d5",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "חיפוש",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "hr": {
+          "file": "46580f52cc16",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Pretraživanje",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "hu": {
+          "file": "e3f6777c8fd7",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Keresés",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "id": {
+          "file": "b0e1432c8bdb",
+          "counts": {
+            "esri": 11,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Cari",
+              "src": "existing",
+              "h": "a74386da8c60"
+            },
+            "showMoreResult": {
+              "t": "Tampilkan lebih banyak hasil...",
+              "src": "existing",
+              "h": "f4c22553694e"
+            }
+          }
+        },
+        "it": {
+          "file": "bf1b2c907d9c",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Cerca",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "ja": {
+          "file": "0a966da05a60",
+          "counts": {
+            "esri": 11,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "検索",
+              "src": "existing",
+              "h": "a74386da8c60"
+            },
+            "noResult": {
+              "t": "「{searchText}」の結果が見つかりません。",
+              "src": "existing",
+              "h": "40da52f7f959"
+            }
+          }
+        },
+        "ko": {
+          "file": "ebd892847d34",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "검색",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "lt": {
+          "file": "3e44018fc796",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Ieškoti",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "lv": {
+          "file": "1fe99f06597e",
+          "counts": {
+            "esri": 10,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 3,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Meklēt",
+              "src": "existing",
+              "h": "a74386da8c60"
+            },
+            "couldNotRetrieve": {
+              "t": "Nevarēja izgūt pašreizējo atrašanās vietu",
+              "src": "existing",
+              "h": "77361c01e239"
+            },
+            "clearRecentSearches": {
+              "t": "Pēdējais meklētais",
+              "src": "existing",
+              "h": "a73d2913b829"
+            }
+          }
+        },
+        "no": {
+          "file": "a0157303715d",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 1
+          },
+          "entries": {}
+        },
+        "nl": {
+          "file": "493a5f9c7617",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Zoeken",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "pl": {
+          "file": "cfc5a6e7aa7a",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Szukaj",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "pt-br": {
+          "file": "cc326e312fcb",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Pesquisar",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "pt-pt": {
+          "file": "30891a8320b8",
+          "counts": {
+            "esri": 11,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Pesquisar",
+              "src": "existing",
+              "h": "a74386da8c60"
+            },
+            "clearRecentSearches": {
+              "t": "Pesquisas Recentes",
+              "src": "existing",
+              "h": "a73d2913b829"
+            }
+          }
+        },
+        "ro": {
+          "file": "8c170a2439be",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Căutare",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "ru": {
+          "file": "525143a8d2ea",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Поиск",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "sk": {
+          "file": "b25d0a9c23f9",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Vyhľadávanie",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "sl": {
+          "file": "ab765867b26d",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Iskanje",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "sr": {
+          "file": "5d43be2b3389",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Pretraži",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "sv": {
+          "file": "25cacbf45662",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Sök",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "th": {
+          "file": "589e5ade7649",
+          "counts": {
+            "esri": 11,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "ค้นหา",
+              "src": "existing",
+              "h": "a74386da8c60"
+            },
+            "couldNotRetrieve": {
+              "t": "ไม่สามารถเรียกค้นข้อมูลตำแหน่งในปัจจุบัน",
+              "src": "existing",
+              "h": "77361c01e239"
+            }
+          }
+        },
+        "tr": {
+          "file": "512c053929b8",
+          "counts": {
+            "esri": 10,
+            "esri-check": 1,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Ara",
+              "src": "existing",
+              "h": "a74386da8c60"
+            },
+            "clearRecentSearches": {
+              "t": "En son aramalar",
+              "src": "existing",
+              "h": "a73d2913b829"
+            }
+          }
+        },
+        "zh-cn": {
+          "file": "aa4a3a3dc8eb",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "搜索",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "uk": {
+          "file": "019d1407fbd2",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Пошук",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "vi": {
+          "file": "da0893dcba1c",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "Tìm kiếm",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "zh-hk": {
+          "file": "471a5a37477b",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "搜尋",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        },
+        "zh-tw": {
+          "file": "471a5a37477b",
+          "counts": {
+            "esri": 12,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 0
+          },
+          "entries": {
+            "_widgetLabel": {
+              "t": "搜尋",
+              "src": "existing",
+              "h": "a74386da8c60"
+            }
+          }
+        }
+      }
+    },
+    "setting": {
+      "en": "bbc5722dc03c",
+      "keys": 225,
+      "hashes": {
+        "searchResult": "88a9b07d73a2",
+        "arrangementStyle": "b0d4ca4c52a7",
+        "showSearchResult": "c917ac51bdda",
+        "resultPanel": "ba2632bb5fc2",
+        "otherWidgets": "6c72c011b7f8",
+        "autoSelect": "c0cf51f404f3",
+        "redirectSearchResult": "1a6b3ff01638",
+        "notSetCorrectly": "e9b37410b202",
+        "selectedField": "53ac4274ba6e",
+        "searchExample": "be1793acd1ca",
+        "locatorSourceErrorHint": "a86a921b6b88",
+        "locatorUrlError": "4171ef6df1f2",
+        "maximumResults": "abd8649b6167",
+        "outputDsLabel": "6cae3d91dfa4",
+        "searchBoxTip": "cd0b4cf2e3d4",
+        "searchIconTip": "23f6633f2d95",
+        "searchClassic": "130cd7fe3334",
+        "searchCompact": "1df39aa58ad4",
+        "arrangementStyleIndex": "0282200bdb74",
+        "styleSquare": "82810cb97184",
+        "styleCurve": "916f09aff858",
+        "styleLinear": "af502f2b37ee",
+        "_url_params_search_status_label": "8ee1d1edbf9e",
+        "addCustomSearchSources": "0551708fbeea",
+        "interactWithMapWidget": "073a757e4b94",
+        "synchronizeSettingsWithMapWidget": "b9bf774cab50",
+        "searchPlaceholder": "5f4b42b8e04d",
+        "customizeSearchSources": "7d6d11194bfa",
+        "advancedConfigurationValueJson": "8a6e5efcf23f",
+        "mapWidget": "8b918e901bfa",
+        "transferSettingsXml": "0a0483016120",
+        "moveThisExactConfigurationBetweenApps": "39d1d0a8788f",
+        "exportXmlFile": "89e94d285df6",
+        "hide": "34d8b60fe253",
+        "importViewXml": "c12e1fd5f8eb",
+        "importFromFile": "b337930e9dc5",
+        "chooseXmlFile": "9ef5e84c29a2",
+        "orPasteXmlAndApply": "d264e6db9145",
+        "pasteConfigurationXmlToImport": "8806e8ffbd3f",
+        "pasteExportedLtSearchCustomConfigGtXml": "c7a26dd0cced",
+        "applyPastedXml": "c4278aedb255",
+        "currentConfigurationReadOnly": "24201e1fe6bf",
+        "currentConfigurationAsXmlReadOnly": "d31bf7ebce46",
+        "general": "9239ee2cda84",
+        "enableCustomSearch": "fb98f9610d33",
+        "allPlaceholder": "a0912b25ea7a",
+        "zoomScaleOnResult": "3add2494da81",
+        "popupBehavior": "724b7bb35461",
+        "noneZoomOnly": "674c5c624bf0",
+        "useTheLayerSOwnPopup": "f6b40fdb258e",
+        "layerAutoFieldPopupArcade": "aadda7e605b9",
+        "spatialLookupPopup": "121eb029bbad",
+        "eachResultOpensThePopupAlready": "d2fb8a41fceb",
+        "sourcesThisIsThePopupFrom": "e1c856c71b88",
+        "appDataSource": "8af0a32b3e03",
+        "initialSearchTerm": "a556fd1f9a89",
+        "searchBehavior": "2b2cbe59e161",
+        "theseMapDirectlyToTheArcGIS": "2971e8d2f037",
+        "autoSelectFirstResult": "748257656214",
+        "showAllSearchEverySource": "d18860cca87b",
+        "showUseCurrentLocation": "23935e47e087",
+        "drawResultGraphic": "3423ce05590f",
+        "enableSuggestions": "4d7c43140abe",
+        "minSuggestCharacters": "86e39f4e66c8",
+        "maxResults": "ffdf1ea4ad31",
+        "maxSuggestions": "847e8d483db8",
+        "enablePopupsNoneLayerModes": "24b8f70c0981",
+        "defaultSourceIndex1All": "4c7e7ab3b394",
+        "rememberRecentSearches": "70df3267f736",
+        "howManyToRemember": "7cb36cb45a99",
+        "howManyRecentSearchesToRemember": "83ac51b12066",
+        "recentSearchesAreStoredOnlyIn": "bd79a2b28487",
+        "resultNavigation": "f7cef9a0dd57",
+        "zoomToResultOnSelect": "81fb45a370ff",
+        "howTheMapMovesToA": "66cf874e107c",
+        "zoomToFixedScale": "83f31f4d823f",
+        "fitToResultExtent": "7616ff9a98b4",
+        "fitToResultExtentFramesThe": "bad417c143f8",
+        "animateTheZoom": "0fdbe9352774",
+        "animationDurationMs": "9101bf414463",
+        "openPopupOnResultSelect": "b60e03be0826",
+        "placement": "ab89d05c4b9c",
+        "whereTheSearchBoxAppears": "6aac60eb8bd6",
+        "inTheWidgetWherePlaced": "5450c490a06e",
+        "dockedOnTheMap": "7e4a66115c91",
+        "mapPosition": "06ee39c1e532",
+        "topLeft": "04b38cf935dd",
+        "topRight": "c1cc898f9464",
+        "bottomLeft": "1a7ce96fd009",
+        "bottomRight": "c2fc57681a0f",
+        "manual": "4e836fdc2572",
+        "appearance": "41def7a0febe",
+        "searchBarStyle": "57a35ee37912",
+        "defaultNative": "2e7ddfb38537",
+        "squareSharpCorners": "4c243bde40c5",
+        "curveRoundedPill": "3a739aae9f0b",
+        "linearUnderlineOnly": "e893ae8137b0",
+        "floatingElevatedCard": "0cbda0c4c916",
+        "softFilledPill": "6eac2bf0e54d",
+        "searchBarSize": "5bafb5af4d9f",
+        "comfortable": "2313707a4e5c",
+        "large": "738fd1d2452f",
+        "accentColor": "e49578edcffe",
+        "accentColorHex": "a7242615c33b",
+        "styleAndSizeAreVisualThemes": "fc867d799db1",
+        "searchSources": "93386c629711",
+        "eachEntryIsOneOptionIn": "a1fbcb4ed623",
+        "layerSource": "e785a53f2080",
+        "geocodeSource": "b3191b6bb308",
+        "dataSource": "e837686815df",
+        "pickOneOrMoreFeatureLayers": "31dd1dc6cd29",
+        "sourcesCountSource": "f52b16e18f5f",
+        "sourcesCountSources": "88f6949aa97e",
+        "expandAll": "2af9d498f852",
+        "collapseAll": "ec898362fe95",
+        "geocode": "b305bd57abc9",
+        "data": "e5e429bcc9c2",
+        "layer": "4343635cf237",
+        "dragToReorder": "e7541faf0a7e",
+        "sourceName": "1ed4e381b0ae",
+        "unnamed": "fedbd2001524",
+        "name": "709a23220f2c",
+        "placeholder": "ed212fa164b9",
+        "boundToAppDataSource": "051a8ed59549",
+        "manageWhichDataSourcesAreAvailable": "7771a0443acb",
+        "serviceUrl": "077225837f3d",
+        "prefix": "90eceb016c51",
+        "suffix": "885db975a310",
+        "suggestionsForThisSource": "382b424d97df",
+        "onlyWithinCurrentMapView": "182bf2ca8f2d",
+        "filterWhereClause": "f58ed7bd09ba",
+        "searchFieldsComma": "02861d33b301",
+        "displayField": "1b8b365595a8",
+        "exactMatch": "372a0cb6b239",
+        "zoomScale": "082550cd1ac5",
+        "resultSymbolColorRGB": "67cf9585a302",
+        "customArcadePopupForThisSource": "73d5e29dd4b7",
+        "customArcadePopupExpressionForThis": "7e0906ca63e0",
+        "leaveBlankToUseTheShared": "166cd9c29211",
+        "singleLineField": "2c234de4d67e",
+        "countryCodeS": "bee355d68820",
+        "categoriesComma": "3eea732a6a49",
+        "searchTemplate": "976065a56265",
+        "locationType": "8bab2712e213",
+        "default": "808d7dca8a74",
+        "street": "b45410999343",
+        "rooftop": "84c7360a0cb7",
+        "remove": "e963907dac5c",
+        "removeSearchSourceName": "b155af7103f5",
+        "popupDisplay": "8cb74b36283f",
+        "controlsTheMapPopupUsedBy": "f4e6e6953b96",
+        "dockThePopup": "6c287fcfec00",
+        "dockPosition": "73c9ebf2b700",
+        "auto": "c614ba7c453c",
+        "topCenter": "e476437f7c44",
+        "bottomCenter": "e3c6bf0555b6",
+        "autoDockOnSmallScreens": "13e309942aca",
+        "showDockUndockButton": "0a8a2646c9da",
+        "showDockOrUndockButton": "237ae0291857",
+        "collapsiblePopup": "7a59b286f1d0",
+        "highlightSelectedFeature": "1139fad9680a",
+        "openAutomaticallyOnSelect": "73c49fee88da",
+        "maxInlineActions": "25ca5af14463",
+        "visiblePartsOfThePopup": "a51905a2cb1f",
+        "closeButton": "6260c410860e",
+        "showCloseButton": "d09310380c6e",
+        "collapseButton": "07c62ffa70ab",
+        "showCollapseButton": "69552ce5fb6c",
+        "featureNavigationPaging": "d657484ef550",
+        "showFeatureNavigation": "82e73518239e",
+        "headingTitle": "e0ca67dc7fda",
+        "showHeading": "2c97ed7fdbe9",
+        "actionBar": "5efb248ea045",
+        "showActionBar": "34c61f0b7a4b",
+        "loadingSpinner": "7296aa4a4837",
+        "showLoadingSpinner": "a7329bd1bb2e",
+        "noteTheseConfigureTheMapS": "17d4b36aef59",
+        "layerPopupArcade": "66d3fa24eced",
+        "popupTitleTemplate": "eab40211ce16",
+        "arcadeExpression": "237084494bd9",
+        "autoGenerateFromSettings": "1b8d95934228",
+        "customWriteMyOwn": "a6314e1065f3",
+        "excludedFieldsComma": "76be66be2a0b",
+        "theWidgetBuildsThePopupExpression": "d08d7fa5fc40",
+        "isTurnedIntoALinkThe": "1cb5ecddc825",
+        "urlFormattingRule": "ff30dd4662d9",
+        "generatedArcadeExpressionReadOnlyPreview": "7d7a2d630097",
+        "generatedArcadePopupExpressionReadOnly": "9f341fda1a44",
+        "editThisExpressionSwitchToCustom": "cb7ebe452f1a",
+        "switchingToCustomCopiesThisGenerated": "4bac09927092",
+        "youAreWritingTheArcadeExpression": "848301d40054",
+        "resetFromAutoGenerated": "8d3d19ecd0ae",
+        "backToAutoGenerate": "9f153048aeed",
+        "customArcadePopupExpression": "091567fcaf1c",
+        "enterAnArcadeExpressionThatReturns": "5f570172ae6f",
+        "tipTheExpressionShouldReturnA": "a6d8882a5732",
+        "spatialLookupRules": "c8c7e1a6fcfa",
+        "popupTitle": "b5c01cc9a130",
+        "onSelectEachRuleRunsAn": "3f183576132a",
+        "ruleIOutputType": "0f7b332dba62",
+        "removeLookupRuleI": "7a490aa23973",
+        "enabled": "df174a3f2faa",
+        "layerUrl": "b6f224410889",
+        "outputType": "82fb4ce1cc57",
+        "insideOutsideMessage": "6c9ab7734b2f",
+        "fieldList": "4e34e3bbe0a4",
+        "insideMessage": "bce39166c96c",
+        "outsideMessage": "49fe358c214a",
+        "staticLinesOptionalJsonArrayOf": "e5285b31ec69",
+        "sectionHeading": "210af2f0730e",
+        "includeAllFields": "07c063729d8e",
+        "explicitFieldsJsonArrayOf": "cf30ad7f49f4",
+        "noResultMessage": "28566c8ab57f",
+        "addLookupRule": "d88c4c87837c",
+        "urlFormattingRules": "e24fc89b361a",
+        "fieldValuesMatchingARuleRender": "01d67e8b36fe",
+        "removeUrlRuleI": "d1f3d7e790b3",
+        "matchType": "3407c03de39e",
+        "startsWith": "2e2ec9b5dcd7",
+        "endsWith": "8cfa56f5b15a",
+        "contains": "caeb909ae4ff",
+        "pattern": "1fff6a31661b",
+        "baseUrl": "1dbd61f556fe",
+        "linkText": "502f872db333",
+        "addUrlRule": "7e30c598d7d1"
+      },
+      "locales": {
+        "ar": {
+          "file": "a59c5b26cacc",
+          "counts": {
+            "esri": 54,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "locatorSourceErrorHint": {
+              "t": "عنوان URL الذي أدخلته غير صحيح أو يتعذر الوصول إليه",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "لم يتم تعيين عنوان URL لمحدد المواقع بشكل صحيح",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            }
+          }
+        },
+        "bg": {
+          "file": "b0395bb26107",
+          "counts": {
+            "esri": 54,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "bs": {
+          "file": "c616c3679f17",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "ca": {
+          "file": "05caaad724c7",
+          "counts": {
+            "esri": 53,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "searchExample": {
+              "t": "Ejemplo: {url}",
+              "src": "existing",
+              "h": "be1793acd1ca"
+            }
+          }
+        },
+        "cs": {
+          "file": "dc3fdba766d8",
+          "counts": {
+            "esri": 52,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "resultPanel": {
+              "t": "Panel s výsledky",
+              "src": "existing",
+              "h": "ba2632bb5fc2"
+            },
+            "redirectSearchResult": {
+              "t": "Přesměrovat v případě, že nejsou výsledky vyhledávání prázdné",
+              "src": "existing",
+              "h": "1a6b3ff01638"
+            }
+          }
+        },
+        "da": {
+          "file": "d7cf7e105e68",
+          "counts": {
+            "esri": 55,
+            "esri-check": 3,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "de": {
+          "file": "8082b3f97400",
+          "counts": {
+            "esri": 54,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "locatorSourceErrorHint": {
+              "t": "Die eingegebene URL ist ungültig, oder es kann nicht darauf zugegriffen werden.",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "Locator-URL ist nicht ordnungsgemäß festgelegt.",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            }
+          }
+        },
+        "el": {
+          "file": "5c2e819d0963",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "es": {
+          "file": "f567d5f5e923",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "et": {
+          "file": "8ca98a386858",
+          "counts": {
+            "esri": 58,
+            "esri-check": 0,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "fi": {
+          "file": "972d074838d9",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "fr": {
+          "file": "d57b5fbf8210",
+          "counts": {
+            "esri": 51,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 5,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "searchResult": {
+              "t": "Résultat de la recherche",
+              "src": "existing",
+              "h": "88a9b07d73a2"
+            },
+            "searchExample": {
+              "t": "Exemple : {url}",
+              "src": "existing",
+              "h": "be1793acd1ca"
+            },
+            "searchCompact": {
+              "t": "Compacte",
+              "src": "existing",
+              "h": "1df39aa58ad4"
+            },
+            "arrangementStyleIndex": {
+              "t": "Style de disposition {index}",
+              "src": "existing",
+              "h": "0282200bdb74"
+            },
+            "searchPlaceholder": {
+              "t": "Sélectionnez une carte pour accéder à d’autres options de configuration.",
+              "src": "existing",
+              "h": "5f4b42b8e04d"
+            }
+          }
+        },
+        "he": {
+          "file": "38261d937118",
+          "counts": {
+            "esri": 54,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "locatorSourceErrorHint": {
+              "t": "כתובת ה-URL שהזנת אינה חוקית או אינה נגישה",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "כתובת ה-URL של מגדיר עיגון כתובות לא הוגדרה כהלכה",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            }
+          }
+        },
+        "hr": {
+          "file": "c616c3679f17",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "hu": {
+          "file": "5d81944ae411",
+          "counts": {
+            "esri": 57,
+            "esri-check": 1,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "id": {
+          "file": "04aeb2fbf081",
+          "counts": {
+            "esri": 57,
+            "esri-check": 1,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "it": {
+          "file": "d1f330604897",
+          "counts": {
+            "esri": 54,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "ja": {
+          "file": "ce61935077db",
+          "counts": {
+            "esri": 54,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "locatorSourceErrorHint": {
+              "t": "入力した URL は無効であるか、アクセスできません",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "ロケーターの URL が正しく設定されていません",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            }
+          }
+        },
+        "ko": {
+          "file": "f538cbae2668",
+          "counts": {
+            "esri": 54,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "locatorSourceErrorHint": {
+              "t": "입력한 URL이 잘못되었거나 접근할 수 없습니다.",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "로케이터 URL이 올바르게 설정되지 않았습니다.",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            }
+          }
+        },
+        "lt": {
+          "file": "a6997c3e9b14",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "lv": {
+          "file": "2f476eb2d429",
+          "counts": {
+            "esri": 54,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "no": {
+          "file": "8c7426718ea3",
+          "counts": {
+            "esri": 55,
+            "esri-check": 3,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "nl": {
+          "file": "767e00914424",
+          "counts": {
+            "esri": 55,
+            "esri-check": 3,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "pl": {
+          "file": "af234659dc41",
+          "counts": {
+            "esri": 54,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "pt-br": {
+          "file": "789d0570db84",
+          "counts": {
+            "esri": 54,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "pt-pt": {
+          "file": "f58a69b4f772",
+          "counts": {
+            "esri": 55,
+            "esri-check": 3,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "ro": {
+          "file": "502ffae343ad",
+          "counts": {
+            "esri": 55,
+            "esri-check": 3,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "ru": {
+          "file": "59dc013c7d66",
+          "counts": {
+            "esri": 53,
+            "esri-check": 5,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "sk": {
+          "file": "4de5fa48aad5",
+          "counts": {
+            "esri": 54,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "sl": {
+          "file": "e85331deeb01",
+          "counts": {
+            "esri": 57,
+            "esri-check": 1,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "sr": {
+          "file": "2123f0a4b31f",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "sv": {
+          "file": "1031d69f9cbc",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "th": {
+          "file": "783910138533",
+          "counts": {
+            "esri": 51,
+            "esri-check": 3,
+            "community": 0,
+            "manual": 0,
+            "existing": 4,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "notSetCorrectly": {
+              "t": "ช่องค้นหาหรือแสดงไม่ได้ตั้งค่าอย่างถูกต้อง",
+              "src": "existing",
+              "h": "e9b37410b202"
+            },
+            "locatorSourceErrorHint": {
+              "t": "URL ที่คุณป้อนไม่ถูกต้องหรือไม่สามารถเข้าถึงได้",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "URL ตัวระบุตำแหน่งไม่ได้ตั้งค่าอย่างถูกต้อง",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            },
+            "searchPlaceholder": {
+              "t": "เลือกแผนที่สำหรับการกำหนดค่าเพิ่มเติม",
+              "src": "existing",
+              "h": "5f4b42b8e04d"
+            }
+          }
+        },
+        "tr": {
+          "file": "0a6033652c3a",
+          "counts": {
+            "esri": 54,
+            "esri-check": 3,
+            "community": 0,
+            "manual": 0,
+            "existing": 1,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "searchResult": {
+              "t": "Sonuç ara",
+              "src": "existing",
+              "h": "88a9b07d73a2"
+            }
+          }
+        },
+        "zh-cn": {
+          "file": "53a864333db3",
+          "counts": {
+            "esri": 52,
+            "esri-check": 4,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "locatorSourceErrorHint": {
+              "t": "您输入的 URL 无效或无法访问",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "定位器 URL 设置不正确",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            }
+          }
+        },
+        "uk": {
+          "file": "281da361fa10",
+          "counts": {
+            "esri": 56,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "vi": {
+          "file": "ef13c219d7b4",
+          "counts": {
+            "esri": 55,
+            "esri-check": 3,
+            "community": 0,
+            "manual": 0,
+            "existing": 0,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {}
+        },
+        "zh-hk": {
+          "file": "ed083c0a8aab",
+          "counts": {
+            "esri": 54,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "locatorSourceErrorHint": {
+              "t": "輸入的服務 URL 無效或無法存取",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "未正確設定定位器 URL",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            }
+          }
+        },
+        "zh-tw": {
+          "file": "ed083c0a8aab",
+          "counts": {
+            "esri": 54,
+            "esri-check": 2,
+            "community": 0,
+            "manual": 0,
+            "existing": 2,
+            "machine": 0,
+            "stale": 0,
+            "missing": 167
+          },
+          "entries": {
+            "locatorSourceErrorHint": {
+              "t": "輸入的服務 URL 無效或無法存取",
+              "src": "existing",
+              "h": "a86a921b6b88"
+            },
+            "locatorUrlError": {
+              "t": "未正確設定定位器 URL",
+              "src": "existing",
+              "h": "4171ef6df1f2"
+            }
+          }
+        }
+      }
+    }
+  }
+}

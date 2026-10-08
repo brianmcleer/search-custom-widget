@@ -21,6 +21,9 @@ import {
 } from '../config'
 import { configToXml, xmlToConfig } from './config-xml'
 import { buildArcadeExpression } from '../runtime/custom-search'
+import { hooks as __exbI18nHooks } from 'jimu-core';
+import __exbI18nMessages from './translations/default';
+
 
 // Mode B leftover (WIDGETHANDOFF 12.3): AllWidgetSettingProps from
 // jimu-for-builder is a shorthand module under the shim and cannot be used as a
@@ -78,6 +81,7 @@ const defaultCustom = (): CustomSearchConfig => ({
 })
 
 const Setting = (props: SettingProps) => {
+  const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
   const { config, id, useMapWidgetIds, onSettingChange } = props
 
   // Work on a plain-object copy; write back wholesale on each change.
@@ -150,7 +154,7 @@ const Setting = (props: SettingProps) => {
   }
 
 
-  const onMapWidgetSelected = (ids: any) => {
+  const onMapWidgetSelected = (ids: string[]) => {
     onSettingChange({ id, useMapWidgetIds: ids })
   }
 
@@ -282,7 +286,7 @@ const Setting = (props: SettingProps) => {
   // JSON editor for advanced nested arrays (staticLines / explicit field list)
   const jsonField = (value: any, onValid: (v: any) => void, rowsHint = 3) => (
     <TextArea
-      aria-label='Advanced configuration value (JSON)'
+      aria-label={t('advancedConfigurationValueJson')}
       css={{ minHeight: `${Math.max(rowsHint * 22, 28)}px`, width: '100%' }}
       defaultValue={value ? JSON.stringify(value, null, 0) : ''}
       onAcceptValue={(v: string) => {
@@ -339,213 +343,213 @@ const Setting = (props: SettingProps) => {
 
   return (
     <div className='widget-setting-search-custom' css={STYLE}>
-      <SettingSection title='Map widget'>
+      <SettingSection title={t('mapWidget')}>
         <SettingRow>
           <MapWidgetSelector useMapWidgetIds={useMapWidgetIds} onSelect={onMapWidgetSelected} />
         </SettingRow>
       </SettingSection>
 
-      <SettingSection title='Transfer settings (XML)'>
-        <div className='hint'>Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.</div>
+      <SettingSection title={t('transferSettingsXml')}>
+        <div className='hint'>{t('moveThisExactConfigurationBetweenApps')}</div>
         <div className='btn-row'>
-          <Button size='sm' type='primary' onClick={downloadXml}>Export XML file</Button>
+          <Button size='sm' type='primary' onClick={downloadXml}>{t('exportXmlFile')}</Button>
           <Button size='sm' onClick={() => { setTransferOpen(o => !o); setTransferMsg(null) }}>
-            {transferOpen ? 'Hide' : 'Import / view XML'}
+            {transferOpen ? t('hide') : t('importViewXml')}
           </Button>
         </div>
         {transferMsg && <div role='status' aria-live='polite' className={`msg ${transferMsg.kind}`}>{transferMsg.text}</div>}
         {transferOpen && (
           <React.Fragment>
-            <Label className='mini-label'>Import from file</Label>
+            <Label className='mini-label'>{t('importFromFile')}</Label>
             <div className='btn-row'>
-              <Button size='sm' onClick={() => fileInputRef.current?.click()}>Choose .xml file…</Button>
+              <Button size='sm' onClick={() => fileInputRef.current?.click()}>{t('chooseXmlFile')}</Button>
               <input ref={fileInputRef} type='file' accept='.xml,application/xml,text/xml'
                 style={{ display: 'none' }} onChange={onPickFile} />
             </div>
-            <Label className='mini-label'>Or paste XML and apply</Label>
+            <Label className='mini-label'>{t('orPasteXmlAndApply')}</Label>
             <div className='xml-box'>
               <TextArea css={{ minHeight: '130px', width: '100%' }} value={importText}
-                aria-label='Paste configuration XML to import' placeholder='Paste exported &lt;searchCustomConfig&gt; XML here…'
+                aria-label={t('pasteConfigurationXmlToImport')} placeholder={t('pasteExportedLtSearchCustomConfigGtXml')}
                 onChange={(e: any) => setImportText(e.target.value)} />
             </div>
             <div className='btn-row'>
               <Button size='sm' type='primary' disabled={!importText.trim()}
-                onClick={() => applyImport(importText)}>Apply pasted XML</Button>
+                onClick={() => applyImport(importText)}>{t('applyPastedXml')}</Button>
             </div>
-            <Label className='mini-label'>Current configuration (read-only)</Label>
+            <Label className='mini-label'>{t('currentConfigurationReadOnly')}</Label>
             <div className='xml-box'>
-              <TextArea css={{ minHeight: '130px', width: '100%' }} aria-label='Current configuration as XML (read only)' value={currentXml} readOnly />
+              <TextArea css={{ minHeight: '130px', width: '100%' }} aria-label={t('currentConfigurationAsXmlReadOnly')} value={currentXml} readOnly />
             </div>
           </React.Fragment>
         )}
       </SettingSection>
 
-      <SettingSection title='General'>
-        <SettingRow flow='wrap' label='Enable custom search'>
-          <Switch aria-label={`Enable custom search`} checked={custom.enabled !== false} onChange={e => patch({ enabled: e.target.checked })} />
+      <SettingSection title={t('general')}>
+        <SettingRow flow='wrap' label={t('enableCustomSearch')}>
+          <Switch aria-label={t('enableCustomSearch')} checked={custom.enabled !== false} onChange={e => patch({ enabled: e.target.checked })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='"All" placeholder'>
-          <TextInput aria-label={`"All" placeholder`} defaultValue={custom.allPlaceholder || ''} className='w-100'
+        <SettingRow flow='wrap' label={t('allPlaceholder')}>
+          <TextInput aria-label={t('allPlaceholder')} defaultValue={custom.allPlaceholder || ''} className='w-100'
             onAcceptValue={v => patch({ allPlaceholder: v })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Zoom scale on result'>
-          <NumericInput aria-label={`Zoom scale on result`} value={custom.defaultZoomScale ?? 1000} min={1}
+        <SettingRow flow='wrap' label={t('zoomScaleOnResult')}>
+          <NumericInput aria-label={t('zoomScaleOnResult')} value={custom.defaultZoomScale ?? 1000} min={1}
             onChange={v => patch({ defaultZoomScale: v as number })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Popup behavior'>
-          <Select aria-label={`Popup behavior`} value={popupMode} onChange={e => patch({ popupMode: e.target.value as CustomPopupMode })}>
-            <Option value={CustomPopupMode.None}>None (zoom only)</Option>
-            <Option value={CustomPopupMode.InheritWebMap}>Use the layer's own popup (from web map)</Option>
-            <Option value={CustomPopupMode.LayerTemplate}>Layer auto-field popup (Arcade)</Option>
-            <Option value={CustomPopupMode.SpatialLookup}>Spatial lookup popup</Option>
+        <SettingRow flow='wrap' label={t('popupBehavior')}>
+          <Select aria-label={t('popupBehavior')} value={popupMode} onChange={e => patch({ popupMode: e.target.value as CustomPopupMode })}>
+            <Option value={CustomPopupMode.None}>{t('noneZoomOnly')}</Option>
+            <Option value={CustomPopupMode.InheritWebMap}>{t('useTheLayerSOwnPopup')}</Option>
+            <Option value={CustomPopupMode.LayerTemplate}>{t('layerAutoFieldPopupArcade')}</Option>
+            <Option value={CustomPopupMode.SpatialLookup}>{t('spatialLookupPopup')}</Option>
           </Select>
         </SettingRow>
         {popupMode === CustomPopupMode.InheritWebMap && (
-          <div className='hint'>Each result opens the popup already configured on its layer. For <strong>app data source</strong> sources this is the popup from the web map; for service-URL sources the SDK builds a default field popup. The widget adds no popup of its own.</div>
+          <div className='hint'>{t('eachResultOpensThePopupAlready')} <strong>{t('appDataSource')}</strong> {t('sourcesThisIsThePopupFrom')}</div>
         )}
-        <SettingRow flow='wrap' label='Initial search term'>
-          <TextInput aria-label={`Initial search term`} defaultValue={custom.initialSearchTerm || ''} className='w-100'
+        <SettingRow flow='wrap' label={t('initialSearchTerm')}>
+          <TextInput aria-label={t('initialSearchTerm')} defaultValue={custom.initialSearchTerm || ''} className='w-100'
             onAcceptValue={v => patch({ initialSearchTerm: v })} />
         </SettingRow>
       </SettingSection>
 
-      <SettingSection title='Search behavior'>
-        <div className='hint'>These map directly to the ArcGIS Search widget options.</div>
-        <SettingRow flow='wrap' label='Auto-select first result'>
-          <Switch aria-label={`Auto-select first result`} checked={custom.autoSelect !== false} onChange={e => patch({ autoSelect: e.target.checked })} />
+      <SettingSection title={t('searchBehavior')}>
+        <div className='hint'>{t('theseMapDirectlyToTheArcGIS')}</div>
+        <SettingRow flow='wrap' label={t('autoSelectFirstResult')}>
+          <Switch aria-label={t('autoSelectFirstResult')} checked={custom.autoSelect !== false} onChange={e => patch({ autoSelect: e.target.checked })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Show "All" (search every source)'>
-          <Switch aria-label={`Show "All" (search every source)`} checked={custom.searchAllEnabled !== false} onChange={e => patch({ searchAllEnabled: e.target.checked })} />
+        <SettingRow flow='wrap' label={t('showAllSearchEverySource')}>
+          <Switch aria-label={t('showAllSearchEverySource')} checked={custom.searchAllEnabled !== false} onChange={e => patch({ searchAllEnabled: e.target.checked })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Show "Use current location"'>
-          <Switch aria-label={`Show "Use current location"`} checked={!!custom.locationEnabled} onChange={e => patch({ locationEnabled: e.target.checked })} />
+        <SettingRow flow='wrap' label={t('showUseCurrentLocation')}>
+          <Switch aria-label={t('showUseCurrentLocation')} checked={!!custom.locationEnabled} onChange={e => patch({ locationEnabled: e.target.checked })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Draw result graphic'>
-          <Switch aria-label={`Draw result graphic`} checked={custom.resultGraphicEnabled !== false} onChange={e => patch({ resultGraphicEnabled: e.target.checked })} />
+        <SettingRow flow='wrap' label={t('drawResultGraphic')}>
+          <Switch aria-label={t('drawResultGraphic')} checked={custom.resultGraphicEnabled !== false} onChange={e => patch({ resultGraphicEnabled: e.target.checked })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Enable suggestions'>
-          <Switch aria-label={`Enable suggestions`} checked={custom.suggestionsEnabled !== false} onChange={e => patch({ suggestionsEnabled: e.target.checked })} />
+        <SettingRow flow='wrap' label={t('enableSuggestions')}>
+          <Switch aria-label={t('enableSuggestions')} checked={custom.suggestionsEnabled !== false} onChange={e => patch({ suggestionsEnabled: e.target.checked })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Min. suggest characters'>
-          <NumericInput aria-label={`Min. suggest characters`} value={custom.minSuggestCharacters ?? 1} min={1} max={10}
+        <SettingRow flow='wrap' label={t('minSuggestCharacters')}>
+          <NumericInput aria-label={t('minSuggestCharacters')} value={custom.minSuggestCharacters ?? 1} min={1} max={10}
             onChange={v => patch({ minSuggestCharacters: v as number })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Max results'>
-          <NumericInput aria-label={`Max results`} value={custom.maxResults ?? 6} min={1} max={50}
+        <SettingRow flow='wrap' label={t('maxResults')}>
+          <NumericInput aria-label={t('maxResults')} value={custom.maxResults ?? 6} min={1} max={50}
             onChange={v => patch({ maxResults: v as number })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Max suggestions'>
-          <NumericInput aria-label={`Max suggestions`} value={custom.maxSuggestions ?? 6} min={1} max={50}
+        <SettingRow flow='wrap' label={t('maxSuggestions')}>
+          <NumericInput aria-label={t('maxSuggestions')} value={custom.maxSuggestions ?? 6} min={1} max={50}
             onChange={v => patch({ maxSuggestions: v as number })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Enable popups (None/Layer modes)'>
-          <Switch aria-label={`Enable popups (None/Layer modes)`} checked={custom.popupEnabled !== false} onChange={e => patch({ popupEnabled: e.target.checked })} />
+        <SettingRow flow='wrap' label={t('enablePopupsNoneLayerModes')}>
+          <Switch aria-label={t('enablePopupsNoneLayerModes')} checked={custom.popupEnabled !== false} onChange={e => patch({ popupEnabled: e.target.checked })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Default source index (-1 = All)'>
-          <NumericInput aria-label={`Default source index (-1 = All)`} value={custom.activeSourceIndex ?? -1} min={-1} max={50}
+        <SettingRow flow='wrap' label={t('defaultSourceIndex1All')}>
+          <NumericInput aria-label={t('defaultSourceIndex1All')} value={custom.activeSourceIndex ?? -1} min={-1} max={50}
             onChange={v => patch({ activeSourceIndex: v as number })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='Remember recent searches'>
-          <Switch aria-label={`Remember recent searches`} checked={!!custom.searchHistoryEnabled}
+        <SettingRow flow='wrap' label={t('rememberRecentSearches')}>
+          <Switch aria-label={t('rememberRecentSearches')} checked={!!custom.searchHistoryEnabled}
             onChange={e => patch({ searchHistoryEnabled: e.target.checked })} />
         </SettingRow>
         {custom.searchHistoryEnabled && (
-          <SettingRow flow='wrap' label='How many to remember'>
-            <NumericInput aria-label={`How many recent searches to remember`} value={custom.searchHistoryMax ?? 5} min={1} max={25}
+          <SettingRow flow='wrap' label={t('howManyToRemember')}>
+            <NumericInput aria-label={t('howManyRecentSearchesToRemember')} value={custom.searchHistoryMax ?? 5} min={1} max={25}
               onChange={v => patch({ searchHistoryMax: v as number })} />
           </SettingRow>
         )}
         {custom.searchHistoryEnabled && (
-          <div className='hint'>Recent searches are stored only in this browser (local storage) and shown as quick chips under the search box. Each visitor sees their own; nothing is sent anywhere.</div>
+          <div className='hint'>{t('recentSearchesAreStoredOnlyIn')}</div>
         )}
       </SettingSection>
 
-      <SettingSection title='Result navigation'>
-        <SettingRow flow='wrap' label='Zoom to result on select'>
-          <Switch aria-label={`Zoom to result on select`} checked={custom.autoNavigate !== false} onChange={e => patch({ autoNavigate: e.target.checked })} />
+      <SettingSection title={t('resultNavigation')}>
+        <SettingRow flow='wrap' label={t('zoomToResultOnSelect')}>
+          <Switch aria-label={t('zoomToResultOnSelect')} checked={custom.autoNavigate !== false} onChange={e => patch({ autoNavigate: e.target.checked })} />
         </SettingRow>
-        <SettingRow flow='wrap' label='How the map moves to a result'>
-          <Select aria-label={`How the map moves to a result`} value={custom.navigateMode || 'scale'}
+        <SettingRow flow='wrap' label={t('howTheMapMovesToA')}>
+          <Select aria-label={t('howTheMapMovesToA')} value={custom.navigateMode || 'scale'}
             onChange={e => patch({ navigateMode: e.target.value as ('scale' | 'extent') })}>
-            <Option value='scale'>Zoom to fixed scale</Option>
-            <Option value='extent'>Fit to result extent</Option>
+            <Option value='scale'>{t('zoomToFixedScale')}</Option>
+            <Option value='extent'>{t('fitToResultExtent')}</Option>
           </Select>
         </SettingRow>
-        <div className='hint'>Fit to result extent frames the whole feature (parcel, district, street). Point results still use the fixed scale.</div>
-        <SettingRow flow='wrap' label='Animate the zoom'>
-          <Switch aria-label={`Animate the zoom`} checked={!!custom.zoomAnimate} onChange={e => patch({ zoomAnimate: e.target.checked })} />
+        <div className='hint'>{t('fitToResultExtentFramesThe')}</div>
+        <SettingRow flow='wrap' label={t('animateTheZoom')}>
+          <Switch aria-label={t('animateTheZoom')} checked={!!custom.zoomAnimate} onChange={e => patch({ zoomAnimate: e.target.checked })} />
         </SettingRow>
         {custom.zoomAnimate && (
-          <SettingRow flow='wrap' label='Animation duration (ms)'>
-            <NumericInput aria-label={`Animation duration (ms)`} value={custom.zoomDuration ?? 500} min={0} max={10000} step={100}
+          <SettingRow flow='wrap' label={t('animationDurationMs')}>
+            <NumericInput aria-label={t('animationDurationMs')} value={custom.zoomDuration ?? 500} min={0} max={10000} step={100}
               onChange={v => patch({ zoomDuration: v as number })} />
           </SettingRow>
         )}
-        <SettingRow flow='wrap' label='Open popup on result select'>
-          <Switch aria-label={`Open popup on result select`} checked={custom.popupOpenOnSelect !== false} onChange={e => patch({ popupOpenOnSelect: e.target.checked })} />
+        <SettingRow flow='wrap' label={t('openPopupOnResultSelect')}>
+          <Switch aria-label={t('openPopupOnResultSelect')} checked={custom.popupOpenOnSelect !== false} onChange={e => patch({ popupOpenOnSelect: e.target.checked })} />
         </SettingRow>
       </SettingSection>
 
-      <SettingSection title='Placement'>
-        <SettingRow flow='wrap' label='Where the search box appears'>
-          <Select aria-label={`Where the search box appears`} value={custom.placement || 'widget'} onChange={e => patch({ placement: e.target.value as ('widget' | 'map') })}>
-            <Option value='widget'>In the widget (where placed)</Option>
-            <Option value='map'>Docked on the map</Option>
+      <SettingSection title={t('placement')}>
+        <SettingRow flow='wrap' label={t('whereTheSearchBoxAppears')}>
+          <Select aria-label={t('whereTheSearchBoxAppears')} value={custom.placement || 'widget'} onChange={e => patch({ placement: e.target.value as ('widget' | 'map') })}>
+            <Option value='widget'>{t('inTheWidgetWherePlaced')}</Option>
+            <Option value='map'>{t('dockedOnTheMap')}</Option>
           </Select>
         </SettingRow>
         {custom.placement === 'map' && (
-          <SettingRow flow='wrap' label='Map position'>
-            <Select aria-label={`Map position`} value={custom.mapPosition || 'top-left'} onChange={e => patch({ mapPosition: e.target.value as any })}>
-              <Option value='top-left'>Top left</Option>
-              <Option value='top-right'>Top right</Option>
-              <Option value='bottom-left'>Bottom left</Option>
-              <Option value='bottom-right'>Bottom right</Option>
-              <Option value='manual'>Manual</Option>
+          <SettingRow flow='wrap' label={t('mapPosition')}>
+            <Select aria-label={t('mapPosition')} value={custom.mapPosition || 'top-left'} onChange={e => patch({ mapPosition: e.target.value as any })}>
+              <Option value='top-left'>{t('topLeft')}</Option>
+              <Option value='top-right'>{t('topRight')}</Option>
+              <Option value='bottom-left'>{t('bottomLeft')}</Option>
+              <Option value='bottom-right'>{t('bottomRight')}</Option>
+              <Option value='manual'>{t('manual')}</Option>
             </Select>
           </SettingRow>
         )}
       </SettingSection>
 
-      <SettingSection title='Appearance'>
-        <SettingRow flow='wrap' label='Search bar style'>
-          <Select aria-label={`Search bar style`} value={custom.barStyle || 'default'}
+      <SettingSection title={t('appearance')}>
+        <SettingRow flow='wrap' label={t('searchBarStyle')}>
+          <Select aria-label={t('searchBarStyle')} value={custom.barStyle || 'default'}
             onChange={e => patch({ barStyle: e.target.value as any })}>
-            <Option value='default'>Default (native)</Option>
-            <Option value='square'>Square (sharp corners)</Option>
-            <Option value='curve'>Curve (rounded / pill)</Option>
-            <Option value='linear'>Linear (underline only)</Option>
-            <Option value='floating'>Floating (elevated card)</Option>
-            <Option value='soft'>Soft (filled pill)</Option>
+            <Option value='default'>{t('defaultNative')}</Option>
+            <Option value='square'>{t('squareSharpCorners')}</Option>
+            <Option value='curve'>{t('curveRoundedPill')}</Option>
+            <Option value='linear'>{t('linearUnderlineOnly')}</Option>
+            <Option value='floating'>{t('floatingElevatedCard')}</Option>
+            <Option value='soft'>{t('softFilledPill')}</Option>
           </Select>
         </SettingRow>
-        <SettingRow flow='wrap' label='Search bar size'>
-          <Select aria-label={`Search bar size`} value={custom.barSize || 'comfortable'}
+        <SettingRow flow='wrap' label={t('searchBarSize')}>
+          <Select aria-label={t('searchBarSize')} value={custom.barSize || 'comfortable'}
             onChange={e => patch({ barSize: e.target.value as any })}>
-            <Option value='compact'>Compact</Option>
-            <Option value='comfortable'>Comfortable</Option>
-            <Option value='large'>Large</Option>
+            <Option value='compact'>{t('searchCompact')}</Option>
+            <Option value='comfortable'>{t('comfortable')}</Option>
+            <Option value='large'>{t('large')}</Option>
           </Select>
         </SettingRow>
-        <SettingRow flow='wrap' label='Accent color'>
-          <TextInput aria-label={`Accent color (hex)`} className='w-100'
+        <SettingRow flow='wrap' label={t('accentColor')}>
+          <TextInput aria-label={t('accentColorHex')} className='w-100'
             defaultValue={custom.barAccent || '#003A55'}
             placeholder='#003A55'
             onAcceptValue={v => patch({ barAccent: v || undefined })} />
         </SettingRow>
-        <div className='hint'>Style and size are visual themes applied live to the search box; "Default" leaves the native look untouched. Accent color drives the focus ring and button hover across the non-default styles.</div>
+        <div className='hint'>{t('styleAndSizeAreVisualThemes')}</div>
       </SettingSection>
 
-      <SettingSection title='Search sources'>
-        <div className='hint'>Each entry is one option in the search box dropdown. Drag the ⠿ handle to reorder; click a row to expand or collapse it.</div>
+      <SettingSection title={t('searchSources')}>
+        <div className='hint'>{t('eachEntryIsOneOptionIn')}</div>
         <div className='add-row'>
-          <Button size='sm' type='primary' onClick={() => addSource(CustomSourceKind.FeatureLayer)}>+ Layer source</Button>
-          <Button size='sm' type='primary' onClick={() => addSource(CustomSourceKind.Geocode)}>+ Geocode source</Button>
+          <Button size='sm' type='primary' onClick={() => addSource(CustomSourceKind.FeatureLayer)}>{t('layerSource')}</Button>
+          <Button size='sm' type='primary' onClick={() => addSource(CustomSourceKind.Geocode)}>{t('geocodeSource')}</Button>
           <Button size='sm' type={showDsPicker ? 'secondary' : 'primary'} aria-expanded={showDsPicker}
-            onClick={() => setShowDsPicker(v => !v)}>+ Data source</Button>
+            onClick={() => setShowDsPicker(v => !v)}>{t('dataSource')}</Button>
         </div>
         {showDsPicker && (
           <div className='ds-picker'>
-            <div className='hint'>Pick one or more feature layers from this app's data sources; each is added as a search source below. Bindings are app-specific and are not carried by the XML export.</div>
+            <div className='hint'>{t('pickOneOrMoreFeatureLayers')}</div>
             <DataSourceSelector
               types={Immutable([DataSourceTypes.FeatureLayer])}
               useDataSources={props.useDataSources}
@@ -557,15 +561,15 @@ const Setting = (props: SettingProps) => {
           </div>
         )}
         <div className='src-toolbar'>
-          <span className='src-count'>{(custom.sources || []).length} source{(custom.sources || []).length === 1 ? '' : 's'}</span>
+          <span className='src-count'>{((custom.sources || []).length === 1 ? t('sourcesCountSource', { sourcesCount: (custom.sources || []).length }) : t('sourcesCountSources', { sourcesCount: (custom.sources || []).length }))}</span>
           <div className='btn-row'>
-            <Button size='sm' type='tertiary' onClick={() => setAllExpanded(true)}>Expand all</Button>
-            <Button size='sm' type='tertiary' onClick={() => setAllExpanded(false)}>Collapse all</Button>
+            <Button size='sm' type='tertiary' onClick={() => setAllExpanded(true)}>{t('expandAll')}</Button>
+            <Button size='sm' type='tertiary' onClick={() => setAllExpanded(false)}>{t('collapseAll')}</Button>
           </div>
         </div>
         {(custom.sources || []).map((s, i) => {
           const isOpen = expandedIds.has(s.id)
-          const kindLabel = s.kind === CustomSourceKind.Geocode ? 'Geocode' : s.kind === CustomSourceKind.DataSource ? 'Data' : 'Layer'
+          const kindLabel = s.kind === CustomSourceKind.Geocode ? t('geocode') : s.kind === CustomSourceKind.DataSource ? t('data') : t('layer')
           const badgeClass = s.kind === CustomSourceKind.Geocode ? 'geo' : s.kind === CustomSourceKind.DataSource ? 'ds' : ''
           const sub = s.kind === CustomSourceKind.DataSource ? (s.dataSourceId || '') : s.url
           return (
@@ -577,82 +581,82 @@ const Setting = (props: SettingProps) => {
             onDrop={(e: any) => { e.preventDefault(); reorderSource(draggingIdx, i); setDraggingIdx(null); setOverIdx(null); setArmedIdx(null) }}
             onDragEnd={() => { setDraggingIdx(null); setOverIdx(null); setArmedIdx(null) }}>
             <div className='src-row'>
-              <span className='src-handle' aria-hidden='true' title='Drag to reorder'
+              <span className='src-handle' aria-hidden='true' title={t('dragToReorder')}
                 onMouseDown={() => setArmedIdx(i)} onMouseUp={() => setArmedIdx(null)}>⠿</span>
               <div className='src-panel'>
                 <CollapsablePanel
                   level={1}
-                  aria-label={`Source ${s.name || i + 1}`}
+                  aria-label={t('sourceName', { name: s.name || i + 1 })}
                   isOpen={isOpen}
                   onRequestOpen={() => setExpanded(s.id, true)}
                   onRequestClose={() => setExpanded(s.id, false)}
                   label={(
                     <span className='src-label'>
                       <span className={`src-badge ${badgeClass}`}>{kindLabel}</span>
-                      <span className='src-name'>{s.name || '(unnamed)'}</span>
+                      <span className='src-name'>{s.name || t('unnamed')}</span>
                       {!isOpen && sub ? <span className='src-sub'>- {sub}</span> : null}
                     </span>
                   )}>
                   <div className='src-body'>
-            <SettingRow flow='wrap' label='Name'>
-              <TextInput aria-label={`Name`} defaultValue={s.name} className='w-100' onAcceptValue={v => updateSource(i, { name: v })} />
+            <SettingRow flow='wrap' label={t('name')}>
+              <TextInput aria-label={t('name')} defaultValue={s.name} className='w-100' onAcceptValue={v => updateSource(i, { name: v })} />
             </SettingRow>
-            <SettingRow flow='wrap' label='Placeholder'>
-              <TextInput aria-label={`Placeholder`} defaultValue={s.placeholder || ''} className='w-100' onAcceptValue={v => updateSource(i, { placeholder: v })} />
+            <SettingRow flow='wrap' label={t('placeholder')}>
+              <TextInput aria-label={t('placeholder')} defaultValue={s.placeholder || ''} className='w-100' onAcceptValue={v => updateSource(i, { placeholder: v })} />
             </SettingRow>
             {s.kind === CustomSourceKind.DataSource
-              ? <div className='hint'>Bound to app data source <code>{s.dataSourceId}</code>. Manage which data sources are available in the "App data sources" picker below.</div>
-              : <SettingRow flow='wrap' label='Service URL'>
-                  <UrlInput aria-label={`Service URL`} value={s.url || ''} schemes={['https']} className='w-100'
+              ? <div className='hint'>{t('boundToAppDataSource')} <code>{s.dataSourceId}</code>{t('manageWhichDataSourcesAreAvailable')}</div>
+              : <SettingRow flow='wrap' label={t('serviceUrl')}>
+                  <UrlInput aria-label={t('serviceUrl')} value={s.url || ''} schemes={['https', 'http']} className='w-100'
                     onChange={(res: any) => updateSource(i, { url: (res && typeof res === 'object') ? (res.value ?? '') : (res ?? '') })} />
                 </SettingRow>}
-            <SettingRow flow='wrap' label='Prefix'>
-              <TextInput aria-label={`Prefix`} defaultValue={s.prefix || ''} className='w-100' onAcceptValue={v => updateSource(i, { prefix: v })} />
+            <SettingRow flow='wrap' label={t('prefix')}>
+              <TextInput aria-label={t('prefix')} defaultValue={s.prefix || ''} className='w-100' onAcceptValue={v => updateSource(i, { prefix: v })} />
             </SettingRow>
-            <SettingRow flow='wrap' label='Suffix'>
-              <TextInput aria-label={`Suffix`} defaultValue={s.suffix || ''} className='w-100' onAcceptValue={v => updateSource(i, { suffix: v })} />
+            <SettingRow flow='wrap' label={t('suffix')}>
+              <TextInput aria-label={t('suffix')} defaultValue={s.suffix || ''} className='w-100' onAcceptValue={v => updateSource(i, { suffix: v })} />
             </SettingRow>
-            <SettingRow flow='wrap' label='Suggestions for this source'>
-              <Switch aria-label={`Suggestions for this source`} checked={s.suggestionsEnabled !== false} onChange={e => updateSource(i, { suggestionsEnabled: e.target.checked })} />
+            <SettingRow flow='wrap' label={t('suggestionsForThisSource')}>
+              <Switch aria-label={t('suggestionsForThisSource')} checked={s.suggestionsEnabled !== false} onChange={e => updateSource(i, { suggestionsEnabled: e.target.checked })} />
             </SettingRow>
-            <SettingRow flow='wrap' label='Min. suggest characters'>
-              <NumericInput aria-label={`Min. suggest characters`} value={s.minSuggestCharacters ?? 1} min={1} max={10}
+            <SettingRow flow='wrap' label={t('minSuggestCharacters')}>
+              <NumericInput aria-label={t('minSuggestCharacters')} value={s.minSuggestCharacters ?? 1} min={1} max={10}
                 onChange={v => updateSource(i, { minSuggestCharacters: v as number })} />
             </SettingRow>
-            <SettingRow flow='wrap' label='Only within current map view'>
-              <Switch aria-label={`Only within current map view`} checked={!!s.withinViewEnabled} onChange={e => updateSource(i, { withinViewEnabled: e.target.checked })} />
+            <SettingRow flow='wrap' label={t('onlyWithinCurrentMapView')}>
+              <Switch aria-label={t('onlyWithinCurrentMapView')} checked={!!s.withinViewEnabled} onChange={e => updateSource(i, { withinViewEnabled: e.target.checked })} />
             </SettingRow>
-            <SettingRow flow='wrap' label='Filter (where clause)'>
-              <TextInput aria-label={`Filter (where clause)`} defaultValue={s.filterWhere || ''} className='w-100'
+            <SettingRow flow='wrap' label={t('filterWhereClause')}>
+              <TextInput aria-label={t('filterWhereClause')} defaultValue={s.filterWhere || ''} className='w-100'
                 onAcceptValue={v => updateSource(i, { filterWhere: v })} />
             </SettingRow>
             {(s.kind === CustomSourceKind.FeatureLayer || s.kind === CustomSourceKind.DataSource) ? (
               <React.Fragment>
-                <SettingRow flow='wrap' label='Search fields (comma)'>
-                  <TextInput aria-label={`Search fields (comma)`} defaultValue={fromList(s.searchFields)} className='w-100'
+                <SettingRow flow='wrap' label={t('searchFieldsComma')}>
+                  <TextInput aria-label={t('searchFieldsComma')} defaultValue={fromList(s.searchFields)} className='w-100'
                     onAcceptValue={v => updateSource(i, { searchFields: toList(v) })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Display field'>
-                  <TextInput aria-label={`Display field`} defaultValue={s.displayField || ''} className='w-100'
+                <SettingRow flow='wrap' label={t('displayField')}>
+                  <TextInput aria-label={t('displayField')} defaultValue={s.displayField || ''} className='w-100'
                     onAcceptValue={v => updateSource(i, { displayField: v })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Exact match'>
-                  <Switch aria-label={`Exact match`} checked={!!s.exactMatch} onChange={e => updateSource(i, { exactMatch: e.target.checked })} />
+                <SettingRow flow='wrap' label={t('exactMatch')}>
+                  <Switch aria-label={t('exactMatch')} checked={!!s.exactMatch} onChange={e => updateSource(i, { exactMatch: e.target.checked })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Zoom scale'>
-                  <NumericInput aria-label={`Zoom scale`} value={s.zoomScale ?? (custom.defaultZoomScale ?? 1000)}
+                <SettingRow flow='wrap' label={t('zoomScale')}>
+                  <NumericInput aria-label={t('zoomScale')} value={s.zoomScale ?? (custom.defaultZoomScale ?? 1000)}
                     onChange={v => updateSource(i, { zoomScale: v as number })} />
                 </SettingRow>
-                <Label className='mini-label'>Result symbol color [r,g,b,a] (optional JSON)</Label>
+                <Label className='mini-label'>{t('resultSymbolColorRGB')}</Label>
                 {jsonField(s.resultSymbol?.color, (color) =>
                   updateSource(i, { resultSymbol: color ? { ...(s.resultSymbol || {}), color } : undefined }), 1)}
                 {custom.popupMode === CustomPopupMode.LayerTemplate && (
                   <React.Fragment>
-                    <Label className='mini-label'>Custom Arcade popup for this source (optional; overrides the shared one)</Label>
+                    <Label className='mini-label'>{t('customArcadePopupForThisSource')}</Label>
                     <div className='xml-box'>
                       <TextArea css={{ minHeight: '120px', width: '100%' }}
-                        aria-label='Custom Arcade popup expression for this source' value={s.popupArcade || ''}
-                        placeholder='Leave blank to use the shared popup expression…'
+                        aria-label={t('customArcadePopupExpressionForThis')} value={s.popupArcade || ''}
+                        placeholder={t('leaveBlankToUseTheShared')}
                         onChange={(e: any) => updateSource(i, { popupArcade: e.target.value })} />
                     </div>
                   </React.Fragment>
@@ -660,36 +664,36 @@ const Setting = (props: SettingProps) => {
               </React.Fragment>
             ) : (
               <React.Fragment>
-                <SettingRow flow='wrap' label='Single-line field'>
-                  <TextInput aria-label={`Single-line field`} defaultValue={s.singleLineFieldName || 'SingleLine'} className='w-100'
+                <SettingRow flow='wrap' label={t('singleLineField')}>
+                  <TextInput aria-label={t('singleLineField')} defaultValue={s.singleLineFieldName || 'SingleLine'} className='w-100'
                     onAcceptValue={v => updateSource(i, { singleLineFieldName: v })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Max suggestions'>
-                  <NumericInput aria-label={`Max suggestions`} value={s.maxSuggestions ?? 10} onChange={v => updateSource(i, { maxSuggestions: v as number })} />
+                <SettingRow flow='wrap' label={t('maxSuggestions')}>
+                  <NumericInput aria-label={t('maxSuggestions')} value={s.maxSuggestions ?? 10} onChange={v => updateSource(i, { maxSuggestions: v as number })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Max results'>
-                  <NumericInput aria-label={`Max results`} value={s.maxResults ?? 5} onChange={v => updateSource(i, { maxResults: v as number })} />
+                <SettingRow flow='wrap' label={t('maxResults')}>
+                  <NumericInput aria-label={t('maxResults')} value={s.maxResults ?? 5} onChange={v => updateSource(i, { maxResults: v as number })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Country code(s)'>
-                  <TextInput aria-label={`Country code(s)`} defaultValue={s.countryCode || ''} className='w-100'
+                <SettingRow flow='wrap' label={t('countryCodeS')}>
+                  <TextInput aria-label={t('countryCodeS')} defaultValue={s.countryCode || ''} className='w-100'
                     onAcceptValue={v => updateSource(i, { countryCode: v })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Categories (comma)'>
-                  <TextInput aria-label={`Categories (comma)`} defaultValue={fromList(s.categories)} className='w-100'
+                <SettingRow flow='wrap' label={t('categoriesComma')}>
+                  <TextInput aria-label={t('categoriesComma')} defaultValue={fromList(s.categories)} className='w-100'
                     onAcceptValue={v => updateSource(i, { categories: toList(v) })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Search template'>
-                  <TextInput aria-label={`Search template`} defaultValue={s.searchTemplate || ''} className='w-100'
+                <SettingRow flow='wrap' label={t('searchTemplate')}>
+                  <TextInput aria-label={t('searchTemplate')} defaultValue={s.searchTemplate || ''} className='w-100'
                     onAcceptValue={v => updateSource(i, { searchTemplate: v })} />
                 </SettingRow>
-                <SettingRow flow='wrap' label='Location type'>
-                  <Select aria-label={`Location type`} value={s.locationType || ''} onChange={e => updateSource(i, { locationType: e.target.value })}>
-                    <Option value=''>Default</Option>
-                    <Option value='street'>Street</Option>
-                    <Option value='rooftop'>Rooftop</Option>
+                <SettingRow flow='wrap' label={t('locationType')}>
+                  <Select aria-label={t('locationType')} value={s.locationType || ''} onChange={e => updateSource(i, { locationType: e.target.value })}>
+                    <Option value=''>{t('default')}</Option>
+                    <Option value='street'>{t('street')}</Option>
+                    <Option value='rooftop'>{t('rooftop')}</Option>
                   </Select>
                 </SettingRow>
-                <Label className='mini-label'>Result symbol color [r,g,b,a] (optional JSON)</Label>
+                <Label className='mini-label'>{t('resultSymbolColorRGB')}</Label>
                 {jsonField(s.resultSymbol?.color, (color) =>
                   updateSource(i, { resultSymbol: color ? { ...(s.resultSymbol || {}), color } : undefined }), 1)}
               </React.Fragment>
@@ -698,7 +702,7 @@ const Setting = (props: SettingProps) => {
                 </CollapsablePanel>
               </div>
               <Button size='sm' type='tertiary' className='src-remove'
-                aria-label={`Remove search source ${s.name || i + 1}`} onClick={() => removeSource(i)}>Remove</Button>
+                aria-label={t('removeSearchSourceName', { name: s.name || i + 1 })} onClick={() => removeSource(i)}>{t('remove')}</Button>
             </div>
           </div>
           )
@@ -708,219 +712,219 @@ const Setting = (props: SettingProps) => {
       {popupMode !== CustomPopupMode.None && (() => {
         const po: any = custom.popupOptions || {}
         return (
-        <SettingSection title='Popup display'>
-          <div className='hint'>Controls the map popup used by search results (the shared MapView popup). Applies to whichever popup behavior is selected above.</div>
-          <SettingRow flow='wrap' label='Dock the popup'>
-            <Switch aria-label={`Dock the popup`} checked={!!po.dockEnabled} onChange={e => patchPopup({ dockEnabled: e.target.checked })} />
+        <SettingSection title={t('popupDisplay')}>
+          <div className='hint'>{t('controlsTheMapPopupUsedBy')}</div>
+          <SettingRow flow='wrap' label={t('dockThePopup')}>
+            <Switch aria-label={t('dockThePopup')} checked={!!po.dockEnabled} onChange={e => patchPopup({ dockEnabled: e.target.checked })} />
           </SettingRow>
           {po.dockEnabled && (
-            <SettingRow flow='wrap' label='Dock position'>
-              <Select aria-label={`Dock position`} value={po.dockPosition || 'auto'} onChange={e => patchPopup({ dockPosition: e.target.value })}>
-                <Option value='auto'>Auto</Option>
-                <Option value='top-left'>Top left</Option>
-                <Option value='top-center'>Top center</Option>
-                <Option value='top-right'>Top right</Option>
-                <Option value='bottom-left'>Bottom left</Option>
-                <Option value='bottom-center'>Bottom center</Option>
-                <Option value='bottom-right'>Bottom right</Option>
+            <SettingRow flow='wrap' label={t('dockPosition')}>
+              <Select aria-label={t('dockPosition')} value={po.dockPosition || 'auto'} onChange={e => patchPopup({ dockPosition: e.target.value })}>
+                <Option value='auto'>{t('auto')}</Option>
+                <Option value='top-left'>{t('topLeft')}</Option>
+                <Option value='top-center'>{t('topCenter')}</Option>
+                <Option value='top-right'>{t('topRight')}</Option>
+                <Option value='bottom-left'>{t('bottomLeft')}</Option>
+                <Option value='bottom-center'>{t('bottomCenter')}</Option>
+                <Option value='bottom-right'>{t('bottomRight')}</Option>
               </Select>
             </SettingRow>
           )}
-          <SettingRow flow='wrap' label='Auto-dock on small screens'>
-            <Switch aria-label={`Auto-dock on small screens`} checked={po.dockBreakpoint !== false} onChange={e => patchPopup({ dockBreakpoint: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('autoDockOnSmallScreens')}>
+            <Switch aria-label={t('autoDockOnSmallScreens')} checked={po.dockBreakpoint !== false} onChange={e => patchPopup({ dockBreakpoint: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Show dock/undock button'>
-            <Switch aria-label={`Show dock or undock button`} checked={po.dockButton !== false} onChange={e => patchPopup({ dockButton: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('showDockUndockButton')}>
+            <Switch aria-label={t('showDockOrUndockButton')} checked={po.dockButton !== false} onChange={e => patchPopup({ dockButton: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Collapsible popup'>
-            <Switch aria-label={`Collapsible popup`} checked={!!po.collapseEnabled} onChange={e => patchPopup({ collapseEnabled: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('collapsiblePopup')}>
+            <Switch aria-label={t('collapsiblePopup')} checked={!!po.collapseEnabled} onChange={e => patchPopup({ collapseEnabled: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Highlight selected feature'>
-            <Switch aria-label={`Highlight selected feature`} checked={po.highlightEnabled !== false} onChange={e => patchPopup({ highlightEnabled: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('highlightSelectedFeature')}>
+            <Switch aria-label={t('highlightSelectedFeature')} checked={po.highlightEnabled !== false} onChange={e => patchPopup({ highlightEnabled: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Open automatically on select'>
-            <Switch aria-label={`Open automatically on select`} checked={po.autoOpenEnabled !== false} onChange={e => patchPopup({ autoOpenEnabled: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('openAutomaticallyOnSelect')}>
+            <Switch aria-label={t('openAutomaticallyOnSelect')} checked={po.autoOpenEnabled !== false} onChange={e => patchPopup({ autoOpenEnabled: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Max inline actions'>
-            <NumericInput aria-label={`Max inline actions`} value={po.maxInlineActions ?? 3} min={0} max={20}
+          <SettingRow flow='wrap' label={t('maxInlineActions')}>
+            <NumericInput aria-label={t('maxInlineActions')} value={po.maxInlineActions ?? 3} min={0} max={20}
               onChange={v => patchPopup({ maxInlineActions: v as number })} />
           </SettingRow>
-          <Label className='mini-label'>Visible parts of the popup</Label>
-          <SettingRow flow='wrap' label='Close button'>
-            <Switch aria-label={`Show close button`} checked={po.visibleCloseButton !== false} onChange={e => patchPopup({ visibleCloseButton: e.target.checked })} />
+          <Label className='mini-label'>{t('visiblePartsOfThePopup')}</Label>
+          <SettingRow flow='wrap' label={t('closeButton')}>
+            <Switch aria-label={t('showCloseButton')} checked={po.visibleCloseButton !== false} onChange={e => patchPopup({ visibleCloseButton: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Collapse button'>
-            <Switch aria-label={`Show collapse button`} checked={po.visibleCollapseButton !== false} onChange={e => patchPopup({ visibleCollapseButton: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('collapseButton')}>
+            <Switch aria-label={t('showCollapseButton')} checked={po.visibleCollapseButton !== false} onChange={e => patchPopup({ visibleCollapseButton: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Feature navigation (paging)'>
-            <Switch aria-label={`Show feature navigation`} checked={po.visibleFeatureNavigation !== false} onChange={e => patchPopup({ visibleFeatureNavigation: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('featureNavigationPaging')}>
+            <Switch aria-label={t('showFeatureNavigation')} checked={po.visibleFeatureNavigation !== false} onChange={e => patchPopup({ visibleFeatureNavigation: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Heading (title)'>
-            <Switch aria-label={`Show heading`} checked={po.visibleHeading !== false} onChange={e => patchPopup({ visibleHeading: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('headingTitle')}>
+            <Switch aria-label={t('showHeading')} checked={po.visibleHeading !== false} onChange={e => patchPopup({ visibleHeading: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Action bar'>
-            <Switch aria-label={`Show action bar`} checked={po.visibleActionBar !== false} onChange={e => patchPopup({ visibleActionBar: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('actionBar')}>
+            <Switch aria-label={t('showActionBar')} checked={po.visibleActionBar !== false} onChange={e => patchPopup({ visibleActionBar: e.target.checked })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Loading spinner'>
-            <Switch aria-label={`Show loading spinner`} checked={po.visibleSpinner !== false} onChange={e => patchPopup({ visibleSpinner: e.target.checked })} />
+          <SettingRow flow='wrap' label={t('loadingSpinner')}>
+            <Switch aria-label={t('showLoadingSpinner')} checked={po.visibleSpinner !== false} onChange={e => patchPopup({ visibleSpinner: e.target.checked })} />
           </SettingRow>
-          <div className='hint'>Note: these configure the map's shared popup, so they also affect other popups opened on the same map.</div>
+          <div className='hint'>{t('noteTheseConfigureTheMapS')}</div>
         </SettingSection>
         )
       })()}
 
       {popupMode === CustomPopupMode.LayerTemplate && (
-        <SettingSection title='Layer popup (Arcade)'>
-          <SettingRow flow='wrap' label='Popup title template'>
-            <TextInput aria-label={`Popup title template`} defaultValue={custom.popupTitleTemplate || '{LOCATION}'} className='w-100'
+        <SettingSection title={t('layerPopupArcade')}>
+          <SettingRow flow='wrap' label={t('popupTitleTemplate')}>
+            <TextInput aria-label={t('popupTitleTemplate')} defaultValue={custom.popupTitleTemplate || '{LOCATION}'} className='w-100'
               onAcceptValue={v => patch({ popupTitleTemplate: v })} />
           </SettingRow>
-          <SettingRow flow='wrap' label='Arcade expression'>
-            <Select aria-label={`Arcade expression`} value={custom.arcadeMode || 'generated'}
+          <SettingRow flow='wrap' label={t('arcadeExpression')}>
+            <Select aria-label={t('arcadeExpression')} value={custom.arcadeMode || 'generated'}
               onChange={e => patch({ arcadeMode: e.target.value as ('generated' | 'custom') })}>
-              <Option value='generated'>Auto-generate from settings</Option>
-              <Option value='custom'>Custom (write my own)</Option>
+              <Option value='generated'>{t('autoGenerateFromSettings')}</Option>
+              <Option value='custom'>{t('customWriteMyOwn')}</Option>
             </Select>
           </SettingRow>
 
           {(!custom.arcadeMode || custom.arcadeMode === 'generated') && (
             <React.Fragment>
-              <SettingRow flow='wrap' label='Excluded fields (comma)'>
-                <TextInput aria-label={`Excluded fields (comma)`} defaultValue={fromList(custom.arcadeFieldsToExclude)} className='w-100'
+              <SettingRow flow='wrap' label={t('excludedFieldsComma')}>
+                <TextInput aria-label={t('excludedFieldsComma')} defaultValue={fromList(custom.arcadeFieldsToExclude)} className='w-100'
                   onAcceptValue={v => patch({ arcadeFieldsToExclude: toList(v) })} />
               </SettingRow>
-              <div className='hint'>The widget builds the popup expression for you from the options above: every field on the layer is listed (except the excluded ones), and any value that matches a <strong>URL formatting rule</strong> is turned into a link. The exact expression it will use is shown below.</div>
-              <Label className='mini-label'>Generated Arcade expression (read-only preview)</Label>
+              <div className='hint'>{t('theWidgetBuildsThePopupExpression')} <strong>{t('urlFormattingRule')}</strong> {t('isTurnedIntoALinkThe')}</div>
+              <Label className='mini-label'>{t('generatedArcadeExpressionReadOnlyPreview')}</Label>
               <div className='xml-box'>
                 <TextArea css={{ minHeight: '180px', width: '100%' }} readOnly
-                  aria-label='Generated Arcade popup expression (read only)'
+                  aria-label={t('generatedArcadePopupExpressionReadOnly')}
                   value={buildArcadeExpression(custom)} />
               </div>
               <div className='btn-row'>
                 <Button size='sm' onClick={() => patch({ arcadeMode: 'custom', arcadeExpression: buildArcadeExpression(custom) })}>
-                  Edit this expression (switch to Custom)
+                  {t('editThisExpressionSwitchToCustom')}
                 </Button>
               </div>
-              <div className='hint'>Switching to Custom copies this generated expression into an editable box so you can tweak it; after that it no longer changes when you edit the options above.</div>
+              <div className='hint'>{t('switchingToCustomCopiesThisGenerated')}</div>
             </React.Fragment>
           )}
 
           {custom.arcadeMode === 'custom' && (
             <React.Fragment>
-              <div className='hint'>You are writing the Arcade expression yourself. It runs as the popup content for every feature-layer source and is stored in this widget's settings (and the XML export). Use the button to reset it from the auto-generated version at any time.</div>
+              <div className='hint'>{t('youAreWritingTheArcadeExpression')}</div>
               <div className='btn-row'>
                 <Button size='sm' onClick={() => patch({ arcadeExpression: buildArcadeExpression(custom) })}>
-                  Reset from auto-generated
+                  {t('resetFromAutoGenerated')}
                 </Button>
                 <Button size='sm' type='tertiary' onClick={() => patch({ arcadeMode: 'generated' })}>
-                  Back to auto-generate
+                  {t('backToAutoGenerate')}
                 </Button>
               </div>
               <div className='xml-box'>
                 <TextArea css={{ minHeight: '220px', width: '100%' }}
-                  aria-label='Custom Arcade popup expression' value={custom.arcadeExpression || ''}
-                  placeholder='Enter an Arcade expression that returns the popup HTML…'
+                  aria-label={t('customArcadePopupExpression')} value={custom.arcadeExpression || ''}
+                  placeholder={t('enterAnArcadeExpressionThatReturns')}
                   onChange={(e: any) => patch({ arcadeExpression: e.target.value })} />
               </div>
-              <div className='hint'>Tip: the expression should return a string (HTML allowed). Use $feature to read attributes.</div>
+              <div className='hint'>{t('tipTheExpressionShouldReturnA')}</div>
             </React.Fragment>
           )}
         </SettingSection>
       )}
 
       {popupMode === CustomPopupMode.SpatialLookup && (
-        <SettingSection title='Spatial lookup rules'>
-          <SettingRow flow='wrap' label='Popup title'>
-            <TextInput aria-label={`Popup title`} defaultValue={custom.spatialPopupTitle || '{result}'} className='w-100'
+        <SettingSection title={t('spatialLookupRules')}>
+          <SettingRow flow='wrap' label={t('popupTitle')}>
+            <TextInput aria-label={t('popupTitle')} defaultValue={custom.spatialPopupTitle || '{result}'} className='w-100'
               onAcceptValue={v => patch({ spatialPopupTitle: v })} />
           </SettingRow>
-          <div className='hint'>On select, each rule runs an intersect query and appends its HTML to the popup. Tokens: {'{result}'}, {'{field:NAME}'}.</div>
+          <div className='hint'>{t('onSelectEachRuleRunsAn')} {'{result}'}, {'{field:NAME}'}.</div>
           {(custom.lookupRules || []).map((r, i) => (
             <div className='card' key={r.id || i}>
               <div className='title'>
-                <strong>Rule {i + 1}: {r.outputType}</strong>
-                <Button size='sm' type='tertiary' aria-label={`Remove lookup rule ${i + 1}`} onClick={() => removeRule(i)}>Remove</Button>
+                <strong>{t('ruleIOutputType', { i: i + 1, outputType: r.outputType })}</strong>
+                <Button size='sm' type='tertiary' aria-label={t('removeLookupRuleI', { i: i + 1 })} onClick={() => removeRule(i)}>{t('remove')}</Button>
               </div>
-              <SettingRow flow='wrap' label='Enabled'>
-                <Switch aria-label={`Enabled`} checked={r.enabled !== false} onChange={e => updateRule(i, { enabled: e.target.checked })} />
+              <SettingRow flow='wrap' label={t('enabled')}>
+                <Switch aria-label={t('enabled')} checked={r.enabled !== false} onChange={e => updateRule(i, { enabled: e.target.checked })} />
               </SettingRow>
-              <SettingRow flow='wrap' label='Layer URL'>
-                <TextInput aria-label={`Layer URL`} defaultValue={r.layerUrl} className='w-100' onAcceptValue={v => updateRule(i, { layerUrl: v })} />
+              <SettingRow flow='wrap' label={t('layerUrl')}>
+                <TextInput aria-label={t('layerUrl')} defaultValue={r.layerUrl} className='w-100' onAcceptValue={v => updateRule(i, { layerUrl: v })} />
               </SettingRow>
-              <SettingRow flow='wrap' label='Output type'>
-                <Select aria-label={`Output type`} value={r.outputType} onChange={e => updateRule(i, { outputType: e.target.value as LookupOutputType })}>
-                  <Option value={LookupOutputType.InOutMessage}>Inside/Outside message</Option>
-                  <Option value={LookupOutputType.FieldList}>Field list</Option>
+              <SettingRow flow='wrap' label={t('outputType')}>
+                <Select aria-label={t('outputType')} value={r.outputType} onChange={e => updateRule(i, { outputType: e.target.value as LookupOutputType })}>
+                  <Option value={LookupOutputType.InOutMessage}>{t('insideOutsideMessage')}</Option>
+                  <Option value={LookupOutputType.FieldList}>{t('fieldList')}</Option>
                 </Select>
               </SettingRow>
               {r.outputType === LookupOutputType.InOutMessage ? (
                 <React.Fragment>
-                  <SettingRow flow='wrap' label='Inside message'>
-                    <TextArea aria-label={`Inside message`} css={{ minHeight: '52px', width: '100%' }} defaultValue={r.insideMessage || ''} onAcceptValue={v => updateRule(i, { insideMessage: v })} />
+                  <SettingRow flow='wrap' label={t('insideMessage')}>
+                    <TextArea aria-label={t('insideMessage')} css={{ minHeight: '52px', width: '100%' }} defaultValue={r.insideMessage || ''} onAcceptValue={v => updateRule(i, { insideMessage: v })} />
                   </SettingRow>
-                  <SettingRow flow='wrap' label='Outside message'>
-                    <TextArea aria-label={`Outside message`} css={{ minHeight: '52px', width: '100%' }} defaultValue={r.outsideMessage || ''} onAcceptValue={v => updateRule(i, { outsideMessage: v })} />
+                  <SettingRow flow='wrap' label={t('outsideMessage')}>
+                    <TextArea aria-label={t('outsideMessage')} css={{ minHeight: '52px', width: '100%' }} defaultValue={r.outsideMessage || ''} onAcceptValue={v => updateRule(i, { outsideMessage: v })} />
                   </SettingRow>
-                  <Label className='mini-label'>Static lines (optional JSON array of {'{label,value,isLink?,href?}'})</Label>
+                  <Label className='mini-label'>{t('staticLinesOptionalJsonArrayOf')} {'{label,value,isLink?,href?}'})</Label>
                   {jsonField(r.staticLines, (v) => updateRule(i, { staticLines: v }), 3)}
                 </React.Fragment>
               ) : (
                 <React.Fragment>
-                  <SettingRow flow='wrap' label='Section heading'>
-                    <TextInput aria-label={`Section heading`} defaultValue={r.sectionHeading || ''} className='w-100' onAcceptValue={v => updateRule(i, { sectionHeading: v })} />
+                  <SettingRow flow='wrap' label={t('sectionHeading')}>
+                    <TextInput aria-label={t('sectionHeading')} defaultValue={r.sectionHeading || ''} className='w-100' onAcceptValue={v => updateRule(i, { sectionHeading: v })} />
                   </SettingRow>
-                  <SettingRow flow='wrap' label='Include all fields'>
-                    <Switch aria-label={`Include all fields`} checked={r.includeAllFields !== false} onChange={e => updateRule(i, { includeAllFields: e.target.checked })} />
+                  <SettingRow flow='wrap' label={t('includeAllFields')}>
+                    <Switch aria-label={t('includeAllFields')} checked={r.includeAllFields !== false} onChange={e => updateRule(i, { includeAllFields: e.target.checked })} />
                   </SettingRow>
                   {r.includeAllFields !== false ? (
-                    <SettingRow flow='wrap' label='Excluded fields (comma)'>
-                      <TextInput aria-label={`Excluded fields (comma)`} defaultValue={fromList(r.excludedFields)} className='w-100'
+                    <SettingRow flow='wrap' label={t('excludedFieldsComma')}>
+                      <TextInput aria-label={t('excludedFieldsComma')} defaultValue={fromList(r.excludedFields)} className='w-100'
                         onAcceptValue={v => updateRule(i, { excludedFields: toList(v) })} />
                     </SettingRow>
                   ) : (
                     <React.Fragment>
-                      <Label className='mini-label'>Explicit fields (JSON array of {'{field,label?}'})</Label>
+                      <Label className='mini-label'>{t('explicitFieldsJsonArrayOf')} {'{field,label?}'})</Label>
                       {jsonField(r.fields, (v) => updateRule(i, { fields: v }), 3)}
                     </React.Fragment>
                   )}
-                  <SettingRow flow='wrap' label='No-result message'>
-                    <TextInput aria-label={`No-result message`} defaultValue={r.noResultMessage || ''} className='w-100' onAcceptValue={v => updateRule(i, { noResultMessage: v })} />
+                  <SettingRow flow='wrap' label={t('noResultMessage')}>
+                    <TextInput aria-label={t('noResultMessage')} defaultValue={r.noResultMessage || ''} className='w-100' onAcceptValue={v => updateRule(i, { noResultMessage: v })} />
                   </SettingRow>
                 </React.Fragment>
               )}
             </div>
           ))}
-          <SettingRow><Button size='sm' onClick={addRule}>+ Add lookup rule</Button></SettingRow>
+          <SettingRow><Button size='sm' onClick={addRule}>{t('addLookupRule')}</Button></SettingRow>
         </SettingSection>
       )}
 
-      <SettingSection title='URL formatting rules'>
-        <div className='hint'>Field values matching a rule render as links. Empty "base URL" uses the value as-is.</div>
+      <SettingSection title={t('urlFormattingRules')}>
+        <div className='hint'>{t('fieldValuesMatchingARuleRender')}</div>
         {(custom.urlRules || []).map((u, i) => (
           <div className='card' key={u.id || i}>
             <div className='title'>
               <strong>{u.matchType} "{u.pattern}"</strong>
-              <Button size='sm' type='tertiary' aria-label={`Remove URL rule ${i + 1}`} onClick={() => removeUrlRule(i)}>Remove</Button>
+              <Button size='sm' type='tertiary' aria-label={t('removeUrlRuleI', { i: i + 1 })} onClick={() => removeUrlRule(i)}>{t('remove')}</Button>
             </div>
-            <SettingRow flow='wrap' label='Match type'>
-              <Select aria-label={`Match type`} value={u.matchType} onChange={e => updateUrlRule(i, { matchType: e.target.value as UrlRule['matchType'] })}>
-                <Option value='startsWith'>starts with</Option>
-                <Option value='endsWith'>ends with</Option>
-                <Option value='contains'>contains</Option>
+            <SettingRow flow='wrap' label={t('matchType')}>
+              <Select aria-label={t('matchType')} value={u.matchType} onChange={e => updateUrlRule(i, { matchType: e.target.value as UrlRule['matchType'] })}>
+                <Option value='startsWith'>{t('startsWith')}</Option>
+                <Option value='endsWith'>{t('endsWith')}</Option>
+                <Option value='contains'>{t('contains')}</Option>
               </Select>
             </SettingRow>
-            <SettingRow flow='wrap' label='Pattern'>
-              <TextInput aria-label={`Pattern`} defaultValue={u.pattern} className='w-100' onAcceptValue={v => updateUrlRule(i, { pattern: v })} />
+            <SettingRow flow='wrap' label={t('pattern')}>
+              <TextInput aria-label={t('pattern')} defaultValue={u.pattern} className='w-100' onAcceptValue={v => updateUrlRule(i, { pattern: v })} />
             </SettingRow>
-            <SettingRow flow='wrap' label='Base URL'>
-              <TextInput aria-label={`Base URL`} defaultValue={u.baseUrl} className='w-100' onAcceptValue={v => updateUrlRule(i, { baseUrl: v })} />
+            <SettingRow flow='wrap' label={t('baseUrl')}>
+              <TextInput aria-label={t('baseUrl')} defaultValue={u.baseUrl} className='w-100' onAcceptValue={v => updateUrlRule(i, { baseUrl: v })} />
             </SettingRow>
-            <SettingRow flow='wrap' label='Link text'>
-              <TextInput aria-label={`Link text`} defaultValue={u.linkText || ''} className='w-100' onAcceptValue={v => updateUrlRule(i, { linkText: v })} />
+            <SettingRow flow='wrap' label={t('linkText')}>
+              <TextInput aria-label={t('linkText')} defaultValue={u.linkText || ''} className='w-100' onAcceptValue={v => updateUrlRule(i, { linkText: v })} />
             </SettingRow>
           </div>
         ))}
-        <SettingRow><Button size='sm' onClick={addUrlRule}>+ Add URL rule</Button></SettingRow>
+        <SettingRow><Button size='sm' onClick={addUrlRule}>{t('addUrlRule')}</Button></SettingRow>
       </SettingSection>
     </div>
   )
