@@ -121,7 +121,7 @@ System.register([], function (e) {
         geocode: "Geocode",
         data: "Veri",
         layer: "Katman",
-        dragToReorder: "Drag to reorder",
+        dragToReorder: "Yeniden sipariş için Drag",
         sourceName: "Source {name}",
         unnamed: "(unnamed)",
         name: "Adı",
@@ -224,7 +224,7 @@ System.register([], function (e) {
         startsWith: "alanı şununla başlayanlar",
         endsWith: "şununla bitenler",
         contains: "alanı şunu içerenler",
-        pattern: "Pattern",
+        pattern: "Desen",
         baseUrl: "Base URL",
         linkText: "Link text",
         addUrlRule: "+ Add URL rule"

@@ -1069,16 +1069,16 @@
       },
       "locales": {
         "ar": {
-          "file": "a59c5b26cacc",
+          "file": "4fefd5dfec4b",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1090,22 +1090,93 @@
               "t": "لم يتم تعيين عنوان URL لمحدد المواقع بشكل صحيح",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "manual": {
+              "t": "الدليل",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "السحب إلى إعادة التشغيل",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefix",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Enabled",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Pattern",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "bg": {
-          "file": "b0395bb26107",
+          "file": "d59b68c86cd2",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Ръчно",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Геокод",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Пренареждане",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Представка",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Суffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Включване",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Модел",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "bs": {
           "file": "c616c3679f17",
@@ -1122,36 +1193,71 @@
           "entries": {}
         },
         "ca": {
-          "file": "05caaad724c7",
+          "file": "f8f1898076f7",
           "counts": {
             "esri": 53,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "searchExample": {
               "t": "Ejemplo: {url}",
               "src": "existing",
               "h": "be1793acd1ca"
+            },
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Arrossegueu per a refer",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefix",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Sufix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Habilitat",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Patró",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "cs": {
-          "file": "dc3fdba766d8",
+          "file": "4375483b68c0",
           "counts": {
             "esri": 52,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "resultPanel": {
@@ -1163,34 +1269,105 @@
               "t": "Přesměrovat v případě, že nejsou výsledky vyhledávání prázdné",
               "src": "existing",
               "h": "1a6b3ff01638"
+            },
+            "manual": {
+              "t": "Manuál",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geokód",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Přetáhněte na novou objednávku",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefix",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Přípona",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Povoleno",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Vzorec",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "da": {
-          "file": "d7cf7e105e68",
+          "file": "0995e620abf4",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geokode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Træk til ny rækkefølge",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Præfiks",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffiks",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Aktiveret",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Mønster",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "de": {
-          "file": "8082b3f97400",
+          "file": "7909d0878c8b",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1202,76 +1379,255 @@
               "t": "Locator-URL ist nicht ordnungsgemäß festgelegt.",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "manual": {
+              "t": "Handbuch",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Drag to Reorder",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Präfix",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Aktiviert",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Muster",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "el": {
-          "file": "5c2e819d0963",
+          "file": "287a2de32b5c",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Χειροκίνητο",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Γεωκωδικός",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Σύρετε για αναδιάταξη",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Πρόθεμα",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Επίθημα",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Ενεργοποίηση",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Μοτίβο",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "es": {
-          "file": "f567d5f5e923",
+          "file": "0e4b8c20fd9a",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Arrastre a reorden",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefijo",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Enabled",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Patrón",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "et": {
-          "file": "8ca98a386858",
+          "file": "7580a53afde5",
           "counts": {
             "esri": 58,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Käsiraamat",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geokood",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Lohista järjekorda",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefiks",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Lubatud",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Muster",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "fi": {
-          "file": "972d074838d9",
+          "file": "1f360ce28560",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Käsikirja",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geokoodi",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Vedä tilaamaan uudelleen",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Etuliite",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Loppuliite",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Käytössä",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Kuvio",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "fr": {
-          "file": "d57b5fbf8210",
+          "file": "250effd2ed33",
           "counts": {
             "esri": 51,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 5,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "searchResult": {
@@ -1298,20 +1654,55 @@
               "t": "Sélectionnez une carte pour accéder à d’autres options de configuration.",
               "src": "existing",
               "h": "5f4b42b8e04d"
+            },
+            "manual": {
+              "t": "Manuel",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Géocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Faites glisser pour réorganiser",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Préfixe",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffixe",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Activé",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Modèle",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "he": {
-          "file": "38261d937118",
+          "file": "ef3ae7c430e0",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1323,6 +1714,41 @@
               "t": "כתובת ה-URL של מגדיר עיגון כתובות לא הוגדרה כהלכה",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "manual": {
+              "t": "ידני",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "תגית: reorder",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "תיקון",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "תיקון סופי",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "המונחים",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "תבנית",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
@@ -1341,58 +1767,166 @@
           "entries": {}
         },
         "hu": {
-          "file": "5d81944ae411",
+          "file": "3fb33e327961",
           "counts": {
             "esri": 57,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Kézi",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Drag to order",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Előtag",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Engedélyezve",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Minta",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "id": {
-          "file": "04aeb2fbf081",
+          "file": "3ac57496f383",
           "counts": {
             "esri": 57,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Seret untuk memesan ulang",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Awalan",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Cukup",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Diaktifkan",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Pola",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "it": {
-          "file": "d1f330604897",
+          "file": "357a7f311f3a",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manuale",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Codice geografico",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Drag to reorder",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefisso",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffisso",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Abilitato",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Modello",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "ja": {
-          "file": "ce61935077db",
+          "file": "967b3d8a5535",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1404,20 +1938,55 @@
               "t": "ロケーターの URL が正しく設定されていません",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "manual": {
+              "t": "マニュアル",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "ジオコード",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "再注文するドラッグ",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "プレフィックス",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "サフィックス",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "有効化",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "パターン",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "ko": {
-          "file": "f538cbae2668",
+          "file": "068478d0191a",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1429,162 +1998,593 @@
               "t": "로케이터 URL이 올바르게 설정되지 않았습니다.",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "manual": {
+              "t": "제품정보",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "사이트맵",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "주문하기",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "연락처",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "스핑크",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "이름 *",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "제품 정보",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "lt": {
-          "file": "a6997c3e9b14",
+          "file": "f1ff0dcf3417",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Rankinis",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geokodas",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Vilkti iš naujo",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Priešdėlis",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Įjungta",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Modelis",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "lv": {
-          "file": "2f476eb2d429",
+          "file": "f48f54b8f330",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Rokasgrāmata",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Ģeokods",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Velciet, lai mainītu kārtību",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefikss",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Sufikss",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Aktivizēts",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Paraugs",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "no": {
-          "file": "8c7426718ea3",
+          "file": "44ac52c396e2",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Dra for å omorganisere",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefiks",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Aktivert",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Mønster",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "nl": {
-          "file": "767e00914424",
+          "file": "ad69f34b1a52",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Handmatig",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Sleep om te herschikken",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Voorvoegsel",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Achtervoegsel",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Ingeschakeld",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Patroon",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "pl": {
-          "file": "af234659dc41",
+          "file": "f1f84a2799f8",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Podręcznik",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geokod",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Przeciągnij do ponownego zamówienia",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefiks",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Włączone",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Wzór",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "pt-br": {
-          "file": "789d0570db84",
+          "file": "d6eea16a952f",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode.",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Arraste para reordenar.",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefixo",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Sufixo",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Activado",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Padrão",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "pt-pt": {
-          "file": "f58a69b4f772",
+          "file": "e9a5c1b95174",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Arrastar para reordenar",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefixo",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Sufixo",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Activado",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Padrão",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "ro": {
-          "file": "502ffae343ad",
+          "file": "67ae5ce00a11",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocod",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Trage la reordonare",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefix",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Sufix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Activat",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Model",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "ru": {
-          "file": "59dc013c7d66",
+          "file": "1d0970fd42e8",
           "counts": {
             "esri": 53,
             "esri-check": 5,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Ручной",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Геокод",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Перетаскивать на заказ",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Префикс",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "суффикс",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "включенный",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "шаблон",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "sk": {
-          "file": "4de5fa48aad5",
+          "file": "5e833713bf83",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Ručne",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geokód",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Presunúť na zmenu poradia",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Predpona",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Povolené",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Vzor",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "sl": {
-          "file": "e85331deeb01",
+          "file": "dd07a6a776b7",
           "counts": {
             "esri": 57,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Ročno",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Povleci za prenovo",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Predpona",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Pripona",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Omogočeno",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Vzorec",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "sr": {
           "file": "2123f0a4b31f",
@@ -1601,30 +2601,66 @@
           "entries": {}
         },
         "sv": {
-          "file": "1031d69f9cbc",
+          "file": "3ee3a58a2d44",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Manuell",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geokod",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Drag till Reorder",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefix",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Enabled",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Mönster",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "th": {
-          "file": "783910138533",
+          "file": "5beb69f6c626",
           "counts": {
             "esri": 51,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 4,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "notSetCorrectly": {
@@ -1646,40 +2682,110 @@
               "t": "เลือกแผนที่สำหรับการกำหนดค่าเพิ่มเติม",
               "src": "existing",
               "h": "5f4b42b8e04d"
+            },
+            "manual": {
+              "t": "กําหนดเอง",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "รหัสภูมิศาสตร์",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "ลากไปยังลําดับใหม่",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "นําหน้า",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "แปรงทาสี",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "เปิดใช้งาน",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "รูปแบบ",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "tr": {
-          "file": "0a6033652c3a",
+          "file": "6f68015e2fe4",
           "counts": {
             "esri": 54,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "searchResult": {
               "t": "Sonuç ara",
               "src": "existing",
               "h": "88a9b07d73a2"
+            },
+            "manual": {
+              "t": "Manual",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Yeniden sipariş için Drag",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Prefix",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Enabled",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Desen",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "zh-cn": {
-          "file": "53a864333db3",
+          "file": "acadcf5cb9e8",
           "counts": {
             "esri": 52,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1691,48 +2797,155 @@
               "t": "定位器 URL 设置不正确",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "manual": {
+              "t": "手动",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "地理代码",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "拖曳以重排顺序",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "前缀",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "后缀",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "已启用",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "图案",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "uk": {
-          "file": "281da361fa10",
+          "file": "c70c301818b5",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Керівництво",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Геокод",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Перетягніть на переадресацію",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Префікс",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Кошик",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Увімкнути",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Візерунок",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "vi": {
-          "file": "ef13c219d7b4",
+          "file": "041001686970",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
-          "entries": {}
+          "entries": {
+            "manual": {
+              "t": "Thủ công",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Kéo để đặt lại",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "Tiền tố",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Suffix",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "Bật",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "Mẫu",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            }
+          }
         },
         "zh-hk": {
-          "file": "ed083c0a8aab",
+          "file": "419020d22738",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1744,20 +2957,55 @@
               "t": "未正確設定定位器 URL",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "manual": {
+              "t": "手動",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "地理碼",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "拖曳重排",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "前缀",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "后缀",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "已開啟",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "樣式",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         },
         "zh-tw": {
-          "file": "ed083c0a8aab",
+          "file": "419020d22738",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 0,
+            "machine": 7,
             "stale": 0,
-            "missing": 167
+            "missing": 160
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1769,6 +3017,41 @@
               "t": "未正確設定定位器 URL",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "manual": {
+              "t": "手動",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "geocode": {
+              "t": "地理碼",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "拖曳重排",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "prefix": {
+              "t": "前缀",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "后缀",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "enabled": {
+              "t": "已開啟",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "pattern": {
+              "t": "樣式",
+              "src": "machine",
+              "h": "1fff6a31661b"
             }
           }
         }
