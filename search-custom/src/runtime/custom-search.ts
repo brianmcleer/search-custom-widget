@@ -12,7 +12,7 @@ import {
   type LookupRuleConfig,
   LookupOutputType
 } from '../config'
-import { __t, __tc } from './i18n-t'
+import { __locale, __t, __tc } from './i18n-t'
 
 // ---------------------------------------------------------------------------
 // String / token helpers
@@ -210,7 +210,7 @@ return { type: 'text', text: content };`
 
 const formatDateJS = (value: any): string => {
   const d = new Date(value)
-  return isNaN(d.getTime()) ? String(value) : d.toLocaleDateString()
+  return isNaN(d.getTime()) ? String(value) : d.toLocaleDateString(__locale())
 }
 
 /** Build the inside/outside boundary message for an InOutMessage rule. */

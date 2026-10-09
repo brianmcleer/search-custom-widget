@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Pēdējais meklētais",
         searchIn: "Meklēt šeit: {value}",
         searchResults: "Meklēšanas rezultāts",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Kartes meklēšana",
+        uiSearchAgainFor: "Meklēt vēlreiz {t}",
+        uiClearRecentSearchHistory: "Tīrīt neseno meklēšanas vēsturi",
+        uiClearRecentSearches: "Notīrīt nesenos meklējumus",
+        openLink: "Atvērt saiti",
+        noMapLinkedOpenThisWidget: "Karte nav saistīta. Atveriet šīs logdaļas iestatījumus un izvēlieties karti zem “Map widget”.",
+        customSearchIsTurnedOffIn: "Pielāgota meklēšana iestatījumos ir izslēgta.",
         location: "{LOCATION}",
         search: "Meklēt",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Neizdevās izveidot meklēšanu. Skatīt pārlūka konsoli.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Neizdevās izveidot šo meklēšanas konfigurāciju. Ja tas tika importēts, vēlreiz pārbaudiet avotus un uznirstošos iestatījumus šajā logdaļā.",
+        theMapViewDidNotFinish: "Kartes skats nepabeidza ielādi.",
+        unknownError: "nezināma kļūda",
+        unserializableError: "nepārspējama kļūda"
       })
     }
   }

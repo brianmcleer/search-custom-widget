@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Hiljutised otsingud",
         searchIn: "Otsi kohast {value}",
         searchResults: "Otsi tulemusi",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Kaardiotsing",
+        uiSearchAgainFor: "Otsi uuesti {t}",
+        uiClearRecentSearchHistory: "Puhasta hiljutine otsingute ajalugu",
+        uiClearRecentSearches: "Värskete otsingute puhastamine",
+        openLink: "Ava link",
+        noMapLinkedOpenThisWidget: "Kaart pole ühendatud. Avage selle vidina seadistused ja valige oma kaart jaotises \"Map vidin\".",
+        customSearchIsTurnedOffIn: "Kohandatud otsing on seadistustes välja lülitatud.",
         location: "{LOCATION}",
         search: "Otsing",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Otsingu loomine nurjus. Vaata brauserikonsooli.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Seda otsingukonfiguratsiooni pole võimalik luua. Kui see just imporditi, kontrolli uuesti selle vidina allikaid ja hüpikakna seadistusi.",
+        theMapViewDidNotFinish: "Kaardivaade ei lõpetanud laadimist.",
+        unknownError: "tundmatu viga",
+        unserializableError: "seeriaviisiline viga"
       })
     }
   }

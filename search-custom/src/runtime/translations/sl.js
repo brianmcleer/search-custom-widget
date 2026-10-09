@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Nedavna iskanja",
         searchIn: "Išči v {value}",
         searchResults: "Iskalni rezultati",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Iskanje zemljevidov",
+        uiSearchAgainFor: "Znova išči {t}",
+        uiClearRecentSearchHistory: "Počisti nedavno zgodovino iskanja",
+        uiClearRecentSearches: "Počisti nedavna iskanja",
+        openLink: "Odpri povezavo",
+        noMapLinkedOpenThisWidget: "Ni povezave z zemljevidom. Odprite nastavitve tega gradnika in izberite zemljevid pod “Map widget”.",
+        customSearchIsTurnedOffIn: "Iskanje po meri je v nastavitvah izključeno.",
         location: "{LOCATION}",
         search: "Iskanje",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Iskanje ni bilo mogoče. Oglejte si brskalnik konzolo.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Te nastavitve iskanja ni bilo moč zgraditi. Če je bil samo uvožen, ponovno preverite vire in pojavne nastavitve v tem gradniku.",
+        theMapViewDidNotFinish: "Prikaz zemljevida ni končal nalaganja.",
+        unknownError: "neznana napaka",
+        unserializableError: "Neizvedljiva napaka"
       })
     }
   }

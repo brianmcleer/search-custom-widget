@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Последно използвани търсения",
         searchIn: "Търсете в {value}",
         searchResults: "Резултати от търсене",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Търсене на карта",
+        uiSearchAgainFor: "Търсене отново {t}",
+        uiClearRecentSearchHistory: "Изчистване на скорошна история на търсенето",
+        uiClearRecentSearches: "Изчистване на последните търсения",
+        openLink: "Отваряне на връзка",
+        noMapLinkedOpenThisWidget: "Няма карта свързана. Отворете този джаджа настройките и изберете вашата карта под год.",
+        customSearchIsTurnedOffIn: "Потребителското търсене е изключено в настройките.",
         location: "{LOCATION}",
         search: "Търсене",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Търсенето не може да бъде създадено. Вижте конзолата на браузъра.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Тази конфигурация за търсене не може да бъде построена. Ако е просто внос, проверете отново източниците и изскачащите настройки в тази джаджа.",
+        theMapViewDidNotFinish: "Прегледът на картата не завърши зареждането.",
+        unknownError: "неизвестна грешка",
+        unserializableError: "несериозна грешка"
       })
     }
   }

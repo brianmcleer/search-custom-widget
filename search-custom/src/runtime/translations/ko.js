@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "최근 검색",
         searchIn: "{value}에서 검색",
         searchResults: "검색 결과",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "본문 바로가기",
+        uiSearchAgainFor: "자주 묻는 질문 {t}",
+        uiClearRecentSearchHistory: "최근 검색 기록",
+        uiClearRecentSearches: "최근 검색",
+        openLink: "관련 링크",
+        noMapLinkedOpenThisWidget: "지도 연결 없음. 이 위젯의 설정을 열고 “Map 위젯”.",
+        customSearchIsTurnedOffIn: "사용자 정의 검색은 설정에서 꺼집니다.",
         location: "{LOCATION}",
         search: "검색",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "검색은 만들 수 없습니다. 브라우저 콘솔을 참조하십시오.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "이 검색 구성은 내장 할 수 없습니다. 그냥 수입 된 경우,이 위젯의 소스와 팝업 설정을 다시 체크.",
+        theMapViewDidNotFinish: "지도보기는 적재하지 않았다.",
+        unknownError: "알 수없는 오류",
+        unserializableError: "unserializable 오류"
       })
     }
   }

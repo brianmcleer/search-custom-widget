@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "最近搜索",
         searchIn: "在 {value} 中搜索",
         searchResults: "搜索结果",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "地图搜索",
+        uiSearchAgainFor: "再次寻找 {t}",
+        uiClearRecentSearchHistory: "清除最近搜索历史",
+        uiClearRecentSearches: "清除最近的搜索",
+        openLink: "打开链接",
+        noMapLinkedOpenThisWidget: "无地图链接 。 打开此部件的设置, 在“ 映射部件” 下选择您的地图 。",
+        customSearchIsTurnedOffIn: "自定义搜索在设置中关闭 。",
         location: "{LOCATION}",
         search: "搜索",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "无法创建搜索 。 见浏览器控制台.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "无法构建此搜索配置 。 如果只是导入, 请重新检查此部件中的源和弹出设置 。",
+        theMapViewDidNotFinish: "地图视图没有完成装入 。",
+        unknownError: "未知错误",
+        unserializableError: "无序错误"
       })
     }
   }

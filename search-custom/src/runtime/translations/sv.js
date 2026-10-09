@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Tidigare sökningar",
         searchIn: "Sök i {value}",
         searchResults: "Sökresultat",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Kartasökning",
+        uiSearchAgainFor: "Sök igen för {t}",
+        uiClearRecentSearchHistory: "Tydlig ny sökhistoria",
+        uiClearRecentSearches: "Tydliga senaste sökningar",
+        openLink: "Öppen länk",
+        noMapLinkedOpenThisWidget: "Ingen karta länkad. Öppna denna widget inställningar och välj din karta under \"Map widget\".",
+        customSearchIsTurnedOffIn: "Anpassad sökning är avstängd i inställningar.",
         location: "{LOCATION}",
         search: "Sök",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Sök kunde inte skapas. Se webbläsarens konsol.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Denna sökkonfiguration kunde inte byggas. Om det bara importerades, kontrollera källor och popup-inställningar i denna widget.",
+        theMapViewDidNotFinish: "Kartvyn avslutade inte lastningen.",
+        unknownError: "Okänd fel",
+        unserializableError: "oserialiserbart fel"
       })
     }
   }

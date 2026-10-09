@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Naposledy provedená vyhledávání",
         searchIn: "Hledat v {value}",
         searchResults: "Výsledek vyhledávání",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Hledání mapy",
+        uiSearchAgainFor: "Hledat znovu {t}",
+        uiClearRecentSearchHistory: "Vymazat nedávnou historii vyhledávání",
+        uiClearRecentSearches: "Vymazat nedávné vyhledávání",
+        openLink: "Otevřít odkaz",
+        noMapLinkedOpenThisWidget: "Žádná mapa není propojena. Otevřete nastavení tohoto widgetu a vyberte si mapu pod \"Map widget\".",
+        customSearchIsTurnedOffIn: "Vlastní vyhledávání je vypnuto v nastavení.",
         location: "{LOCATION}",
         search: "Hledat",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Hledání nebylo možné vytvořit. Viz konzoli prohlížeče.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Tato konfigurace vyhledávání nemohla být vybudována. Pokud byl právě importován, znovu zkontrolujte zdroje a vyskakovací nastavení v tomto widget.",
+        theMapViewDidNotFinish: "Pohled na mapu nedokončil načítání.",
+        unknownError: "neznámá chyba",
+        unserializableError: "neserializovatelná chyba"
       })
     }
   }

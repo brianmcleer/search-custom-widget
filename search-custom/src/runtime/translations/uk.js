@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Останні пошуки",
         searchIn: "Шукати в {value}",
         searchResults: "Результат пошуку",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Пошук карт",
+        uiSearchAgainFor: "Пошук {t}",
+        uiClearRecentSearchHistory: "Історія пошуку",
+        uiClearRecentSearches: "Очистити останні пошуки",
+        openLink: "Відкрити посилання",
+        noMapLinkedOpenThisWidget: "Немає підключених карт. Відкрийте налаштування віджету та оберіть карту під назвою «Map віджет».",
+        customSearchIsTurnedOffIn: "Користувальницьке пошук вимкнено в налаштуваннях.",
         location: "{LOCATION}",
         search: "Пошук",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Пошук не може бути створений. Перегляд консолі браузера.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Ця конфігурація пошуку не може бути побудована. Якщо це було просто імпортовано, перегляньте джерела та налаштування поштових повідомлень в цьому віджеті.",
+        theMapViewDidNotFinish: "Вид карти не закінчувався завантаженням.",
+        unknownError: "Невідома помилка",
+        unserializableError: "несеріалізована помилка"
       })
     }
   }

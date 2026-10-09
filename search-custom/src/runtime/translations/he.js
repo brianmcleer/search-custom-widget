@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "חיפושים אחרונים",
         searchIn: "חפש ב-{value}",
         searchResults: "תוצאות חיפוש",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "מפה חיפוש",
+        uiSearchAgainFor: "חיפוש שוב {t}",
+        uiClearRecentSearchHistory: "היסטוריה של חיפוש",
+        uiClearRecentSearches: "חיפושים אחרונים",
+        openLink: "קישור פתוח",
+        noMapLinkedOpenThisWidget: "אין מפה מקושרת. פתח את ההגדרות של widget ובחר את המפה תחת \"Map widget\".",
+        customSearchIsTurnedOffIn: "חיפוש מותאם בהגדרות.",
         location: "{LOCATION}",
         search: "חיפוש",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "החיפוש לא יכול להיווצר. ראה קונסולת הדפדפן",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "לא ניתן לבנות תצורה זו. אם זה רק ייבא, לבדוק מחדש את המקורות ואת הגדרות פופאפ ב widget זה.",
+        theMapViewDidNotFinish: "הנוף של המפה לא סיים את הטעינה.",
+        unknownError: "טעות לא ידועה",
+        unserializableError: "טעות בלתי אפשרית"
       })
     }
   }

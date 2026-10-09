@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Nylige søgninger",
         searchIn: "Søg i {value}",
         searchResults: "Søgeresultater",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Kortsøgning",
+        uiSearchAgainFor: "Søg igen efter {t}",
+        uiClearRecentSearchHistory: "Ryd nyere søgningshistorik",
+        uiClearRecentSearches: "Ryd nylige søgninger",
+        openLink: "Åbn link",
+        noMapLinkedOpenThisWidget: "Intet kort. Åbn denne kontrol indstillinger og vælg dit kort under \"Kort kontrol\".",
+        customSearchIsTurnedOffIn: "Brugerdefineret søgning er slået fra i indstillinger.",
         location: "{LOCATION}",
         search: "Søg",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Søgning kunne ikke oprettes. Se browserkonsollen.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Denne søgekonfiguration kunne ikke bygges. Hvis det lige var importeret, så tjek igen kilderne og popop- indstillingerne i denne kontrol.",
+        theMapViewDidNotFinish: "Kortvisningen afsluttede ikke indlæsning.",
+        unknownError: "ukendt fejl",
+        unserializableError: "userialiserbar fejl"
       })
     }
   }

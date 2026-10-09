@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Pencarian terbaru",
         searchIn: "Cari di {value}",
         searchResults: "Hasil pencarian",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Pencarian peta",
+        uiSearchAgainFor: "Cari lagi {t}",
+        uiClearRecentSearchHistory: "Bersihkan riwayat pencarian baru-baru ini",
+        uiClearRecentSearches: "Bersihkan pencarian baru-baru ini",
+        openLink: "Buka tautan",
+        noMapLinkedOpenThisWidget: "Tidak ada peta yang terhubung. Buka pengaturan widget ini dan pilih peta Anda di bawah \"Peta widget\".",
+        customSearchIsTurnedOffIn: "Pencarian kustom dimatikan dalam pengaturan.",
         location: "{LOCATION}",
         search: "Cari",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Pencarian tidak dapat dibuat. Lihat konsol peramban.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Konfigurasi pencarian ini tidak dapat dibangun. Jika hanya diimpor, periksa ulang sumber dan pengaturan popup dalam widget ini.",
+        theMapViewDidNotFinish: "Tampilan peta tidak menyelesaikan loading.",
+        unknownError: "galat tak dikenal",
+        unserializableError: "kesalahan tidak serialisasi"
       })
     }
   }

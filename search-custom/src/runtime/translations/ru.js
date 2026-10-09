@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Недавние поисковые запросы",
         searchIn: "Поиск в {value}",
         searchResults: "Результаты поиска",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Поиск карт",
+        uiSearchAgainFor: "Поиск снова для {t}",
+        uiClearRecentSearchHistory: "Ясная недавняя история поиска",
+        uiClearRecentSearches: "Явные недавние поиски",
+        openLink: "Открытая ссылка",
+        noMapLinkedOpenThisWidget: "Никакой карты. Откройте настройки этого виджета и выберите свою карту в разделе «Карта виджета».",
+        customSearchIsTurnedOffIn: "Пользовательский поиск отключается в настройках.",
         location: "{LOCATION}",
         search: "Поиск",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Поиск не мог быть создан. Смотрите консоль браузера.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Эта конфигурация поиска не может быть построена. Если он был просто импортирован, перепроверьте источники и настройки всплывающих окон в этом виджете.",
+        theMapViewDidNotFinish: "Вид на карту не закончил загрузку.",
+        unknownError: "Неизвестная ошибка",
+        unserializableError: "несериализируемая ошибка"
       })
     }
   }

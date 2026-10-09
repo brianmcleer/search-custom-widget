@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "عمليات البحث الحديثة",
         searchIn: "البحث في {value}",
         searchResults: "البحث عن النتائج",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "البحث عن الخرائط",
+        uiSearchAgainFor: "البحث مرة أخرى {t}",
+        uiClearRecentSearchHistory: "تاريخ البحث الأخير",
+        uiClearRecentSearches: "عمليات تفتيش حديثة واضحة",
+        openLink: "وصلة مفتوحة",
+        noMapLinkedOpenThisWidget: "لا توجد خريطة مرتبطة افتحوا هذه اللوحات واختاروا خرائطكم تحت عنوان \" ماب ويدغي \" .",
+        customSearchIsTurnedOffIn: "التفتيش العرفي يُطفَل في البيئات",
         location: "{LOCATION}",
         search: "بحث",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "البحث لا يمكن خلقه انظر إلى (بروسر)",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "ولا يمكن بناء تشكيلة البحث هذه. إذا كان مستورداً فقط، أعيد فحص المصادر ومواقع البوب في هذا المستنقع.",
+        theMapViewDidNotFinish: "لم تنهي رؤية الخريطة التحميل",
+        unknownError: "خطأ مجهول",
+        unserializableError: "خطأ غير معقول"
       })
     }
   }

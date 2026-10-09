@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Recherches récentes",
         searchIn: "Rechercher dans {value}",
         searchResults: "Résultats de la recherche",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Recherche de carte",
+        uiSearchAgainFor: "Cherchez encore {t}",
+        uiClearRecentSearchHistory: "Effacer l'historique de la recherche récente",
+        uiClearRecentSearches: "Effacer les recherches récentes",
+        openLink: "Ouvrir le lien",
+        noMapLinkedOpenThisWidget: "Pas de carte liée. Ouvrez les paramètres de ce widget et choisissez votre carte sous le widget \"Map\".",
+        customSearchIsTurnedOffIn: "La recherche personnalisée est désactivée dans les paramètres.",
         location: "{LOCATION}",
         search: "Rechercher",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "La recherche n'a pas pu être créée. Voir la console du navigateur.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Cette configuration de recherche n'a pas pu être construite. Si elle vient d'être importée, revérifiez les sources et les paramètres contextuels de ce widget.",
+        theMapViewDidNotFinish: "La carte n'a pas fini le chargement.",
+        unknownError: "erreur inconnue",
+        unserializableError: "Erreur non sérialisable"
       })
     }
   }

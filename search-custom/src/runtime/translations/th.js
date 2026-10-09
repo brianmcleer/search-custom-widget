@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "การค้นหาก่อนหน้านี้",
         searchIn: "ค้นหาใน {value}",
         searchResults: "ผลลัพธ์การค้นหา",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "ค้นหาบนแผนที่",
+        uiSearchAgainFor: "ค้นหาอีกครั้ง {t}",
+        uiClearRecentSearchHistory: "ล้างประวัติการค้นหาล่าสุด",
+        uiClearRecentSearches: "ล้างการค้นหาเมื่อเร็ว ๆ นี้",
+        openLink: "เปิดลิงก์",
+        noMapLinkedOpenThisWidget: "ไม่มีแผนที่เชื่อมโยง เปิดการตั้งค่าวิดเจ็ตนี้ และเลือกแผนที่ของคุณภายใต้ “วิดเจ็ต Map\".",
+        customSearchIsTurnedOffIn: "การค้นหาที่กําหนดเองถูกปิดในการตั้งค่า",
         location: "{LOCATION}",
         search: "ค้นหา",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "ไม่สามารถสร้างการค้นหาได้ ดูคอนโซลของเบราว์เซอร์",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "ไม่สามารถสร้างการปรับแต่งการค้นหานี้ได้ หากมันเป็นเพียงการนําเข้าใหม่ ให้ตรวจสอบแหล่งและการตั้งค่าป๊อปอัปในวิดเจ็ตนี้",
+        theMapViewDidNotFinish: "มุมมองแผนที่ยังไม่เสร็จสิ้นการโหลด",
+        unknownError: "ข้อผิดพลาดไม่ทราบสาเหตุ",
+        unserializableError: "ข้อผิดพลาดที่ไม่สามารถตรวจสอบได้"
       })
     }
   }

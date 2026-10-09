@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Ostatnie wyszukiwania",
         searchIn: "Szukaj w {value}",
         searchResults: "Wynik wyszukiwania",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Wyszukiwanie map",
+        uiSearchAgainFor: "Szukaj ponownie {t}",
+        uiClearRecentSearchHistory: "Wyczyść najnowszą historię wyszukiwania",
+        uiClearRecentSearches: "Wyczyść ostatnie wyszukiwanie",
+        openLink: "Otwórz link",
+        noMapLinkedOpenThisWidget: "Nie ma mapy. Otwórz ustawienia tego widgetu i wybierz mapę pod \"Map widget\".",
+        customSearchIsTurnedOffIn: "Własne wyszukiwanie jest wyłączone w ustawieniach.",
         location: "{LOCATION}",
         search: "Szukaj",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Nie można utworzyć wyszukiwania. Zobacz konsolę przeglądarki.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Ta konfiguracja wyszukiwania nie mogła być zbudowana. Jeśli to było tylko importowane, sprawdź ponownie źródła i ustawienia wyskakujące w tym widget.",
+        theMapViewDidNotFinish: "Widok mapy nie zakończył ładowania.",
+        unknownError: "nieznany błąd",
+        unserializableError: "błąd niezserializowalny"
       })
     }
   }

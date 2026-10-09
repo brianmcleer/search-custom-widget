@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Cerques recents",
         searchIn: "Cerca a {value}",
         searchResults: "Resultat de la cerca",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Cerca de mapa",
+        uiSearchAgainFor: "Cerca una altra vegada per {t}",
+        uiClearRecentSearchHistory: "Neteja l' historial de cerca recent",
+        uiClearRecentSearches: "Neteja les cerques recents",
+        openLink: "Obre l' enllaç",
+        noMapLinkedOpenThisWidget: "No hi ha cap mapa enllaçat. Obre aquest arranjament de l' estri 2001- Settings i escolliu el mapa sota l' estri DOCTYPEMap.",
+        customSearchIsTurnedOffIn: "S' ha apagat la cerca a mida.",
         location: "{LOCATION}",
         search: "Cerca",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "No s' ha pogut crear la cerca. Mireu la consola del navegador.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Aquesta configuració de cerca no es pot construir. Si s' ha importat, torna a comprovar les fonts i arranjaments emergents d' aquest estri.",
+        theMapViewDidNotFinish: "La vista del mapa no ha finalitzat la càrrega.",
+        unknownError: "error desconegut",
+        unserializableError: "Error no llegible"
       })
     }
   }

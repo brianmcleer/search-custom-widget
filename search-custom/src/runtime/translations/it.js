@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Ricerche recenti",
         searchIn: "Cerca in {value}",
         searchResults: "Risultato ricerca",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Ricerca mappa",
+        uiSearchAgainFor: "Ricerca di nuovo per {t}",
+        uiClearRecentSearchHistory: "Cancella la cronologia delle ricerche recenti",
+        uiClearRecentSearches: "Ultime ricerche recenti",
+        openLink: "Apri il link",
+        noMapLinkedOpenThisWidget: "Nessuna mappa collegata. Aprire le impostazioni di questo widget e scegliere la mappa sotto “Map widget”.",
+        customSearchIsTurnedOffIn: "La ricerca personalizzata è disattivata nelle impostazioni.",
         location: "{LOCATION}",
         search: "Cerca",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "La ricerca non potrebbe essere creata. Vedere la console del browser.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Questa configurazione di ricerca non potrebbe essere costruita. Se è stato appena importato, ricontrollare le fonti e le impostazioni popup in questo widget.",
+        theMapViewDidNotFinish: "La mappa non ha finito di caricare.",
+        unknownError: "errore sconosciuto",
+        unserializableError: "errore non serializzabile"
       })
     }
   }

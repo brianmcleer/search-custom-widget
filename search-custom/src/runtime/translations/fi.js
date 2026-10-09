@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Edelliset haut",
         searchIn: "Hae kohteesta {value}",
         searchResults: "Hakutulos",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Karttahaku",
+        uiSearchAgainFor: "Etsi uudelleen {t}",
+        uiClearRecentSearchHistory: "Tyhjennä äskettäinen hakuhistoria",
+        uiClearRecentSearches: "Tyhjennä viimeaikaiset haut",
+        openLink: "Avoin linkki",
+        noMapLinkedOpenThisWidget: "Karttaa ei ole yhdistetty. Avaa tämä widget... asetukset ja valitse karttasi alla ...",
+        customSearchIsTurnedOffIn: "Oma haku on pois päältä asetuksista.",
         location: "{LOCATION}",
         search: "Hae",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Etsimistä ei voitu luoda. Katso selaimen konsolia.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Tätä hakukokoonpanoa ei voitu rakentaa. Jos se oli juuri tuotu, tarkista lähteet ja ponnahdusikkunan asetukset tässä vekotin.",
+        theMapViewDidNotFinish: "Karttanäkymä ei ladannut loppuun.",
+        unknownError: "tuntematon virhe",
+        unserializableError: "epätavallinen virhe"
       })
     }
   }

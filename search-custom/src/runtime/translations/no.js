@@ -3,7 +3,7 @@ System.register([], function (e) {
   return {
     execute: function () {
       e({
-        _widgetLabel: "Search Custom",
+        _widgetLabel: "Søk Tilpasset",
         showResult: "Vis søkeresultater for {searchText}",
         hideResult: "Skjul søkeresultater for {searchText}",
         allSearchSources: "Alle søkekilder",
@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Siste søk",
         searchIn: "Søk i {value}",
         searchResults: "Søkeresultater",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Kartsøk",
+        uiSearchAgainFor: "Søk igjen etter {t}",
+        uiClearRecentSearchHistory: "Tøm søkehistorikken",
+        uiClearRecentSearches: "Fjern siste søk",
+        openLink: "Åpne lenke",
+        noMapLinkedOpenThisWidget: "Ingen kart knyttet. Åpne denne widgetens innstillinger og velg kartet ditt under \\\"Map widget\\\".",
+        customSearchIsTurnedOffIn: "Egendefinert søk er slått av i innstillinger.",
         location: "{LOCATION}",
         search: "Søk",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Søk kunne ikke opprettes. Se nettleserkonsollen.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Denne søkeinnstillingen kunne ikke bygges. Hvis den bare var importert, sjekk om kildene og popupinnstillingene i denne widgeten.",
+        theMapViewDidNotFinish: "Kartvisningen var ikke ferdig med lasting.",
+        unknownError: "ukjent feil",
+        unserializableError: "uiserbar feil"
       })
     }
   }

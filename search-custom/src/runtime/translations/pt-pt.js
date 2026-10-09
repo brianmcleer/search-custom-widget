@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Pesquisas Recentes",
         searchIn: "Pesquisar em {value}",
         searchResults: "Pesquisar resultado",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Pesquisa de mapas",
+        uiSearchAgainFor: "Procurar novamente por {t}",
+        uiClearRecentSearchHistory: "Limpar o histórico de pesquisa recente",
+        uiClearRecentSearches: "Limpar as pesquisas recentes",
+        openLink: "Abrir link",
+        noMapLinkedOpenThisWidget: "Nenhum mapa ligado. Abra as configurações deste widget e escolha seu mapa em \"Map widget\".",
+        customSearchIsTurnedOffIn: "A pesquisa personalizada está desligada nas configurações.",
         location: "{LOCATION}",
         search: "Pesquisar",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Não foi possível criar a pesquisa. Veja a consola do navegador.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Não foi possível criar esta configuração de pesquisa. Se foi importado, verifique novamente as configurações de fontes e popup neste widget.",
+        theMapViewDidNotFinish: "A vista do mapa não terminou de carregar.",
+        unknownError: "erro desconhecido",
+        unserializableError: "erro inserializável"
       })
     }
   }

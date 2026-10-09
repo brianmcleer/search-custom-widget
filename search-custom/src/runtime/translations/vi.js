@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Các tìm kiếm gần đây",
         searchIn: "Tìm kiếm trong {value}",
         searchResults: "Kết quả tìm kiếm",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Tìm kiếm sơ đồ",
+        uiSearchAgainFor: "Tìm lại {t}",
+        uiClearRecentSearchHistory: "Xoá lịch sử tìm kiếm gần đây",
+        uiClearRecentSearches: "Xoá các tìm kiếm gần đây",
+        openLink: "Mở liên kết",
+        noMapLinkedOpenThisWidget: "Không có bản đồ liên kết. Mở thiết lập của thiết lập thiết lập ô điều khiển này và chọn bản đồ dưới “Map ô điều khiển.",
+        customSearchIsTurnedOffIn: "Tìm kiếm tự chọn bị tắt trong thiết lập.",
         location: "{LOCATION}",
         search: "Tìm kiếm",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Không thể tạo tìm kiếm. Xem bảng điều khiển trình duyệt.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Không thể xây dựng cấu hình tìm kiếm này. Nếu nó chỉ được nhập khẩu, hãy kiểm tra lại các nguồn và thiết lập bật lên trong ô điều khiển này.",
+        theMapViewDidNotFinish: "Khung xem bản đồ chưa tải xong.",
+        unknownError: "lỗi không rõ",
+        unserializableError: "Lỗi không thể gửi đi được"
       })
     }
   }

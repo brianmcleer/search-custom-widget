@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Πρόσφατες αναζητήσεις",
         searchIn: "Αναζήτηση σε {value}",
         searchResults: "Αναζήτηση αποτελέσματος",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Αναζήτηση χάρτη",
+        uiSearchAgainFor: "Αναζήτηση και πάλι για {t}",
+        uiClearRecentSearchHistory: "Καθαρισμός πρόσφατου ιστορικού αναζήτησης",
+        uiClearRecentSearches: "Καθαρισμός πρόσφατων αναζητήσεων",
+        openLink: "Άνοιγμα δεσμού",
+        noMapLinkedOpenThisWidget: "Δεν συνδέεται χάρτης. Ανοίξτε τις ρυθμίσεις αυτού του γραφικού συστατικού και επιλέξτε το χάρτη σας στο “Map widget”.",
+        customSearchIsTurnedOffIn: "Η προσαρμοσμένη αναζήτηση είναι απενεργοποιημένη στις ρυθμίσεις.",
         location: "{LOCATION}",
         search: "Αναζήτηση",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Η αναζήτηση δεν μπορεί να δημιουργηθεί. Δείτε την κονσόλα browser.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Αυτή η ρύθμιση αναζήτησης δεν μπορεί να κατασκευαστεί. Αν μόλις εισήχθη, ελέγξτε ξανά τις πηγές και τις αναδυόμενες ρυθμίσεις σε αυτό το γραφικό συστατικό.",
+        theMapViewDidNotFinish: "Η προβολή χάρτη δεν τελείωσε τη φόρτωση.",
+        unknownError: "άγνωστο σφάλμα",
+        unserializableError: "σφάλμα μη ανιχνεύσιμο"
       })
     }
   }

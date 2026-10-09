@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "最近使用した検索",
         searchIn: "{value} を検索",
         searchResults: "検索結果",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "地図検索",
+        uiSearchAgainFor: "再び探す {t}",
+        uiClearRecentSearchHistory: "最近の検索履歴をクリア",
+        uiClearRecentSearches: "最近の検索をクリア",
+        openLink: "サイトマップ",
+        noMapLinkedOpenThisWidget: "サイトマップ ウィジェットの設定を開き、「マップウィジェット」の下のマップを選択します。",
+        customSearchIsTurnedOffIn: "設定でカスタム検索がオフになっています。",
         location: "{LOCATION}",
         search: "検索",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "検索は作成できません。 ブラウザコンソールを参照してください。",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "この検索設定は構築できませんでした。 インポートしたら、このウィジェットのソースとポップアップ設定を再確認します。",
+        theMapViewDidNotFinish: "地図ビューはロードを終わらなかった。",
+        unknownError: "未知のエラー",
+        unserializableError: "unserializable エラー"
       })
     }
   }

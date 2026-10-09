@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Letzte Suchvorgänge",
         searchIn: "In {value} suchen",
         searchResults: "Suchergebnis",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Kartensuche",
+        uiSearchAgainFor: "Wieder suchen für {t}",
+        uiClearRecentSearchHistory: "Klare aktuelle Suchhistorie",
+        uiClearRecentSearches: "Klare aktuelle Suchanfragen",
+        openLink: "Offener Link",
+        noMapLinkedOpenThisWidget: "Keine Karte verknüpft. Öffnen Sie die Einstellungen dieses Widgets und wählen Sie Ihre Karte unter \"Karten-Widget\".",
+        customSearchIsTurnedOffIn: "Die benutzerdefinierte Suche ist in den Einstellungen deaktiviert.",
         location: "{LOCATION}",
         search: "Suchen",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Die Suche konnte nicht erstellt werden. Sehen Sie sich die Browserkonsole an.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Diese Suchkonfiguration konnte nicht erstellt werden. Wenn es gerade importiert wurde, überprüfen Sie erneut die Quellen und Popup-Einstellungen in diesem Widget.",
+        theMapViewDidNotFinish: "Die Kartenansicht war nicht fertig geladen.",
+        unknownError: "Unbekannter Fehler",
+        unserializableError: "nichtialisierbarer Fehler"
       })
     }
   }

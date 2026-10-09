@@ -234,7 +234,11 @@ System.register([], function (e) {
         location: "{LOCATION}",
         result: "{result}",
         text: "{label,value,isLink?,href?}",
-        text2: "{field,label?}"
+        text2: "{field,label?}",
+        exportFailedValue1: "Export failed: {value1}",
+        importFailedValue1: "Import failed: {value1}",
+        exportFailed: "Izvoz nije uspeo:",
+        importFailed: "Import failed:"
       })
     }
   }

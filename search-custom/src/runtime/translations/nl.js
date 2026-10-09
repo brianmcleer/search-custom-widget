@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Recente zoekacties",
         searchIn: "Zoek in {value}",
         searchResults: "Search Results",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Zoeken in de kaart",
+        uiSearchAgainFor: "Opnieuw zoeken naar {t}",
+        uiClearRecentSearchHistory: "Recente zoekgeschiedenis wissen",
+        uiClearRecentSearches: "Recente zoekopdrachten wissen",
+        openLink: "Verwijzing openen",
+        noMapLinkedOpenThisWidget: "Geen kaart gekoppeld. Open dit widget-instellingen en kies uw kaart onder de map widget.",
+        customSearchIsTurnedOffIn: "Aangepast zoeken is uitgeschakeld in instellingen.",
         location: "{LOCATION}",
         search: "Zoeken",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Zoeken kon niet worden aangemaakt. Zie de browserconsole.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Deze zoekconfiguratie kon niet gebouwd worden. Als het gewoon geïmporteerd is, controleer dan de bronnen en popup instellingen in dit widget.",
+        theMapViewDidNotFinish: "De kaartweergave is niet klaar met laden.",
+        unknownError: "onbekende fout",
+        unserializableError: "onuitwisbare fout"
       })
     }
   }

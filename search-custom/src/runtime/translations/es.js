@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Búsquedas recientes",
         searchIn: "Buscar en {value}",
         searchResults: "Resultado de la búsqueda",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
+        uiMapSearch: "Mapa búsqueda",
+        uiSearchAgainFor: "Buscar de nuevo {t}",
         uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiClearRecentSearches: "Búsquedas recientes claras",
+        openLink: "Enlace abierto",
+        noMapLinkedOpenThisWidget: "No hay mapa vinculado. Abra la configuración de este widget y elija su mapa bajo “Map widget”.",
+        customSearchIsTurnedOffIn: "La búsqueda personalizada se apaga en la configuración.",
         location: "{LOCATION}",
         search: "Buscar",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "La búsqueda no se puede crear. Vea la consola del navegador.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Esta configuración de búsqueda no se pudo construir. Si se acaba de importar, vuelva a comprobar las fuentes y la configuración de popup en este widget.",
+        theMapViewDidNotFinish: "La vista del mapa no terminó de cargar.",
+        unknownError: "error desconocido",
+        unserializableError: "error unserializable"
       })
     }
   }

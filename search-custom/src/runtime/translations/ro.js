@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Căutări recente",
         searchIn: "Căutare în {value}",
         searchResults: "Rezultat căutare",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Căutare hartă",
+        uiSearchAgainFor: "Caută din nou {t}",
+        uiClearRecentSearchHistory: "Șterge istoricul căutărilor recente",
+        uiClearRecentSearches: "Șterge căutările recente",
+        openLink: "Deschide legătura",
+        noMapLinkedOpenThisWidget: "Nicio hartă legată. Deschideți acest widget setări și alegeți harta ta sub",
+        customSearchIsTurnedOffIn: "Căutarea personalizată este oprită în setări.",
         location: "{LOCATION}",
         search: "Căutare",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Căutarea nu a putut fi creată. Vezi consola browser-ului.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Această configurație de căutare nu a putut fi construită. Dacă a fost doar importat, re-verifica sursele și setările popup în acest widget.",
+        theMapViewDidNotFinish: "Vederea hărții nu a terminat încărcarea.",
+        unknownError: "Eroare necunoscută",
+        unserializableError: "eroare inoperabilă"
       })
     }
   }

@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Legutóbbi keresések",
         searchIn: "Keresés itt: {value}",
         searchResults: "Keresési eredmény",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Térkép keresése",
+        uiSearchAgainFor: "Keresés újra {t}",
+        uiClearRecentSearchHistory: "A legutóbbi keresési előzmények törlése",
+        uiClearRecentSearches: "A legutóbbi keresések törlése",
+        openLink: "Megnyitás",
+        noMapLinkedOpenThisWidget: "Nincs térképek összekötve. Nyissa meg a widget beállításokat, és válassza ki a térképet a \"Térkép widget\".",
+        customSearchIsTurnedOffIn: "Egyéni keresés ki van kapcsolva a beállításokban.",
         location: "{LOCATION}",
         search: "Keresés",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "A keresés nem sikerült. Lásd a böngésző konzolt.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Ez a keresési beállítás nem sikerült. Ha csak importálták, ellenőrizze újra a forrásokat és a popup beállítások ebben a widget.",
+        theMapViewDidNotFinish: "A térkép nézete nem fejezte be a betöltést.",
+        unknownError: "ismeretlen hiba",
+        unserializableError: "nem sorozható hiba"
       })
     }
   }

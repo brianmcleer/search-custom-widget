@@ -127,7 +127,7 @@ const Setting = (props: SettingProps) => {
       URL.revokeObjectURL(url)
       setTransferMsg({ kind: 'ok', text: __t("configurationExported") })
     } catch (e) {
-      setTransferMsg({ kind: 'err', text: 'Export failed: ' + (e?.message || e) })
+      setTransferMsg({ kind: 'err', text: __t("exportFailedValue1", { value1: (e?.message || e) }) })
     }
   }
 
@@ -141,7 +141,7 @@ const Setting = (props: SettingProps) => {
       setTransferMsg({ kind: 'ok', text: __t("configurationImportedAndApplied") })
       setImportText('')
     } catch (e) {
-      setTransferMsg({ kind: 'err', text: 'Import failed: ' + (e?.message || e) })
+      setTransferMsg({ kind: 'err', text: __t("importFailedValue1", { value1: (e?.message || e) }) })
     }
   }
 
