@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "{label, value,isLink?,href?}",
         text2: "{field, Silt?}",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Eksport nurjus: {value1}",
+        importFailedValue1: "Import nurjus: {value1}",
         exportFailed: "Eksport nurjus:",
-        importFailed: "Import failed:"
+        importFailed: "Import nurjus:"
       })
     }
   }

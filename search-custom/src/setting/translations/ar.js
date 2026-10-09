@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "(لابيل)، (فالينك)؟",
         text2: "(فيلد)، (لابيل)؟",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "فشل التصدير: {value1}",
+        importFailedValue1: "فشل الواردات: {value1}",
         exportFailed: "فشل التصدير:",
-        importFailed: "Import failed:"
+        importFailed: "فشل الواردات:"
       })
     }
   }

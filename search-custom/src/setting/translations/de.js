@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "{label,value,isLink?,href?}",
         text2: "{Feld, Label?}",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Ausfuhr fehlgeschlagen: {value1}",
+        importFailedValue1: "Einfuhr fehlgeschlagen: {value1}",
         exportFailed: "Fehler bei Export:",
-        importFailed: "Import failed:"
+        importFailed: "Einfuhr fehlgeschlagen:"
       })
     }
   }

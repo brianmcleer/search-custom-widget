@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "Etichetă, valoare, eLink?",
         text2: "Câmp, etichetă?",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Exportul a eșuat: {value1}",
+        importFailedValue1: "Importul a eșuat: {value1}",
         exportFailed: "Export eşuat:",
-        importFailed: "Import failed:"
+        importFailed: "Importul a eșuat:"
       })
     }
   }

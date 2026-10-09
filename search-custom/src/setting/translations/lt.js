@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "{etiketė, reikšmė, isLink?, href?}",
         text2: "{laukas, etiketė?}",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Eksportuoti nepavyko: {value1}",
+        importFailedValue1: "Importuoti nepavyko: {value1}",
         exportFailed: "Eksportuoti nepavyko:",
-        importFailed: "Import failed:"
+        importFailed: "Importuoti nepavyko:"
       })
     }
   }

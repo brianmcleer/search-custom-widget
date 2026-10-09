@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "{label, value, isLink?, href?}",
         text2: "Πεδίο, σήμα;",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Αποτυχία εξαγωγής: {value1}",
+        importFailedValue1: "Αποτυχία εισαγωγής: {value1}",
         exportFailed: "Η εξαγωγή απέτυχε:",
-        importFailed: "Import failed:"
+        importFailed: "Αποτυχία εισαγωγής:"
       })
     }
   }

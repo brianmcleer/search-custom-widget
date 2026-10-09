@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "{etiqueta, valor, ésink?,href?}",
         text2: "{field, label?}",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Ha fallat l' exportació: {value1}",
+        importFailedValue1: "Ha fallat la importació: {value1}",
         exportFailed: "Error en exportar:",
-        importFailed: "Import failed:"
+        importFailed: "Ha fallat la importació:"
       })
     }
   }

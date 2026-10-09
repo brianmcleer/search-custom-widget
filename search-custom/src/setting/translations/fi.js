@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "{merkki, arvo, onLink?, href?}",
         text2: "Kenttä, etiketti?",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Vieminen epäonnistui: {value1}",
+        importFailedValue1: "Tuonti epäonnistui: {value1}",
         exportFailed: "Vieminen epäonnistui:",
-        importFailed: "Import failed:"
+        importFailed: "Tuonti epäonnistui:"
       })
     }
   }

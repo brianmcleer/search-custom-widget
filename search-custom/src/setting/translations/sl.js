@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "{Oznaka, vrednost, jeLink?,href?}",
         text2: "{polje, označevanje?}",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Izvoz ni uspel: {value1}",
+        importFailedValue1: "Uvoz ni uspel: {value1}",
         exportFailed: "Izvoz ni uspel:",
-        importFailed: "Import failed:"
+        importFailed: "Uvoz ni uspel:"
       })
     }
   }

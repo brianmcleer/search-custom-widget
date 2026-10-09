@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "Được rồi.",
         text2: "Được chưa?",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Lỗi xuất: {value1}",
+        importFailedValue1: "Nhập thất bại: {value1}",
         exportFailed: "Xuất không thành công:",
-        importFailed: "Import failed:"
+        importFailed: "Nhập thất bại:"
       })
     }
   }

@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "[לאבל, ערך, isLink?]",
         text2: "פילד,בל?",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "יצוא נכשל: {value1}",
+        importFailedValue1: "ייבוא נכשל: {value1}",
         exportFailed: "הייצוא נכשל:",
-        importFailed: "Import failed:"
+        importFailed: "ייבוא נכשל:"
       })
     }
   }

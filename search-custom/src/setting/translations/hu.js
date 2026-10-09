@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "{címke, érték, isLink?",
         text2: "{mező, címke?",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Nem sikerült exportálni: {value1}",
+        importFailedValue1: "Nem sikerült importálni: {value1}",
         exportFailed: "Az exportálás nem sikerült:",
-        importFailed: "Import failed:"
+        importFailed: "Nem sikerült importálni:"
       })
     }
   }

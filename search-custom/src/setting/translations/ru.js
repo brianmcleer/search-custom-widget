@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "Значение, стоимость, линк?,href?",
         text2: "Поле, этикетка?",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Экспорт провалился: {value1}",
+        importFailedValue1: "Импорт провалился: {value1}",
         exportFailed: "Экспорт не удался:",
-        importFailed: "Import failed:"
+        importFailed: "Импорт провалился:"
       })
     }
   }

@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "Знак, стойност, линк?",
         text2: "{Поле, етикет?}",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Грешка при експортиране: {value1}",
+        importFailedValue1: "Грешка при импортиране: {value1}",
         exportFailed: "Неуспешен експорт:",
-        importFailed: "Import failed:"
+        importFailed: "Грешка при импортиране:"
       })
     }
   }

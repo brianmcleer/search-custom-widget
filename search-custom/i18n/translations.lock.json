@@ -3261,16 +3261,16 @@
       },
       "locales": {
         "ar": {
-          "file": "32763be42eb8",
+          "file": "c984b9ca44c4",
           "counts": {
             "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -4152,20 +4152,35 @@
               "t": "(فيلد)، (لابيل)؟",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "فشل التصدير: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "فشل الواردات: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "فشل الواردات:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "bg": {
-          "file": "54116b66e18f",
+          "file": "8824b3963df9",
           "counts": {
             "esri": 56,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -5032,6 +5047,21 @@
               "t": "{Поле, етикет?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Грешка при експортиране: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Грешка при импортиране: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Грешка при импортиране:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
@@ -5050,16 +5080,16 @@
           "entries": {}
         },
         "ca": {
-          "file": "efaffc216e06",
+          "file": "4560148c881a",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "searchExample": {
@@ -5936,20 +5966,35 @@
               "t": "{field, label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Ha fallat l' exportació: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Ha fallat la importació: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Ha fallat la importació:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "cs": {
-          "file": "e7f4ede5e9ff",
+          "file": "8460c163a866",
           "counts": {
             "esri": 53,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "resultPanel": {
@@ -6831,20 +6876,35 @@
               "t": "Pole, štítek?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Export selhal: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Import selhal: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Import selhal:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "da": {
-          "file": "9ba745fd9944",
+          "file": "85e04c45c9a2",
           "counts": {
             "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 176,
+            "machine": 179,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -7726,20 +7786,35 @@
               "t": "{field, label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Eksportér mislykkedes: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Import mislykkedes: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Import mislykkedes:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "de": {
-          "file": "e9b9f429ec3d",
+          "file": "6f1655484d61",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 175,
+            "machine": 178,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -8626,20 +8701,35 @@
               "t": "{Feld, Label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Ausfuhr fehlgeschlagen: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Einfuhr fehlgeschlagen: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Einfuhr fehlgeschlagen:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "el": {
-          "file": "9d1103267859",
+          "file": "11981d3bd5eb",
           "counts": {
             "esri": 58,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -9506,20 +9596,35 @@
               "t": "Πεδίο, σήμα;",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Αποτυχία εξαγωγής: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Αποτυχία εισαγωγής: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Αποτυχία εισαγωγής:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "es": {
-          "file": "d7cdb276e1ac",
+          "file": "d2d045ed3f50",
           "counts": {
             "esri": 59,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -10386,20 +10491,35 @@
               "t": "{field,label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "La exportación falló: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "La importación falló: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "La importación falló:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "et": {
-          "file": "fdd15c220ea7",
+          "file": "531f524a257e",
           "counts": {
             "esri": 59,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -11271,20 +11391,35 @@
               "t": "{field, Silt?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Eksport nurjus: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Import nurjus: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Import nurjus:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "fi": {
-          "file": "4d0a9796275a",
+          "file": "eb458dbda4d9",
           "counts": {
             "esri": 59,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -12151,20 +12286,35 @@
               "t": "Kenttä, etiketti?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Vieminen epäonnistui: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Tuonti epäonnistui: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Tuonti epäonnistui:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "fr": {
-          "file": "0ee3dba5dc60",
+          "file": "ba41f3ce6a12",
           "counts": {
             "esri": 53,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 5,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "searchResult": {
@@ -13056,20 +13206,35 @@
               "t": "{champ, étiquette?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "L'exportation a échoué : {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "L'importation a échoué : {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "L'importation a échoué :",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "he": {
-          "file": "85e9e2ca9106",
+          "file": "2f2d51c75893",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -13946,6 +14111,21 @@
               "t": "פילד,בל?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "יצוא נכשל: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "ייבוא נכשל: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "ייבוא נכשל:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
@@ -13964,16 +14144,16 @@
           "entries": {}
         },
         "hu": {
-          "file": "717da93b5606",
+          "file": "545c24c7acb9",
           "counts": {
             "esri": 59,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -14840,20 +15020,35 @@
               "t": "{mező, címke?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Nem sikerült exportálni: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Nem sikerült importálni: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Nem sikerült importálni:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "id": {
-          "file": "2a88f195ef2b",
+          "file": "be5a0964ad8b",
           "counts": {
             "esri": 55,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 177,
+            "machine": 180,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "styleLinear": {
@@ -15740,20 +15935,35 @@
               "t": "{field, label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Ekspor gagal: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Impor gagal: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Impor gagal:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "it": {
-          "file": "49d73d871947",
+          "file": "b3b196c236f4",
           "counts": {
             "esri": 56,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -16620,20 +16830,35 @@
               "t": "Field, Label?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Esportazione fallita: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Importo fallito: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Importo fallito:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "ja": {
-          "file": "21f734b27c10",
+          "file": "825cad800af4",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -17510,20 +17735,35 @@
               "t": "{フィールド、ラベル?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "輸出失敗: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "インポート失敗: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "インポート失敗:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "ko": {
-          "file": "42436035ef4c",
+          "file": "4bfb27687340",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -18400,20 +18640,35 @@
               "t": "{필드, 라벨?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "수출 실패: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "수입 실패: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "수입 실패:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "lt": {
-          "file": "c810a8402691",
+          "file": "6aad5a093c17",
           "counts": {
             "esri": 58,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -19280,20 +19535,35 @@
               "t": "{laukas, etiketė?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Eksportuoti nepavyko: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Importuoti nepavyko: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Importuoti nepavyko:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "lv": {
-          "file": "39104775527c",
+          "file": "c20446a4f8cd",
           "counts": {
             "esri": 56,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -20160,20 +20430,35 @@
               "t": "{lauks, uzraksts?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Eksportēt neizdevās: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Neizdevās importēt: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Neizdevās importēt:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "no": {
-          "file": "b0bc65310814",
+          "file": "81ed5297d7b0",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 175,
+            "machine": 178,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -21050,20 +21335,35 @@
               "t": "{felt, etikett?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Eksportering mislyktes: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Importering mislyktes: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Importering mislyktes:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "nl": {
-          "file": "0eb3b5f6290a",
+          "file": "0cbab7344db2",
           "counts": {
             "esri": 52,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 177,
+            "machine": 181,
             "stale": 0,
-            "missing": 4
+            "missing": 0
           },
           "entries": {
             "searchCompact": {
@@ -21950,20 +22250,40 @@
               "t": "{veld, label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Exporteren mislukt: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Importeren mislukt: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "exportFailed": {
+              "t": "Exporteren mislukt:",
+              "src": "machine",
+              "h": "8cbbd142783c"
+            },
+            "importFailed": {
+              "t": "Importeren mislukt:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "pl": {
-          "file": "385d903d9fe6",
+          "file": "193453dfd6c1",
           "counts": {
             "esri": 56,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -22830,20 +23150,35 @@
               "t": "Pola, etykietki?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Eksport nie powiódł się: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Importuj nieudany: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Importuj nieudany:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "pt-br": {
-          "file": "205647171f7f",
+          "file": "7e225caf68b4",
           "counts": {
             "esri": 55,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "styleLinear": {
@@ -23715,20 +24050,35 @@
               "t": "Campo, etiqueta?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "A exportação falhou: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "A importação falhou: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "A importação falhou:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "pt-pt": {
-          "file": "8d6e5bc6311a",
+          "file": "5a7b1a082683",
           "counts": {
             "esri": 56,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "styleLinear": {
@@ -24600,20 +24950,35 @@
               "t": "Campo, rótulo?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "A exportação falhou: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "A importação falhou: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "A importação falhou:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "ro": {
-          "file": "45d47c08bdd3",
+          "file": "d1b844f2c6ec",
           "counts": {
             "esri": 56,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "searchCompact": {
@@ -25485,20 +25850,35 @@
               "t": "Câmp, etichetă?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Exportul a eșuat: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Importul a eșuat: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Importul a eșuat:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "ru": {
-          "file": "8c18d4d6a716",
+          "file": "d65a6a539845",
           "counts": {
             "esri": 54,
             "esri-check": 5,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -26370,20 +26750,35 @@
               "t": "Поле, этикетка?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Экспорт провалился: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Импорт провалился: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Импорт провалился:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "sk": {
-          "file": "febad7dc8096",
+          "file": "24751e531445",
           "counts": {
             "esri": 56,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -27250,20 +27645,35 @@
               "t": "Pole, značka?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Export zlyhal: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Import zlyhal: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Import zlyhal:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "sl": {
-          "file": "c2b1c0143a6f",
+          "file": "e13b51f31050",
           "counts": {
             "esri": 59,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -28130,6 +28540,21 @@
               "t": "{polje, označevanje?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Izvoz ni uspel: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Uvoz ni uspel: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Uvoz ni uspel:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
@@ -28148,16 +28573,16 @@
           "entries": {}
         },
         "sv": {
-          "file": "55803a413566",
+          "file": "b209c12d9e7b",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 175,
+            "machine": 178,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -29034,20 +29459,35 @@
               "t": "{field,label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Export misslyckades: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Import misslyckades: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Import misslyckades:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "th": {
-          "file": "cb1ee1829559",
+          "file": "b1aedb39d4ff",
           "counts": {
             "esri": 53,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 4,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "notSetCorrectly": {
@@ -29934,20 +30374,35 @@
               "t": "(ฟิลด์, ป้าย? )",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "การส่งออกล้มเหลว: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "ล้มเหลวในการนําเข้า: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "ล้มเหลวในการนําเข้า:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "tr": {
-          "file": "66a81fc1904f",
+          "file": "8962634dbbfb",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 174,
+            "machine": 177,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "searchResult": {
@@ -30824,20 +31279,35 @@
               "t": "{field,label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "İhracat başarısız oldu: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "İthalat başarısız oldu: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "İthalat başarısız oldu:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "zh-cn": {
-          "file": "d5575125292f",
+          "file": "b22fe6fa0c78",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -31714,20 +32184,35 @@
               "t": "菲尔德,标签?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "导出失败 : {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "导入失败 : {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "导入失败 :",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "uk": {
-          "file": "a2f617ab2fbc",
+          "file": "dc6693194d28",
           "counts": {
             "esri": 58,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -32594,20 +33079,35 @@
               "t": "{field,label?}",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Експорт не вдалося: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Імпорт не вдалося: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Імпорт не вдалося:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "vi": {
-          "file": "d54f77885248",
+          "file": "b682fe15ee04",
           "counts": {
             "esri": 57,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "advancedConfigurationValueJson": {
@@ -33474,20 +33974,35 @@
               "t": "Được chưa?",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Lỗi xuất: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Nhập thất bại: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Nhập thất bại:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "zh-hk": {
-          "file": "aed008d6e9e7",
+          "file": "4b42c945b322",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -34364,20 +34879,35 @@
               "t": "- Field, label? - 是的。",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "匯出失敗 : {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "匯入失敗 : {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "匯入失敗 :",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         },
         "zh-tw": {
-          "file": "aed008d6e9e7",
+          "file": "4b42c945b322",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 173,
+            "machine": 176,
             "stale": 0,
-            "missing": 3
+            "missing": 0
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -35254,6 +35784,21 @@
               "t": "- Field, label? - 是的。",
               "src": "machine",
               "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "匯出失敗 : {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "匯入失敗 : {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "匯入失敗 :",
+              "src": "machine",
+              "h": "3d4acf618bf3"
             }
           }
         }

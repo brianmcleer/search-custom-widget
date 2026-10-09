@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "Štítok, hodnota, jeLink?",
         text2: "Pole, značka?",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "Export zlyhal: {value1}",
+        importFailedValue1: "Import zlyhal: {value1}",
         exportFailed: "Export zlyhal:",
-        importFailed: "Import failed:"
+        importFailed: "Import zlyhal:"
       })
     }
   }

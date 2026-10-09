@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "(เสียง)",
         text2: "(ฟิลด์, ป้าย? )",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "การส่งออกล้มเหลว: {value1}",
+        importFailedValue1: "ล้มเหลวในการนําเข้า: {value1}",
         exportFailed: "การส่งออกล้มเหลว:",
-        importFailed: "Import failed:"
+        importFailed: "ล้มเหลวในการนําเข้า:"
       })
     }
   }

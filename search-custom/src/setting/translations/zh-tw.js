@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "符號,值,是林克嗎?",
         text2: "- Field, label? - 是的。",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "匯出失敗 : {value1}",
+        importFailedValue1: "匯入失敗 : {value1}",
         exportFailed: "匯出失敗:",
-        importFailed: "Import failed:"
+        importFailed: "匯入失敗 :"
       })
     }
   }

@@ -235,10 +235,10 @@ System.register([], function (e) {
         result: "{result}",
         text: "- 标签,价值,是林克?",
         text2: "菲尔德,标签?",
-        exportFailedValue1: "Export failed: {value1}",
-        importFailedValue1: "Import failed: {value1}",
+        exportFailedValue1: "导出失败 : {value1}",
+        importFailedValue1: "导入失败 : {value1}",
         exportFailed: "导出失败:",
-        importFailed: "Import failed:"
+        importFailed: "导入失败 :"
       })
     }
   }
