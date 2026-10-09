@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Изберете карта за допълнителни конфигурации.",
         customizeSearchSources: "Персонализиране на източници за търсене",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Name",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Заместител",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "Адрес на услугата",
         prefix: "Представка",
         suffix: "Суffix",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "завършва на",
         contains: "съдържа",
         pattern: "Модел",
-        baseUrl: "Base URL",
+        baseUrl: "Базов адрес",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Грешка при четене на избрания файл.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

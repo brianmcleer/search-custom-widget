@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Velg et kart for mer konfigurasjon.",
         customizeSearchSources: "Tilpass søkekilder",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Kart widget",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Plassholder",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "Tjenesteadresse",
         prefix: "Prefiks",
         suffix: "Suffix",
         suggestionsForThisSource: "Suggestions for this source",
@@ -227,7 +227,14 @@ System.register([], function (e) {
         pattern: "Mønster",
         baseUrl: "Base URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Kunne ikke lese den valgte filen.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

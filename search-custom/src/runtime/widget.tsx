@@ -21,10 +21,24 @@ import {
 import { beacon } from '../shared/beacon'
 import type { BeaconHandle } from '../shared/beacon'
 import './widget.scss'
+import __i18nDefaults from './translations/default'
+import { __setIntl, __tc } from './i18n-t'
+let __i18nIntl: any = null
+/** Module translator: app language via the widget intl, English from default.ts, {name} values filled. */
+const __t = (id: string, values?: { [key: string]: any }): string => {
+  const msg: string = (__i18nDefaults as any)[id] ?? id
+  if (__i18nIntl && typeof __i18nIntl.formatMessage === 'function') {
+    try { return __i18nIntl.formatMessage({ id, defaultMessage: msg }, values) } catch (e) { }
+  }
+  return msg.replace(/\{(\w+)\}/g, (m: string, k: string) => (values && values[k] != null ? String(values[k]) : m))
+}
+
 
 const { useEffect, useRef, useState } = React
 
 const Widget = (props: AllWidgetProps<IMConfig>) => {
+  __setIntl((props as any).intl)
+  __i18nIntl = (props as any).intl
     const { useMapWidgetIds, config } = props
     const searchWidgetRef = useRef<Search | null>(null)
     const searchContainerRef = useRef<HTMLDivElement | null>(null)
@@ -185,8 +199,8 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         const view = jimuMapView?.view
 
         if (!searchContainerRef.current) { setStatusMsg(''); return }
-        if (!hasMap) { setStatusMsg('No map linked. Open this widget\u2019s settings and choose your map under \u201CMap widget\u201D.'); return }
-        if (!custom || custom.enabled === false) { setStatusMsg('Custom search is turned off in settings.'); return }
+        if (!hasMap) { setStatusMsg(__t("noMapLinkedOpenThisWidget")); return }
+        if (!custom || custom.enabled === false) { setStatusMsg(__t("customSearchIsTurnedOffIn")); return }
         if (!view) { setStatusMsg(''); return }
 
         setStatusMsg('')
@@ -262,7 +276,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                 }
 
                 const makeTemplate = (expression: string) => ({
-                    title: custom.popupTitleTemplate || '{LOCATION}',
+                    title: __tc(custom.popupTitleTemplate, "location"),
                     content: [{ type: 'expression', expressionInfo: { name: 'arcadePopup', expression } }]
                 })
 
@@ -381,7 +395,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                                 url: g.url,
                                 singleLineFieldName: g.singleLineFieldName || 'SingleLine',
                                 name: g.name || 'Address',
-                                placeholder: custom.allPlaceholder || 'Search'
+                                placeholder: __tc(custom.allPlaceholder, "search")
                             }))
                     } catch (e) {
                         console.error('[Search Custom] Could not load portal geocoders from portalUrl:', e)
@@ -433,7 +447,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                     searchWidget = new Search(searchOptions)
                 } catch (err) {
                     console.error('[Search Custom] Failed to create the Search widget:', err)
-                    setStatusMsg('Search could not be created. See the browser console.')
+                    setStatusMsg(__t("searchCouldNotBeCreatedSee"))
                     return
                 }
 
@@ -531,7 +545,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                         }
                         if (!navRef.current.openPopupOnSelect) return
                         const content = `<div class="popup-details" style="padding:10px;">${sections.join('<hr/>')}</div>`
-                        const popupArgs = { title: applyTokens(custom.spatialPopupTitle || '{result}', resultName, {}), content, location }
+                        const popupArgs = { title: applyTokens(__tc(custom.spatialPopupTitle, "result"), resultName, {}), content, location }
                         try {
                             if (typeof mapComponent?.openPopup === 'function') {
                                 // EB 1.21+: <arcgis-map> owns the popup.
@@ -565,7 +579,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
             } catch (err) {
                 beaconRef.current?.error(err, 'open')
                 console.error('[Search Custom] Build failed; showing a message instead of a blank widget.', err)
-                setStatusMsg('This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.')
+                setStatusMsg(__t("thisSearchConfigurationCouldNotBe"))
             }
         }
 
@@ -576,7 +590,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         } else if (typeof (view as any).when === 'function') {
             ; (view as any).when(attach, (e: any) => {
                 console.error('[Search Custom] view.when() failed:', e)
-                setStatusMsg('The map view did not finish loading.')
+                setStatusMsg(__t("theMapViewDidNotFinish"))
             })
         } else {
             attach()
@@ -636,7 +650,7 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
 
     return (
         <div className={`widget-search jimu-widget search-styled bar-${custom?.barStyle || 'default'} size-${custom?.barSize || 'comfortable'}`}
-            role='search' aria-label='Map search'
+            role='search' aria-label={__t("uiMapSearch")}
             style={{ ['--sc-accent' as any]: custom?.barAccent || '#003A55' }}>
             {(props.useDataSources || []).map((uds: any) => (
                 <DataSourceComponent key={uds.dataSourceId} useDataSource={uds} widgetId={props.id}
@@ -645,14 +659,14 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
             <div className='search-box-wrap'>
                 <div className='search-container' ref={searchContainerRef}></div>
                 {custom?.searchHistoryEnabled && showHistory && history.length > 0
-                    ? <div className='search-history-dropdown' ref={panelRef} role='listbox' aria-label='Recent searches'>
+                    ? <div className='search-history-dropdown' ref={panelRef} role='listbox' aria-label={__t("clearRecentSearches")}>
                         {history.map((t, i) => {
                             const ci = t.indexOf(',')
                             const primary = ci > -1 ? t.slice(0, ci) : t
                             const secondary = ci > -1 ? t.slice(ci + 1).trim() : ''
                             return (
                                 <button key={`${t}-${i}`} type='button' role='option' aria-selected='false'
-                                    className='shd-item' aria-label={`Search again for ${t}`}
+                                    className='shd-item' aria-label={__t("uiSearchAgainFor", { t: t })}
                                     onMouseDown={(e: any) => { e.preventDefault(); selectHistory(t) }}
                                     onKeyDown={(e: any) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectHistory(t) } }}>
                                     <span className='shd-icon' aria-hidden='true'>
@@ -669,9 +683,9 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                             )
                         })}
                         <button type='button' className='shd-clear'
-                            aria-label='Clear recent search history'
+                            aria-label={__t("uiClearRecentSearchHistory")}
                             onMouseDown={(e: any) => { e.preventDefault(); clearHistory(); setShowHistory(false) }}>
-                            Clear recent searches
+                            {__t("uiClearRecentSearches")}
                         </button>
                     </div>
                     : null}

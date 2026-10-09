@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Eine Karte für weitere Konfigurationen auswählen.",
         customizeSearchSources: "Suchquellen anpassen",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Map Widget",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -120,7 +120,7 @@ System.register([], function (e) {
         collapseAll: "Alle ausblenden",
         geocode: "Geocode",
         data: "Daten",
-        layer: "Layer",
+        layer: "Schicht",
         dragToReorder: "Drag to Reorder",
         sourceName: "Source {name}",
         unnamed: "(unnamed)",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "endet mit",
         contains: "enthält",
         pattern: "Muster",
-        baseUrl: "Base URL",
+        baseUrl: "Basis-URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Konnte die ausgewählte Datei nicht lesen.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

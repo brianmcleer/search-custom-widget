@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "选择地图以进行进一步配置。",
         customizeSearchSources: "自定义搜索源",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "地图部件",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "占位符",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "服务 URL",
         prefix: "前缀",
         suffix: "后缀",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "结尾是",
         contains: "包含",
         pattern: "图案",
-        baseUrl: "Base URL",
+        baseUrl: "基础 URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "无法读取选中的文件 。",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Chọn một bản đồ để cấu hình thêm.",
         customizeSearchSources: "Tùy chỉnh nguồn tìm kiếm",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Thiết bị sơ đồ",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Phần giữ chỗ",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "URL dịch vụ",
         prefix: "Tiền tố",
         suffix: "Suffix",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "kết thúc với",
         contains: "chứa",
         pattern: "Mẫu",
-        baseUrl: "Base URL",
+        baseUrl: "URL cơ bản",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Không thể đọc tập tin đã chọn.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Välj en karta för ytterligare konfigurationer.",
         customizeSearchSources: "Anpassa sökkällor",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Karta widget",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -156,7 +156,7 @@ System.register([], function (e) {
         controlsTheMapPopupUsedBy: "Controls the map popup used by search results (the shared MapView popup). Applies to whichever popup behavior is selected above.",
         dockThePopup: "Dock the popup",
         dockPosition: "Docka position",
-        auto: "Auto",
+        auto: "Auto Auto Auto Auto",
         topCenter: "Överst i mitten",
         bottomCenter: "Längst ned i mitten",
         autoDockOnSmallScreens: "Auto-dock on small screens",
@@ -227,7 +227,14 @@ System.register([], function (e) {
         pattern: "Mönster",
         baseUrl: "Base URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Kunde inte läsa den valda filen.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

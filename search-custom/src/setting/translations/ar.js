@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "عنصر نائب",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "الخدمة",
         prefix: "Prefix",
         suffix: "Suffix",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "الانتهاء بـ",
         contains: "يحتوي على",
         pattern: "Pattern",
-        baseUrl: "Base URL",
+        baseUrl: "القاعدة URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "لم أستطع قراءة الملف المختار.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

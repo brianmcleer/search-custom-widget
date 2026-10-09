@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "בחר מפה לתצורות נוספות.",
         customizeSearchSources: "התאם אישית מקורות חיפוש",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "מפה widget",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "ממלא מקום",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "כתובת URL",
         prefix: "תיקון",
         suffix: "תיקון סופי",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "מסתיים ב-",
         contains: "מכיל",
         pattern: "תבנית",
-        baseUrl: "Base URL",
+        baseUrl: "כתובת URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "לא יכול לקרוא את הקובץ שנבחר.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

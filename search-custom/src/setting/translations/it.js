@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Seleziona una mappa per ulteriori configurazioni.",
         customizeSearchSources: "Personalizza origini di ricerca",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Mappa widget",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -120,7 +120,7 @@ System.register([], function (e) {
         collapseAll: "Comprimi tutto",
         geocode: "Codice geografico",
         data: "Dati",
-        layer: "Layer",
+        layer: "Livello",
         dragToReorder: "Drag to reorder",
         sourceName: "Source {name}",
         unnamed: "(unnamed)",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Segnaposto",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "URL del servizio",
         prefix: "Prefisso",
         suffix: "Suffisso",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "termina con",
         contains: "contiene",
         pattern: "Modello",
-        baseUrl: "Base URL",
+        baseUrl: "URL della base",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Non è possibile leggere il file selezionato.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

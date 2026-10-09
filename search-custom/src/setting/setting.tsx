@@ -23,6 +23,7 @@ import { configToXml, xmlToConfig } from './config-xml'
 import { buildArcadeExpression } from '../runtime/custom-search'
 import { hooks as __exbI18nHooks } from 'jimu-core';
 import __exbI18nMessages from './translations/default';
+import { __setIntl, __t, __tc } from './i18n-t'
 
 
 // Mode B leftover (WIDGETHANDOFF 12.3): AllWidgetSettingProps from
@@ -81,6 +82,7 @@ const defaultCustom = (): CustomSearchConfig => ({
 })
 
 const Setting = (props: SettingProps) => {
+  __setIntl((props as any).intl)
   const t = __exbI18nHooks.useTranslation(__exbI18nMessages);
   const { config, id, useMapWidgetIds, onSettingChange } = props
 
@@ -123,7 +125,7 @@ const Setting = (props: SettingProps) => {
       a.click()
       document.body.removeChild(a)
       URL.revokeObjectURL(url)
-      setTransferMsg({ kind: 'ok', text: 'Configuration exported.' })
+      setTransferMsg({ kind: 'ok', text: __t("configurationExported") })
     } catch (e) {
       setTransferMsg({ kind: 'err', text: 'Export failed: ' + (e?.message || e) })
     }
@@ -136,7 +138,7 @@ const Setting = (props: SettingProps) => {
       // Merge onto defaults so any field absent in an older export is sensibly filled.
       const merged: CustomSearchConfig = { ...defaultCustom(), ...incoming }
       commit(merged)
-      setTransferMsg({ kind: 'ok', text: 'Configuration imported and applied.' })
+      setTransferMsg({ kind: 'ok', text: __t("configurationImportedAndApplied") })
       setImportText('')
     } catch (e) {
       setTransferMsg({ kind: 'err', text: 'Import failed: ' + (e?.message || e) })
@@ -148,7 +150,7 @@ const Setting = (props: SettingProps) => {
     if (!file) return
     const reader = new FileReader()
     reader.onload = () => applyImport(String(reader.result || ''))
-    reader.onerror = () => setTransferMsg({ kind: 'err', text: 'Could not read the selected file.' })
+    reader.onerror = () => setTransferMsg({ kind: 'err', text: __t("couldNotReadTheSelectedFile") })
     reader.readAsText(file)
     e.target.value = '' // allow re-selecting the same file
   }
@@ -776,7 +778,7 @@ const Setting = (props: SettingProps) => {
       {popupMode === CustomPopupMode.LayerTemplate && (
         <SettingSection title={t('layerPopupArcade')}>
           <SettingRow flow='wrap' label={t('popupTitleTemplate')}>
-            <TextInput aria-label={t('popupTitleTemplate')} defaultValue={custom.popupTitleTemplate || '{LOCATION}'} className='w-100'
+            <TextInput aria-label={t('popupTitleTemplate')} defaultValue={__tc(custom.popupTitleTemplate, "location")} className='w-100'
               onAcceptValue={v => patch({ popupTitleTemplate: v })} />
           </SettingRow>
           <SettingRow flow='wrap' label={t('arcadeExpression')}>
@@ -835,10 +837,10 @@ const Setting = (props: SettingProps) => {
       {popupMode === CustomPopupMode.SpatialLookup && (
         <SettingSection title={t('spatialLookupRules')}>
           <SettingRow flow='wrap' label={t('popupTitle')}>
-            <TextInput aria-label={t('popupTitle')} defaultValue={custom.spatialPopupTitle || '{result}'} className='w-100'
+            <TextInput aria-label={t('popupTitle')} defaultValue={__tc(custom.spatialPopupTitle, "result")} className='w-100'
               onAcceptValue={v => patch({ spatialPopupTitle: v })} />
           </SettingRow>
-          <div className='hint'>{t('onSelectEachRuleRunsAn')} {'{result}'}, {'{field:NAME}'}.</div>
+          <div className='hint'>{t('onSelectEachRuleRunsAn')} {__t("result")}, {'{field:NAME}'}.</div>
           {(custom.lookupRules || []).map((r, i) => (
             <div className='card' key={r.id || i}>
               <div className='title'>
@@ -865,7 +867,7 @@ const Setting = (props: SettingProps) => {
                   <SettingRow flow='wrap' label={t('outsideMessage')}>
                     <TextArea aria-label={t('outsideMessage')} css={{ minHeight: '52px', width: '100%' }} defaultValue={r.outsideMessage || ''} onAcceptValue={v => updateRule(i, { outsideMessage: v })} />
                   </SettingRow>
-                  <Label className='mini-label'>{t('staticLinesOptionalJsonArrayOf')} {'{label,value,isLink?,href?}'})</Label>
+                  <Label className='mini-label'>{t('staticLinesOptionalJsonArrayOf')} {__t("text")})</Label>
                   {jsonField(r.staticLines, (v) => updateRule(i, { staticLines: v }), 3)}
                 </React.Fragment>
               ) : (
@@ -883,7 +885,7 @@ const Setting = (props: SettingProps) => {
                     </SettingRow>
                   ) : (
                     <React.Fragment>
-                      <Label className='mini-label'>{t('explicitFieldsJsonArrayOf')} {'{field,label?}'})</Label>
+                      <Label className='mini-label'>{t('explicitFieldsJsonArrayOf')} {__t("text2")})</Label>
                       {jsonField(r.fields, (v) => updateRule(i, { fields: v }), 3)}
                     </React.Fragment>
                   )}

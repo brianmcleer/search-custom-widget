@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Wybierz mapę na potrzeby dalszych konfiguracji.",
         customizeSearchSources: "Dostosuj źródła wyszukiwania",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Widżet mapy",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Symbol zastępczy",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "URL usługi",
         prefix: "Prefiks",
         suffix: "Suffix",
         suggestionsForThisSource: "Suggestions for this source",
@@ -156,7 +156,7 @@ System.register([], function (e) {
         controlsTheMapPopupUsedBy: "Controls the map popup used by search results (the shared MapView popup). Applies to whichever popup behavior is selected above.",
         dockThePopup: "Dock the popup",
         dockPosition: "Pozycja dokowania",
-        auto: "Auto",
+        auto: "Automatycznie",
         topCenter: "Na środku u góry",
         bottomCenter: "Na środku u dołu",
         autoDockOnSmallScreens: "Auto-dock on small screens",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "kończy się na",
         contains: "zawiera",
         pattern: "Wzór",
-        baseUrl: "Base URL",
+        baseUrl: "Podstawowy adres URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Nie można odczytać wybranego pliku.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

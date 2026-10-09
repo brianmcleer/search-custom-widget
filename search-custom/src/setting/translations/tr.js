@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Yer İmi",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "Servis URL",
         prefix: "Prefix",
         suffix: "Suffix",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "şununla bitenler",
         contains: "alanı şunu içerenler",
         pattern: "Desen",
-        baseUrl: "Base URL",
+        baseUrl: "Base URL URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Seçilen dosyayı okuyamazdı.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

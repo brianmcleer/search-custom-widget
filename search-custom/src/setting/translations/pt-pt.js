@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Selecione um mapa para obter mais configurações.",
         customizeSearchSources: "Personalizar fontes de pesquisa",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Elemento do mapa",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Espaço reservado",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "URL do serviço",
         prefix: "Prefixo",
         suffix: "Sufixo",
         suggestionsForThisSource: "Suggestions for this source",
@@ -156,7 +156,7 @@ System.register([], function (e) {
         controlsTheMapPopupUsedBy: "Controls the map popup used by search results (the shared MapView popup). Applies to whichever popup behavior is selected above.",
         dockThePopup: "Dock the popup",
         dockPosition: "Posição de ancoragem",
-        auto: "Auto",
+        auto: "Automático",
         topCenter: "Centro superior",
         bottomCenter: "Centro inferior",
         autoDockOnSmallScreens: "Auto-dock on small screens",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "acaba em",
         contains: "contém",
         pattern: "Padrão",
-        baseUrl: "Base URL",
+        baseUrl: "URL base",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Não foi possível ler o arquivo selecionado.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

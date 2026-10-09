@@ -3,8 +3,8 @@
   "generator": "exb-i18n-kit",
   "parts": {
     "runtime": {
-      "en": "0d924bb8ea71",
-      "keys": 13,
+      "en": "be323268b479",
+      "keys": 28,
       "hashes": {
         "_widgetLabel": "a74386da8c60",
         "showResult": "d3c65022baa0",
@@ -18,20 +18,35 @@
         "clearThisHistories": "f71b31923e8c",
         "clearRecentSearches": "a73d2913b829",
         "searchIn": "309586345c48",
-        "searchResults": "88a9b07d73a2"
+        "searchResults": "88a9b07d73a2",
+        "uiMapSearch": "3d4986859fc6",
+        "uiSearchAgainFor": "ae360b30fa2a",
+        "uiClearRecentSearchHistory": "874d9305bdb5",
+        "uiClearRecentSearches": "692409583657",
+        "openLink": "d2de1a2831e7",
+        "noMapLinkedOpenThisWidget": "ac56100c9eed",
+        "customSearchIsTurnedOffIn": "a55d2f23968e",
+        "location": "96a680aff28f",
+        "search": "bce06414177f",
+        "searchCouldNotBeCreatedSee": "8da4016f7bc0",
+        "result": "1c4ecae47e72",
+        "thisSearchConfigurationCouldNotBe": "dba91c4b9e95",
+        "theMapViewDidNotFinish": "2074ef52ec60",
+        "unknownError": "af6321ca7a8b",
+        "unserializableError": "76e73551597a"
       },
       "locales": {
         "ar": {
-          "file": "77f2df027f06",
+          "file": "56757b7c151b",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -42,16 +57,16 @@
           }
         },
         "bg": {
-          "file": "52d4ceddaa72",
+          "file": "f8bf1fbd3a7c",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -62,16 +77,16 @@
           }
         },
         "bs": {
-          "file": "46580f52cc16",
+          "file": "05a735f33b0c",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -82,16 +97,16 @@
           }
         },
         "ca": {
-          "file": "e46ed7175250",
+          "file": "043581d404e2",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -102,16 +117,16 @@
           }
         },
         "cs": {
-          "file": "9a0a560ea132",
+          "file": "a03ebf595f61",
           "counts": {
             "esri": 11,
-            "esri-check": 0,
+            "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 2,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -127,16 +142,16 @@
           }
         },
         "da": {
-          "file": "ddacf53369a8",
+          "file": "dd56b744664f",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -147,16 +162,16 @@
           }
         },
         "de": {
-          "file": "3cf16da87335",
+          "file": "90fe23adaf80",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -167,16 +182,16 @@
           }
         },
         "el": {
-          "file": "9fc517bb6e36",
+          "file": "79da9c457db2",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -187,16 +202,16 @@
           }
         },
         "es": {
-          "file": "46d88e4cbbe7",
+          "file": "05455a43a4ad",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -207,16 +222,16 @@
           }
         },
         "et": {
-          "file": "0555566f0666",
+          "file": "e8274ee45023",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -227,16 +242,16 @@
           }
         },
         "fi": {
-          "file": "4f8d1d75d916",
+          "file": "06d9bb33d877",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -247,16 +262,16 @@
           }
         },
         "fr": {
-          "file": "d63af7701072",
+          "file": "3abb07aa269a",
           "counts": {
-            "esri": 11,
+            "esri": 12,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -267,16 +282,16 @@
           }
         },
         "he": {
-          "file": "517675dbd1d5",
+          "file": "2bf0a33dd851",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -287,16 +302,16 @@
           }
         },
         "hr": {
-          "file": "46580f52cc16",
+          "file": "05a735f33b0c",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -307,16 +322,16 @@
           }
         },
         "hu": {
-          "file": "e3f6777c8fd7",
+          "file": "8846d3c4b324",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -327,16 +342,16 @@
           }
         },
         "id": {
-          "file": "b0e1432c8bdb",
+          "file": "3cae0092f55f",
           "counts": {
-            "esri": 11,
+            "esri": 12,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 2,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -352,16 +367,16 @@
           }
         },
         "it": {
-          "file": "bf1b2c907d9c",
+          "file": "c9a3597dee51",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -372,16 +387,16 @@
           }
         },
         "ja": {
-          "file": "0a966da05a60",
+          "file": "8638335dbd49",
           "counts": {
-            "esri": 11,
+            "esri": 12,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 2,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -397,16 +412,16 @@
           }
         },
         "ko": {
-          "file": "ebd892847d34",
+          "file": "665914bf67f9",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -417,16 +432,16 @@
           }
         },
         "lt": {
-          "file": "3e44018fc796",
+          "file": "79d5cd187eaa",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -437,16 +452,16 @@
           }
         },
         "lv": {
-          "file": "1fe99f06597e",
+          "file": "7648755ef716",
           "counts": {
-            "esri": 10,
+            "esri": 11,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 3,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -467,30 +482,30 @@
           }
         },
         "no": {
-          "file": "a0157303715d",
+          "file": "3317d56c7f2b",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
             "machine": 0,
             "stale": 0,
-            "missing": 1
+            "missing": 15
           },
           "entries": {}
         },
         "nl": {
-          "file": "493a5f9c7617",
+          "file": "734cf832e62b",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -501,16 +516,16 @@
           }
         },
         "pl": {
-          "file": "cfc5a6e7aa7a",
+          "file": "676efee16f14",
           "counts": {
             "esri": 12,
-            "esri-check": 0,
+            "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -521,16 +536,16 @@
           }
         },
         "pt-br": {
-          "file": "cc326e312fcb",
+          "file": "06e40e7d4aec",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -541,16 +556,16 @@
           }
         },
         "pt-pt": {
-          "file": "30891a8320b8",
+          "file": "b28e70654710",
           "counts": {
-            "esri": 11,
+            "esri": 12,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 2,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -566,16 +581,16 @@
           }
         },
         "ro": {
-          "file": "8c170a2439be",
+          "file": "0b163448f30f",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -586,16 +601,16 @@
           }
         },
         "ru": {
-          "file": "525143a8d2ea",
+          "file": "da3e2fd80076",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -606,16 +621,16 @@
           }
         },
         "sk": {
-          "file": "b25d0a9c23f9",
+          "file": "fa41402c31f0",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -626,16 +641,16 @@
           }
         },
         "sl": {
-          "file": "ab765867b26d",
+          "file": "51f42137c082",
           "counts": {
             "esri": 12,
-            "esri-check": 0,
+            "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -646,16 +661,16 @@
           }
         },
         "sr": {
-          "file": "5d43be2b3389",
+          "file": "224922e3fe05",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -666,16 +681,16 @@
           }
         },
         "sv": {
-          "file": "25cacbf45662",
+          "file": "a691ff79fdd3",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -686,16 +701,16 @@
           }
         },
         "th": {
-          "file": "589e5ade7649",
+          "file": "7bc5f9f313cc",
           "counts": {
-            "esri": 11,
+            "esri": 12,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 2,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -711,16 +726,16 @@
           }
         },
         "tr": {
-          "file": "512c053929b8",
+          "file": "3af1912b373c",
           "counts": {
-            "esri": 10,
+            "esri": 11,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 2,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -736,16 +751,16 @@
           }
         },
         "zh-cn": {
-          "file": "aa4a3a3dc8eb",
+          "file": "85121b0386b0",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -756,16 +771,16 @@
           }
         },
         "uk": {
-          "file": "019d1407fbd2",
+          "file": "b61f8d2b64d9",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -776,16 +791,16 @@
           }
         },
         "vi": {
-          "file": "da0893dcba1c",
+          "file": "d368fb3caaf3",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -796,16 +811,16 @@
           }
         },
         "zh-hk": {
-          "file": "471a5a37477b",
+          "file": "209c3798a63c",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -816,16 +831,16 @@
           }
         },
         "zh-tw": {
-          "file": "471a5a37477b",
+          "file": "209c3798a63c",
           "counts": {
-            "esri": 12,
+            "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
             "machine": 0,
             "stale": 0,
-            "missing": 0
+            "missing": 14
           },
           "entries": {
             "_widgetLabel": {
@@ -838,8 +853,8 @@
       }
     },
     "setting": {
-      "en": "bbc5722dc03c",
-      "keys": 225,
+      "en": "9e3cced71959",
+      "keys": 232,
       "hashes": {
         "searchResult": "88a9b07d73a2",
         "arrangementStyle": "b0d4ca4c52a7",
@@ -1065,20 +1080,27 @@
         "pattern": "1fff6a31661b",
         "baseUrl": "1dbd61f556fe",
         "linkText": "502f872db333",
-        "addUrlRule": "7e30c598d7d1"
+        "addUrlRule": "7e30c598d7d1",
+        "configurationExported": "8c0605411fb8",
+        "configurationImportedAndApplied": "c976875e88cd",
+        "couldNotReadTheSelectedFile": "ec63f7b5577c",
+        "location": "96a680aff28f",
+        "result": "1c4ecae47e72",
+        "text": "3a0336caeae4",
+        "text2": "2e3dd0ad7911"
       },
       "locales": {
         "ar": {
-          "file": "4fefd5dfec4b",
+          "file": "dbbcac0d7b26",
           "counts": {
             "esri": 54,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 10,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1090,6 +1112,11 @@
               "t": "لم يتم تعيين عنوان URL لمحدد المواقع بشكل صحيح",
               "src": "existing",
               "h": "4171ef6df1f2"
+            },
+            "mapWidget": {
+              "t": "Map widget",
+              "src": "machine",
+              "h": "8b918e901bfa"
             },
             "manual": {
               "t": "الدليل",
@@ -1105,6 +1132,11 @@
               "t": "السحب إلى إعادة التشغيل",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "الخدمة",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Prefix",
@@ -1125,20 +1157,25 @@
               "t": "Pattern",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "القاعدة URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "bg": {
-          "file": "d59b68c86cd2",
+          "file": "adf849351367",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -1155,6 +1192,11 @@
               "t": "Пренареждане",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "Адрес на услугата",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Представка",
@@ -1175,34 +1217,39 @@
               "t": "Модел",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Базов адрес",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "bs": {
-          "file": "c616c3679f17",
+          "file": "15bb93c84aa2",
           "counts": {
-            "esri": 56,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
             "machine": 0,
             "stale": 0,
-            "missing": 167
+            "missing": 175
           },
           "entries": {}
         },
         "ca": {
-          "file": "f8f1898076f7",
+          "file": "5bb70972d92d",
           "counts": {
             "esri": 53,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "searchExample": {
@@ -1225,6 +1272,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "URL del servei",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Prefix",
               "src": "machine",
@@ -1244,20 +1296,25 @@
               "t": "Patró",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "URL base",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "cs": {
-          "file": "4375483b68c0",
+          "file": "ceccf9418466",
           "counts": {
             "esri": 52,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "resultPanel": {
@@ -1285,6 +1342,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "URL služby",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Prefix",
               "src": "machine",
@@ -1304,20 +1366,25 @@
               "t": "Vzorec",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Základní URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "da": {
-          "file": "0995e620abf4",
+          "file": "483ca91bad38",
           "counts": {
-            "esri": 55,
-            "esri-check": 3,
+            "esri": 54,
+            "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 10,
             "stale": 0,
-            "missing": 160
+            "missing": 166
           },
           "entries": {
             "manual": {
@@ -1335,6 +1402,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "Service URL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Præfiks",
               "src": "machine",
@@ -1345,6 +1417,11 @@
               "src": "machine",
               "h": "885db975a310"
             },
+            "auto": {
+              "t": "Auto",
+              "src": "machine",
+              "h": "c614ba7c453c"
+            },
             "enabled": {
               "t": "Aktiveret",
               "src": "machine",
@@ -1354,20 +1431,25 @@
               "t": "Mønster",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Base- URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "de": {
-          "file": "7909d0878c8b",
+          "file": "0bb52f2c10f3",
           "counts": {
-            "esri": 54,
+            "esri": 53,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 10,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1395,6 +1477,16 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "name": {
+              "t": "Name",
+              "src": "machine",
+              "h": "709a23220f2c"
+            },
+            "serviceUrl": {
+              "t": "Service URL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Präfix",
               "src": "machine",
@@ -1414,20 +1506,25 @@
               "t": "Muster",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Basis-URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "el": {
-          "file": "287a2de32b5c",
+          "file": "c80be41932cd",
           "counts": {
-            "esri": 56,
+            "esri": 57,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -1444,6 +1541,11 @@
               "t": "Σύρετε για αναδιάταξη",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "URL υπηρεσίας",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Πρόθεμα",
@@ -1464,20 +1566,25 @@
               "t": "Μοτίβο",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Βασικό URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "es": {
-          "file": "0e4b8c20fd9a",
+          "file": "0a7464e1ec14",
           "counts": {
-            "esri": 56,
-            "esri-check": 2,
+            "esri": 58,
+            "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -1494,6 +1601,11 @@
               "t": "Arrastre a reorden",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "URL de servicio",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Prefijo",
@@ -1514,20 +1626,25 @@
               "t": "Patrón",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Base URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "et": {
-          "file": "7580a53afde5",
+          "file": "93252ca399c8",
           "counts": {
             "esri": 58,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 10,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -1545,6 +1662,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "Teenuse URL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Prefiks",
               "src": "machine",
@@ -1560,24 +1682,34 @@
               "src": "machine",
               "h": "df174a3f2faa"
             },
+            "contains": {
+              "t": "sisaldab",
+              "src": "machine",
+              "h": "caeb909ae4ff"
+            },
             "pattern": {
               "t": "Muster",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Baas- URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "fi": {
-          "file": "1f360ce28560",
+          "file": "21a9744ef576",
           "counts": {
-            "esri": 56,
-            "esri-check": 2,
+            "esri": 58,
+            "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -1594,6 +1726,11 @@
               "t": "Vedä tilaamaan uudelleen",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "Palvelun URL",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Etuliite",
@@ -1614,20 +1751,25 @@
               "t": "Kuvio",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Perus URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "fr": {
-          "file": "250effd2ed33",
+          "file": "7f804f0f4619",
           "counts": {
-            "esri": 51,
+            "esri": 52,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 5,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "searchResult": {
@@ -1670,6 +1812,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "URL du service",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Préfixe",
               "src": "machine",
@@ -1689,20 +1836,25 @@
               "t": "Modèle",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "URL de base",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "he": {
-          "file": "ef3ae7c430e0",
+          "file": "0f3abe9f7bb9",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1730,6 +1882,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "כתובת URL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "תיקון",
               "src": "machine",
@@ -1749,34 +1906,39 @@
               "t": "תבנית",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "כתובת URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "hr": {
-          "file": "c616c3679f17",
+          "file": "15bb93c84aa2",
           "counts": {
-            "esri": 56,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
             "machine": 0,
             "stale": 0,
-            "missing": 167
+            "missing": 175
           },
           "entries": {}
         },
         "hu": {
-          "file": "3fb33e327961",
+          "file": "2f30639d3685",
           "counts": {
-            "esri": 57,
+            "esri": 58,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -1793,6 +1955,11 @@
               "t": "Drag to order",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "Szolgáltatási URL",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Előtag",
@@ -1813,20 +1980,25 @@
               "t": "Minta",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Bázis URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "id": {
-          "file": "3ac57496f383",
+          "file": "263cbc67d397",
           "counts": {
-            "esri": 57,
+            "esri": 54,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 10,
             "stale": 0,
-            "missing": 160
+            "missing": 167
           },
           "entries": {
             "manual": {
@@ -1844,6 +2016,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "URL layanan",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Awalan",
               "src": "machine",
@@ -1854,6 +2031,11 @@
               "src": "machine",
               "h": "885db975a310"
             },
+            "default": {
+              "t": "Baku",
+              "src": "machine",
+              "h": "808d7dca8a74"
+            },
             "enabled": {
               "t": "Diaktifkan",
               "src": "machine",
@@ -1863,20 +2045,25 @@
               "t": "Pola",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "URL Dasar",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "it": {
-          "file": "357a7f311f3a",
+          "file": "9a749609f64a",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -1893,6 +2080,11 @@
               "t": "Drag to reorder",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "URL del servizio",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Prefisso",
@@ -1913,20 +2105,25 @@
               "t": "Modello",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "URL della base",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "ja": {
-          "file": "967b3d8a5535",
+          "file": "f79641e9f76f",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -1954,6 +2151,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "サービスURL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "プレフィックス",
               "src": "machine",
@@ -1973,20 +2175,25 @@
               "t": "パターン",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "ベースURL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "ko": {
-          "file": "068478d0191a",
+          "file": "3fd6084fe131",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -2014,6 +2221,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "서비스 URL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "연락처",
               "src": "machine",
@@ -2033,20 +2245,25 @@
               "t": "제품 정보",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "기본 URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "lt": {
-          "file": "f1ff0dcf3417",
+          "file": "bcbe9a790718",
           "counts": {
-            "esri": 56,
+            "esri": 57,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -2063,6 +2280,11 @@
               "t": "Vilkti iš naujo",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "Paslaugos URL",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Priešdėlis",
@@ -2083,20 +2305,25 @@
               "t": "Modelis",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Pagrindinis URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "lv": {
-          "file": "f48f54b8f330",
+          "file": "fa975e53cd7b",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -2113,6 +2340,11 @@
               "t": "Velciet, lai mainītu kārtību",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "Servisa URL",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Prefikss",
@@ -2133,20 +2365,25 @@
               "t": "Paraugs",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Bāzes URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "no": {
-          "file": "44ac52c396e2",
+          "file": "36c237c5d1f5",
           "counts": {
-            "esri": 55,
+            "esri": 54,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 10,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "manual": {
@@ -2164,6 +2401,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "Tjenesteadresse",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Prefiks",
               "src": "machine",
@@ -2174,6 +2416,11 @@
               "src": "machine",
               "h": "885db975a310"
             },
+            "auto": {
+              "t": "Auto",
+              "src": "machine",
+              "h": "c614ba7c453c"
+            },
             "enabled": {
               "t": "Aktivert",
               "src": "machine",
@@ -2183,20 +2430,25 @@
               "t": "Mønster",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Base URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "nl": {
-          "file": "ad69f34b1a52",
+          "file": "7af3d8ff8539",
           "counts": {
-            "esri": 55,
+            "esri": 52,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 11,
             "stale": 0,
-            "missing": 160
+            "missing": 166
           },
           "entries": {
             "manual": {
@@ -2214,6 +2466,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "Service-URL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Voorvoegsel",
               "src": "machine",
@@ -2224,6 +2481,16 @@
               "src": "machine",
               "h": "885db975a310"
             },
+            "street": {
+              "t": "Straat",
+              "src": "machine",
+              "h": "b45410999343"
+            },
+            "auto": {
+              "t": "Auto",
+              "src": "machine",
+              "h": "c614ba7c453c"
+            },
             "enabled": {
               "t": "Ingeschakeld",
               "src": "machine",
@@ -2233,20 +2500,25 @@
               "t": "Patroon",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Basis-URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "pl": {
-          "file": "f1f84a2799f8",
+          "file": "65db74e4d27e",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -2263,6 +2535,11 @@
               "t": "Przeciągnij do ponownego zamówienia",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "URL usługi",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Prefiks",
@@ -2283,20 +2560,25 @@
               "t": "Wzór",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Podstawowy adres URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "pt-br": {
-          "file": "d6eea16a952f",
+          "file": "6dfe50c08beb",
           "counts": {
             "esri": 54,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "manual": {
@@ -2314,6 +2596,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "URL de serviço",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Prefixo",
               "src": "machine",
@@ -2333,20 +2620,25 @@
               "t": "Padrão",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "URL base",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "pt-pt": {
-          "file": "e9a5c1b95174",
+          "file": "f63faa1f3cd6",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "manual": {
@@ -2364,6 +2656,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "URL do serviço",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Prefixo",
               "src": "machine",
@@ -2383,20 +2680,25 @@
               "t": "Padrão",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "URL base",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "ro": {
-          "file": "67ae5ce00a11",
+          "file": "6f783edc6042",
           "counts": {
             "esri": 55,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "manual": {
@@ -2413,6 +2715,11 @@
               "t": "Trage la reordonare",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "URL- ul serviciului",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Prefix",
@@ -2433,20 +2740,25 @@
               "t": "Model",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "URL de bază",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "ru": {
-          "file": "1d0970fd42e8",
+          "file": "7b1a526d9a4c",
           "counts": {
             "esri": 53,
             "esri-check": 5,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "manual": {
@@ -2463,6 +2775,11 @@
               "t": "Перетаскивать на заказ",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "Сервис URL",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Префикс",
@@ -2483,20 +2800,25 @@
               "t": "шаблон",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Базовый URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "sk": {
-          "file": "5e833713bf83",
+          "file": "e62fc23a47c5",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -2513,6 +2835,11 @@
               "t": "Presunúť na zmenu poradia",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "URL služby",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Predpona",
@@ -2533,20 +2860,25 @@
               "t": "Vzor",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Základná URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "sl": {
-          "file": "dd07a6a776b7",
+          "file": "b58350d2f410",
           "counts": {
-            "esri": 57,
+            "esri": 58,
             "esri-check": 1,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -2563,6 +2895,11 @@
               "t": "Povleci za prenovo",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "URL storitve",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Predpona",
@@ -2583,34 +2920,39 @@
               "t": "Vzorec",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Osnovni URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "sr": {
-          "file": "2123f0a4b31f",
+          "file": "bba4ca4692b3",
           "counts": {
-            "esri": 56,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
             "machine": 0,
             "stale": 0,
-            "missing": 167
+            "missing": 175
           },
           "entries": {}
         },
         "sv": {
-          "file": "3ee3a58a2d44",
+          "file": "e46747d080c9",
           "counts": {
-            "esri": 56,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 10,
             "stale": 0,
-            "missing": 160
+            "missing": 165
           },
           "entries": {
             "manual": {
@@ -2628,6 +2970,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "Service URL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "Prefix",
               "src": "machine",
@@ -2638,6 +2985,11 @@
               "src": "machine",
               "h": "885db975a310"
             },
+            "auto": {
+              "t": "Auto Auto Auto Auto",
+              "src": "machine",
+              "h": "c614ba7c453c"
+            },
             "enabled": {
               "t": "Enabled",
               "src": "machine",
@@ -2647,20 +2999,25 @@
               "t": "Mönster",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Base URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "th": {
-          "file": "5beb69f6c626",
+          "file": "d3334a952248",
           "counts": {
-            "esri": 51,
+            "esri": 52,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 4,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "notSetCorrectly": {
@@ -2698,6 +3055,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "ที่อยู่ URL ของบริการ",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "นําหน้า",
               "src": "machine",
@@ -2717,26 +3079,36 @@
               "t": "รูปแบบ",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "ที่อยู่ URL หลัก",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "tr": {
-          "file": "6f68015e2fe4",
+          "file": "df7c416726bc",
           "counts": {
             "esri": 54,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 7,
+            "machine": 10,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "searchResult": {
               "t": "Sonuç ara",
               "src": "existing",
               "h": "88a9b07d73a2"
+            },
+            "mapWidget": {
+              "t": "Map widget",
+              "src": "machine",
+              "h": "8b918e901bfa"
             },
             "manual": {
               "t": "Manual",
@@ -2752,6 +3124,11 @@
               "t": "Yeniden sipariş için Drag",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "Servis URL",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Prefix",
@@ -2772,20 +3149,25 @@
               "t": "Desen",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Base URL URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "zh-cn": {
-          "file": "acadcf5cb9e8",
+          "file": "b5d145c4deab",
           "counts": {
-            "esri": 52,
+            "esri": 53,
             "esri-check": 4,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -2813,6 +3195,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "服务 URL",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "前缀",
               "src": "machine",
@@ -2832,20 +3219,25 @@
               "t": "图案",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "基础 URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "uk": {
-          "file": "c70c301818b5",
+          "file": "5fd0a3c85d6c",
           "counts": {
-            "esri": 56,
+            "esri": 57,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -2862,6 +3254,11 @@
               "t": "Перетягніть на переадресацію",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "Статус на сервери",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Префікс",
@@ -2882,20 +3279,25 @@
               "t": "Візерунок",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "База URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "vi": {
-          "file": "041001686970",
+          "file": "2ea4ea261d9f",
           "counts": {
-            "esri": 55,
+            "esri": 56,
             "esri-check": 3,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "manual": {
@@ -2912,6 +3314,11 @@
               "t": "Kéo để đặt lại",
               "src": "machine",
               "h": "e7541faf0a7e"
+            },
+            "serviceUrl": {
+              "t": "URL dịch vụ",
+              "src": "machine",
+              "h": "077225837f3d"
             },
             "prefix": {
               "t": "Tiền tố",
@@ -2932,20 +3339,25 @@
               "t": "Mẫu",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "URL cơ bản",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "zh-hk": {
-          "file": "419020d22738",
+          "file": "7f214c08e5af",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -2973,6 +3385,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "服務網址",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "前缀",
               "src": "machine",
@@ -2992,20 +3409,25 @@
               "t": "樣式",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "基址",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         },
         "zh-tw": {
-          "file": "419020d22738",
+          "file": "7f214c08e5af",
           "counts": {
-            "esri": 54,
+            "esri": 55,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 2,
-            "machine": 7,
+            "machine": 9,
             "stale": 0,
-            "missing": 160
+            "missing": 164
           },
           "entries": {
             "locatorSourceErrorHint": {
@@ -3033,6 +3455,11 @@
               "src": "machine",
               "h": "e7541faf0a7e"
             },
+            "serviceUrl": {
+              "t": "服務網址",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
             "prefix": {
               "t": "前缀",
               "src": "machine",
@@ -3052,6 +3479,11 @@
               "t": "樣式",
               "src": "machine",
               "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "基址",
+              "src": "machine",
+              "h": "1dbd61f556fe"
             }
           }
         }

@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Selectați o hartă pentru configurări suplimentare.",
         customizeSearchSources: "Personalizați sursele de căutare",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Widget hartă",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -117,7 +117,7 @@ System.register([], function (e) {
         sourcesCountSource: "{sourcesCount} source",
         sourcesCountSources: "{sourcesCount} sources",
         expandAll: "Extindere toate",
-        collapseAll: "Collapse all",
+        collapseAll: "Restrângere toate",
         geocode: "Geocod",
         data: "Date",
         layer: "Strat tematic",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Substituent",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "URL- ul serviciului",
         prefix: "Prefix",
         suffix: "Sufix",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "se termină cu",
         contains: "conține",
         pattern: "Model",
-        baseUrl: "Base URL",
+        baseUrl: "URL de bază",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Nu am putut citi fișierul selectat.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

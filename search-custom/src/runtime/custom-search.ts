@@ -12,6 +12,7 @@ import {
   type LookupRuleConfig,
   LookupOutputType
 } from '../config'
+import { __t, __tc } from './i18n-t'
 
 // ---------------------------------------------------------------------------
 // String / token helpers
@@ -69,7 +70,7 @@ export const formatUrlValueJS = (
   const lower = value.toLowerCase()
   const rule = rules.find(r => matches(lower, r))
   const href = rule && rule.baseUrl ? `${rule.baseUrl}${value}` : value
-  const text = (rule && rule.linkText) || 'Open link'
+  const text = (rule && rule.linkText) || __t("openLink")
   const aria = `${label}, opens in a new tab`
   return `<div style="margin:0;padding:0;line-height:1.2;"><b>${label}:</b> ` +
     `<a target="_blank" rel="noopener noreferrer" aria-label="${aria}" href="${href}">${text}</a></div>`
@@ -107,7 +108,7 @@ export const buildArcadeExpression = (config: CustomSearchConfig): string => {
   const formatChecks = rules.map(r => {
     const p = escapeArcade(r.pattern.toLowerCase())
     const n = r.pattern.length
-    const text = escapeArcade(r.linkText || 'Open link')
+    const text = escapeArcade(__tc(r.linkText, "openLink"))
     const href = r.baseUrl
       ? `"${escapeArcade(r.baseUrl)}" + valText`
       : 'valText'

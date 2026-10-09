@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Selecteer een kaart voor verdere configuraties.",
         customizeSearchSources: "Zoekbronnen aanpassen",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Mapwidget",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Tijdelijke aanduiding",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "Service-URL",
         prefix: "Voorvoegsel",
         suffix: "Achtervoegsel",
         suggestionsForThisSource: "Suggestions for this source",
@@ -148,7 +148,7 @@ System.register([], function (e) {
         searchTemplate: "Search template",
         locationType: "Location type",
         default: "Standaard",
-        street: "Street",
+        street: "Straat",
         rooftop: "Rooftop",
         remove: "Verwijderen",
         removeSearchSourceName: "Remove search source {name}",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "eindigt met",
         contains: "bevat",
         pattern: "Patroon",
-        baseUrl: "Base URL",
+        baseUrl: "Basis-URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Kon het geselecteerde bestand niet lezen.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

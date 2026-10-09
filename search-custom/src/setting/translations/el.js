@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Επιλέξτε χάρτη για περαιτέρω ρύθμιση παραμέτρων.",
         customizeSearchSources: "Προσαρμογή πηγών αναζήτησης",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Γραφικό συστατικό χάρτη",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Κείμενο υπόδειξης",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "URL υπηρεσίας",
         prefix: "Πρόθεμα",
         suffix: "Επίθημα",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "τελειώνει σε",
         contains: "περιέχει",
         pattern: "Μοτίβο",
-        baseUrl: "Base URL",
+        baseUrl: "Βασικό URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Αδυναμία ανάγνωσης του επιλεγμένου αρχείου.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

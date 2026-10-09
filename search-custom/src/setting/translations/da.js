@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Vælg et kort med henblik på yderligere konfigurationer.",
         customizeSearchSources: "Tilpas søgekilder",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Kortkontrol",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -148,7 +148,7 @@ System.register([], function (e) {
         searchTemplate: "Search template",
         locationType: "Location type",
         default: "Standard",
-        street: "Street",
+        street: "Gade",
         rooftop: "Rooftop",
         remove: "Fjern",
         removeSearchSourceName: "Remove search source {name}",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "slutter med",
         contains: "indeholder",
         pattern: "Mønster",
-        baseUrl: "Base URL",
+        baseUrl: "Base- URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Kunne ikke læse den markerede fil.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

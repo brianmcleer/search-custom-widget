@@ -15,7 +15,22 @@ System.register([], function (e) {
         clearThisHistories: "Xóa lịch sử này",
         clearRecentSearches: "Các tìm kiếm gần đây",
         searchIn: "Tìm kiếm trong {value}",
-        searchResults: "Kết quả tìm kiếm"
+        searchResults: "Kết quả tìm kiếm",
+        uiMapSearch: "Map search",
+        uiSearchAgainFor: "Search again for {t}",
+        uiClearRecentSearchHistory: "Clear recent search history",
+        uiClearRecentSearches: "Clear recent searches",
+        openLink: "Open link",
+        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
+        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        location: "{LOCATION}",
+        search: "Tìm kiếm",
+        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        result: "{result}",
+        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
+        theMapViewDidNotFinish: "The map view did not finish loading.",
+        unknownError: "unknown error",
+        unserializableError: "unserializable error"
       })
     }
   }

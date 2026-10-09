@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "เลือกแผนที่สำหรับการกำหนดค่าเพิ่มเติม",
         customizeSearchSources: "ปรับแต่งแหล่งที่มีการค้นหา",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "วิดเจ็ตของแผนที่",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "ตัวยึด",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "ที่อยู่ URL ของบริการ",
         prefix: "นําหน้า",
         suffix: "แปรงทาสี",
         suggestionsForThisSource: "Suggestions for this source",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "จบด้วย",
         contains: "มีอยู่",
         pattern: "รูปแบบ",
-        baseUrl: "Base URL",
+        baseUrl: "ที่อยู่ URL หลัก",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "ไม่สามารถอ่านแฟ้มที่เลือกไว้ได้.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }

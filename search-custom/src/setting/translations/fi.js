@@ -32,7 +32,7 @@ System.register([], function (e) {
         searchPlaceholder: "Valitse kartta lisämäärityksiä varten.",
         customizeSearchSources: "Mukauta hakulähteitä",
         advancedConfigurationValueJson: "Advanced configuration value (JSON)",
-        mapWidget: "Map widget",
+        mapWidget: "Karttaelementti",
         transferSettingsXml: "Transfer settings (XML)",
         moveThisExactConfigurationBetweenApps: "Move this exact configuration between apps. Export a portable XML file, then import it into another Search (Custom) widget.",
         exportXmlFile: "Export XML file",
@@ -128,7 +128,7 @@ System.register([], function (e) {
         placeholder: "Paikkamerkki",
         boundToAppDataSource: "Bound to app data source",
         manageWhichDataSourcesAreAvailable: ". Manage which data sources are available in the \"App data sources\" picker below.",
-        serviceUrl: "Service URL",
+        serviceUrl: "Palvelun URL",
         prefix: "Etuliite",
         suffix: "Loppuliite",
         suggestionsForThisSource: "Suggestions for this source",
@@ -148,7 +148,7 @@ System.register([], function (e) {
         searchTemplate: "Search template",
         locationType: "Location type",
         default: "Oletusarvo",
-        street: "Street",
+        street: "Katu",
         rooftop: "Rooftop",
         remove: "Poista",
         removeSearchSourceName: "Remove search source {name}",
@@ -225,9 +225,16 @@ System.register([], function (e) {
         endsWith: "päättyy merkkiin",
         contains: "sisältää",
         pattern: "Kuvio",
-        baseUrl: "Base URL",
+        baseUrl: "Perus URL",
         linkText: "Link text",
-        addUrlRule: "+ Add URL rule"
+        addUrlRule: "+ Add URL rule",
+        configurationExported: "Configuration exported.",
+        configurationImportedAndApplied: "Configuration imported and applied.",
+        couldNotReadTheSelectedFile: "Valittua tiedostoa ei voitu lukea.",
+        location: "{LOCATION}",
+        result: "{result}",
+        text: "{label,value,isLink?,href?}",
+        text2: "{field,label?}"
       })
     }
   }
