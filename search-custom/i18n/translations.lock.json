@@ -199,12 +199,12 @@
         "bs": {
           "file": "737455c7f573",
           "counts": {
-            "esri": 13,
+            "esri": 15,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 13,
+            "machine": 11,
             "stale": 0,
             "missing": 1
           },
@@ -268,16 +268,6 @@
               "t": "Prikaz mape nije završio učitavanje.",
               "src": "machine",
               "h": "2074ef52ec60"
-            },
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
             }
           }
         },
@@ -1089,12 +1079,12 @@
         "hr": {
           "file": "ef79d90bcd87",
           "counts": {
-            "esri": 13,
+            "esri": 15,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 14,
+            "machine": 12,
             "stale": 0,
             "missing": 0
           },
@@ -1163,16 +1153,6 @@
               "t": "Prikaz mape nije završio s učitavanjem.",
               "src": "machine",
               "h": "2074ef52ec60"
-            },
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
             }
           }
         },
@@ -2484,12 +2464,12 @@
         "sr": {
           "file": "290dfc15a86d",
           "counts": {
-            "esri": 13,
+            "esri": 15,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 14,
+            "machine": 12,
             "stale": 0,
             "missing": 0
           },
@@ -2558,16 +2538,6 @@
               "t": "Pogled na mapu nije završio učitavanje.",
               "src": "machine",
               "h": "2074ef52ec60"
-            },
-            "unknownError": {
-              "t": "nepoznata greška",
-              "src": "machine",
-              "h": "af6321ca7a8b"
-            },
-            "unserializableError": {
-              "t": "Neserijalizacijska greška",
-              "src": "machine",
-              "h": "76e73551597a"
             }
           }
         },
@@ -5271,14 +5241,14 @@
           }
         },
         "bs": {
-          "file": "13bd854904fe",
+          "file": "405bcfdc31bc",
           "counts": {
-            "esri": 56,
+            "esri": 58,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 174,
+            "machine": 172,
             "stale": 0,
             "missing": 4
           },
@@ -5287,11 +5257,6 @@
               "t": "Napredna vrijednost za podešavanja",
               "src": "machine",
               "h": "8a6e5efcf23f"
-            },
-            "mapWidget": {
-              "t": "Mapa grafičkog elementa",
-              "src": "machine",
-              "h": "8b918e901bfa"
             },
             "transferSettingsXml": {
               "t": "Podešavanje prijenosa",
@@ -6112,11 +6077,6 @@
               "t": "Konfiguracija uvezena i primijenjena.",
               "src": "machine",
               "h": "c976875e88cd"
-            },
-            "couldNotReadTheSelectedFile": {
-              "t": "Nisam mogao pročitati izabranu datoteku",
-              "src": "machine",
-              "h": "ec63f7b5577c"
             },
             "location": {
               "t": "{LOCATION}",
@@ -15208,12 +15168,12 @@
         "hr": {
           "file": "68ab3dc26f39",
           "counts": {
-            "esri": 56,
+            "esri": 58,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 177,
+            "machine": 175,
             "stale": 0,
             "missing": 1
           },
@@ -15222,11 +15182,6 @@
               "t": "Napredna konfiguracijska vrijednost (JSON)",
               "src": "machine",
               "h": "8a6e5efcf23f"
-            },
-            "mapWidget": {
-              "t": "Grafički element mape",
-              "src": "machine",
-              "h": "8b918e901bfa"
             },
             "transferSettingsXml": {
               "t": "Postavke prijenosa (XML)",
@@ -16062,11 +16017,6 @@
               "t": "Konfiguracija uvezena i primijenjena.",
               "src": "machine",
               "h": "c976875e88cd"
-            },
-            "couldNotReadTheSelectedFile": {
-              "t": "Ne mogu pročitati odabranu datoteku.",
-              "src": "machine",
-              "h": "ec63f7b5577c"
             },
             "location": {
               "t": "{LOCATION}",
@@ -30523,12 +30473,12 @@
         "sr": {
           "file": "e070e02e2a4a",
           "counts": {
-            "esri": 56,
+            "esri": 58,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 178,
+            "machine": 176,
             "stale": 0,
             "missing": 0
           },
@@ -30537,11 +30487,6 @@
               "t": "Napredna konfiguraciona vrednost (JSON)",
               "src": "machine",
               "h": "8a6e5efcf23f"
-            },
-            "mapWidget": {
-              "t": "Мапа виџетаQShortcut",
-              "src": "machine",
-              "h": "8b918e901bfa"
             },
             "transferSettingsXml": {
               "t": "Поставке преноса (XML)",
@@ -31382,11 +31327,6 @@
               "t": "Konfiguracija uvezena i primenjena.",
               "src": "machine",
               "h": "c976875e88cd"
-            },
-            "couldNotReadTheSelectedFile": {
-              "t": "Ne mogu da pročitam odabranu datoteku.",
-              "src": "machine",
-              "h": "ec63f7b5577c"
             },
             "location": {
               "t": "{LOCATION}",

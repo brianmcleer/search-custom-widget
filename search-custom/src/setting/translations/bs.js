@@ -230,7 +230,7 @@ System.register([], function (e) {
         addUrlRule: "+ Dodaj pravilo URL-a",
         configurationExported: "Konfiguracija izvezena.",
         configurationImportedAndApplied: "Konfiguracija uvezena i primijenjena.",
-        couldNotReadTheSelectedFile: "Nisam mogao pročitati izabranu datoteku",
+        couldNotReadTheSelectedFile: "Nisam mogao pročitati izabranu datoteku.",
         location: "{LOCATION}",
         result: "{result}",
         text: "{Oznaka, vrijednost, je li Link?,href?}",
