@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Skorašnje pretrage",
         searchIn: "Pretražite u {value}",
         searchResults: "Rezultat pretrage",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Potraga za mapom",
+        uiSearchAgainFor: "Traži ponovo {t}",
+        uiClearRecentSearchHistory: "Очисти скорашњу историју претраге",
+        uiClearRecentSearches: "Очисти скорашње претраге",
+        openLink: "Otvori link",
+        noMapLinkedOpenThisWidget: "Nema mape. Otvorite postavke ovog grafičkog elementa i izaberite mapu pod “Map widget”.",
+        customSearchIsTurnedOffIn: "Vlastita pretraga je iskljuèena u postavkama.",
         location: "{LOCATION}",
         search: "Pretraži",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Pretraga nije mogla biti kreirana. Pogledajte konzolu pretraživača.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Ova konfiguracija pretraživanja nije mogla biti izgrađena. Da je samo uvezena, ponovo provjerite izvore i skočne postavke u ovom grafičkom elementu.",
+        theMapViewDidNotFinish: "Pogled na mapu nije završio učitavanje.",
+        unknownError: "nepoznata greška",
+        unserializableError: "Neserijalizacijska greška"
       })
     }
   }

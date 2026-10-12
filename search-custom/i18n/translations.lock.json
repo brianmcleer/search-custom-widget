@@ -197,22 +197,87 @@
           }
         },
         "bs": {
-          "file": "05a735f33b0c",
+          "file": "737455c7f573",
           "counts": {
             "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 0,
+            "machine": 13,
             "stale": 0,
-            "missing": 14
+            "missing": 1
           },
           "entries": {
             "_widgetLabel": {
               "t": "Pretraživanje",
               "src": "existing",
               "h": "a74386da8c60"
+            },
+            "uiMapSearch": {
+              "t": "_Pretrage",
+              "src": "machine",
+              "h": "3d4986859fc6"
+            },
+            "uiClearRecentSearchHistory": {
+              "t": "Očisti historiju skorašnje pretrage",
+              "src": "machine",
+              "h": "874d9305bdb5"
+            },
+            "uiClearRecentSearches": {
+              "t": "_Očisti skorašnje pretrage",
+              "src": "machine",
+              "h": "692409583657"
+            },
+            "openLink": {
+              "t": "Otvori link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
+            },
+            "noMapLinkedOpenThisWidget": {
+              "t": "Nijedna mapa nije povezana. Otvori postavke ovog grafičkog elementa i izaberi svoju kartu pod \\\"Map widget\\\".",
+              "src": "machine",
+              "h": "ac56100c9eed"
+            },
+            "customSearchIsTurnedOffIn": {
+              "t": "Vlastita pretraga je isključena u postavkama.",
+              "src": "machine",
+              "h": "a55d2f23968e"
+            },
+            "location": {
+              "t": "{LOCATION}",
+              "src": "machine",
+              "h": "96a680aff28f"
+            },
+            "searchCouldNotBeCreatedSee": {
+              "t": "Nije moguće napraviti pretragu. Pogledajte konzolu preglednika.",
+              "src": "machine",
+              "h": "8da4016f7bc0"
+            },
+            "result": {
+              "t": "{result}",
+              "src": "machine",
+              "h": "1c4ecae47e72"
+            },
+            "thisSearchConfigurationCouldNotBe": {
+              "t": "Ova konfiguracija pretraživanja nije mogla biti izgrađena. Da je samo uvezena, ponovo provjerite izvore i popup postavke u ovom grafičkom elementu.",
+              "src": "machine",
+              "h": "dba91c4b9e95"
+            },
+            "theMapViewDidNotFinish": {
+              "t": "Prikaz mape nije završio učitavanje.",
+              "src": "machine",
+              "h": "2074ef52ec60"
+            },
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
             }
           }
         },
@@ -1022,22 +1087,92 @@
           }
         },
         "hr": {
-          "file": "05a735f33b0c",
+          "file": "ef79d90bcd87",
           "counts": {
             "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 0,
+            "machine": 14,
             "stale": 0,
-            "missing": 14
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
               "t": "Pretraživanje",
               "src": "existing",
               "h": "a74386da8c60"
+            },
+            "uiMapSearch": {
+              "t": "Traži po karti",
+              "src": "machine",
+              "h": "3d4986859fc6"
+            },
+            "uiSearchAgainFor": {
+              "t": "Traži ponovo {t}",
+              "src": "machine",
+              "h": "ae360b30fa2a"
+            },
+            "uiClearRecentSearchHistory": {
+              "t": "Očisti skorašnju povijest pretraživanja",
+              "src": "machine",
+              "h": "874d9305bdb5"
+            },
+            "uiClearRecentSearches": {
+              "t": "Očisti skorašnje pretrage",
+              "src": "machine",
+              "h": "692409583657"
+            },
+            "openLink": {
+              "t": "Otvori poveznicu",
+              "src": "machine",
+              "h": "d2de1a2831e7"
+            },
+            "noMapLinkedOpenThisWidget": {
+              "t": "Karta nije povezana. Otvorite postavke ovog grafičkog elementa i odaberite kartu pod “Map widget”.",
+              "src": "machine",
+              "h": "ac56100c9eed"
+            },
+            "customSearchIsTurnedOffIn": {
+              "t": "Vlastita pretraga je isključena u postavkama.",
+              "src": "machine",
+              "h": "a55d2f23968e"
+            },
+            "location": {
+              "t": "{LOCATION}",
+              "src": "machine",
+              "h": "96a680aff28f"
+            },
+            "searchCouldNotBeCreatedSee": {
+              "t": "Pretraga nije mogla biti napravljena. Pogledajte konzolu preglednika.",
+              "src": "machine",
+              "h": "8da4016f7bc0"
+            },
+            "result": {
+              "t": "{result}",
+              "src": "machine",
+              "h": "1c4ecae47e72"
+            },
+            "thisSearchConfigurationCouldNotBe": {
+              "t": "Ova konfiguracija pretraživanja nije mogla biti izgrađena. Ako je samo uvezena, ponovno provjerite izvore i skočne postavke u ovom widgetu.",
+              "src": "machine",
+              "h": "dba91c4b9e95"
+            },
+            "theMapViewDidNotFinish": {
+              "t": "Prikaz mape nije završio s učitavanjem.",
+              "src": "machine",
+              "h": "2074ef52ec60"
+            },
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
             }
           }
         },
@@ -2347,22 +2482,92 @@
           }
         },
         "sr": {
-          "file": "224922e3fe05",
+          "file": "290dfc15a86d",
           "counts": {
             "esri": 13,
             "esri-check": 0,
             "community": 0,
             "manual": 0,
             "existing": 1,
-            "machine": 0,
+            "machine": 14,
             "stale": 0,
-            "missing": 14
+            "missing": 0
           },
           "entries": {
             "_widgetLabel": {
               "t": "Pretraži",
               "src": "existing",
               "h": "a74386da8c60"
+            },
+            "uiMapSearch": {
+              "t": "Potraga za mapom",
+              "src": "machine",
+              "h": "3d4986859fc6"
+            },
+            "uiSearchAgainFor": {
+              "t": "Traži ponovo {t}",
+              "src": "machine",
+              "h": "ae360b30fa2a"
+            },
+            "uiClearRecentSearchHistory": {
+              "t": "Очисти скорашњу историју претраге",
+              "src": "machine",
+              "h": "874d9305bdb5"
+            },
+            "uiClearRecentSearches": {
+              "t": "Очисти скорашње претраге",
+              "src": "machine",
+              "h": "692409583657"
+            },
+            "openLink": {
+              "t": "Otvori link",
+              "src": "machine",
+              "h": "d2de1a2831e7"
+            },
+            "noMapLinkedOpenThisWidget": {
+              "t": "Nema mape. Otvorite postavke ovog grafičkog elementa i izaberite mapu pod “Map widget”.",
+              "src": "machine",
+              "h": "ac56100c9eed"
+            },
+            "customSearchIsTurnedOffIn": {
+              "t": "Vlastita pretraga je iskljuèena u postavkama.",
+              "src": "machine",
+              "h": "a55d2f23968e"
+            },
+            "location": {
+              "t": "{LOCATION}",
+              "src": "machine",
+              "h": "96a680aff28f"
+            },
+            "searchCouldNotBeCreatedSee": {
+              "t": "Pretraga nije mogla biti kreirana. Pogledajte konzolu pretraživača.",
+              "src": "machine",
+              "h": "8da4016f7bc0"
+            },
+            "result": {
+              "t": "{result}",
+              "src": "machine",
+              "h": "1c4ecae47e72"
+            },
+            "thisSearchConfigurationCouldNotBe": {
+              "t": "Ova konfiguracija pretraživanja nije mogla biti izgrađena. Da je samo uvezena, ponovo provjerite izvore i skočne postavke u ovom grafičkom elementu.",
+              "src": "machine",
+              "h": "dba91c4b9e95"
+            },
+            "theMapViewDidNotFinish": {
+              "t": "Pogled na mapu nije završio učitavanje.",
+              "src": "machine",
+              "h": "2074ef52ec60"
+            },
+            "unknownError": {
+              "t": "nepoznata greška",
+              "src": "machine",
+              "h": "af6321ca7a8b"
+            },
+            "unserializableError": {
+              "t": "Neserijalizacijska greška",
+              "src": "machine",
+              "h": "76e73551597a"
             }
           }
         },
@@ -5066,18 +5271,889 @@
           }
         },
         "bs": {
-          "file": "4b729304cb1f",
+          "file": "13bd854904fe",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 174,
             "stale": 0,
-            "missing": 178
+            "missing": 4
           },
-          "entries": {}
+          "entries": {
+            "advancedConfigurationValueJson": {
+              "t": "Napredna vrijednost za podešavanja",
+              "src": "machine",
+              "h": "8a6e5efcf23f"
+            },
+            "mapWidget": {
+              "t": "Mapa grafičkog elementa",
+              "src": "machine",
+              "h": "8b918e901bfa"
+            },
+            "transferSettingsXml": {
+              "t": "Podešavanje prijenosa",
+              "src": "machine",
+              "h": "0a0483016120"
+            },
+            "moveThisExactConfigurationBetweenApps": {
+              "t": "Pomjeri ovu tačnu konfiguraciju između aplikacija. Izvezi prijenosnu XML datoteku, a zatim je uvezi u drugi grafički element Pretraga (Custom).",
+              "src": "machine",
+              "h": "39d1d0a8788f"
+            },
+            "exportXmlFile": {
+              "t": "Uvezi XML datoteku",
+              "src": "machine",
+              "h": "89e94d285df6"
+            },
+            "importViewXml": {
+              "t": "Uvezi/pogled XML",
+              "src": "machine",
+              "h": "c12e1fd5f8eb"
+            },
+            "importFromFile": {
+              "t": "Uvezi iz datoteke",
+              "src": "machine",
+              "h": "b337930e9dc5"
+            },
+            "chooseXmlFile": {
+              "t": "Izaberite .xml datoteku...",
+              "src": "machine",
+              "h": "9ef5e84c29a2"
+            },
+            "orPasteXmlAndApply": {
+              "t": "Ili zalijepi XML i primijeni",
+              "src": "machine",
+              "h": "d264e6db9145"
+            },
+            "pasteConfigurationXmlToImport": {
+              "t": "Umetni XML podešavanja za uvoz",
+              "src": "machine",
+              "h": "8806e8ffbd3f"
+            },
+            "pasteExportedLtSearchCustomConfigGtXml": {
+              "t": "Umetni ovdje izvezeno &lt;searchCustomConfig&gt; XML...",
+              "src": "machine",
+              "h": "c7a26dd0cced"
+            },
+            "applyPastedXml": {
+              "t": "Primijeni zabilješku XML",
+              "src": "machine",
+              "h": "c4278aedb255"
+            },
+            "currentConfigurationReadOnly": {
+              "t": "Trenutna podešavanja (samo za čitanje)",
+              "src": "machine",
+              "h": "24201e1fe6bf"
+            },
+            "currentConfigurationAsXmlReadOnly": {
+              "t": "Trenutna konfiguracija kao XML (samo za čitanje)",
+              "src": "machine",
+              "h": "d31bf7ebce46"
+            },
+            "enableCustomSearch": {
+              "t": "Omogući vlastitu pretragu",
+              "src": "machine",
+              "h": "fb98f9610d33"
+            },
+            "allPlaceholder": {
+              "t": "Sve držač mjesta",
+              "src": "machine",
+              "h": "a0912b25ea7a"
+            },
+            "zoomScaleOnResult": {
+              "t": "Uvećaj skalu pri rezultatu",
+              "src": "machine",
+              "h": "3add2494da81"
+            },
+            "popupBehavior": {
+              "t": "Popup ponašanje",
+              "src": "machine",
+              "h": "724b7bb35461"
+            },
+            "noneZoomOnly": {
+              "t": "Nijedan (samo zoom)",
+              "src": "machine",
+              "h": "674c5c624bf0"
+            },
+            "useTheLayerSOwnPopup": {
+              "t": "Koristi vlastiti popup sloja (iz web mape)",
+              "src": "machine",
+              "h": "f6b40fdb258e"
+            },
+            "layerAutoFieldPopupArcade": {
+              "t": "Sloj automatsko polje popup (Arcade)",
+              "src": "machine",
+              "h": "aadda7e605b9"
+            },
+            "spatialLookupPopup": {
+              "t": "Prostorno pretraživanjepopup",
+              "src": "machine",
+              "h": "121eb029bbad"
+            },
+            "eachResultOpensThePopupAlready": {
+              "t": "Svaki rezultat otvara popup već podešen na svom sloju.",
+              "src": "machine",
+              "h": "d2fb8a41fceb"
+            },
+            "sourcesThisIsThePopupFrom": {
+              "t": "Izvori ovo je popup sa web mape; za servis-URL izvore SDK gradi uobičajeni skočni prikaz polja. Grafički element ne dodaje vlastiti popup.",
+              "src": "machine",
+              "h": "e1c856c71b88"
+            },
+            "appDataSource": {
+              "t": "izvor podataka aplikacije",
+              "src": "machine",
+              "h": "8af0a32b3e03"
+            },
+            "initialSearchTerm": {
+              "t": "Početni izraz za pretragu",
+              "src": "machine",
+              "h": "a556fd1f9a89"
+            },
+            "searchBehavior": {
+              "t": "Ponašanje pretraživanja",
+              "src": "machine",
+              "h": "2b2cbe59e161"
+            },
+            "theseMapDirectlyToTheArcGIS": {
+              "t": "Ove karte su direktno na opcije grafičkog elementa za pretragu ArcGIS-a.",
+              "src": "machine",
+              "h": "2971e8d2f037"
+            },
+            "autoSelectFirstResult": {
+              "t": "Automatski izaberi prvi rezultat",
+              "src": "machine",
+              "h": "748257656214"
+            },
+            "showAllSearchEverySource": {
+              "t": "Prikaži _sve (pretraži sve izvore)",
+              "src": "machine",
+              "h": "d18860cca87b"
+            },
+            "showUseCurrentLocation": {
+              "t": "PrikažiKoristi trenutnu lokaciju",
+              "src": "machine",
+              "h": "23935e47e087"
+            },
+            "drawResultGraphic": {
+              "t": "Nacrtaj grafiku rezultata",
+              "src": "machine",
+              "h": "3423ce05590f"
+            },
+            "enableSuggestions": {
+              "t": "Omogući prijedloge",
+              "src": "machine",
+              "h": "4d7c43140abe"
+            },
+            "minSuggestCharacters": {
+              "t": "Min. predlaže znakove",
+              "src": "machine",
+              "h": "86e39f4e66c8"
+            },
+            "maxResults": {
+              "t": "Maksimalni rezultati",
+              "src": "machine",
+              "h": "ffdf1ea4ad31"
+            },
+            "maxSuggestions": {
+              "t": "Maksimalni prijedlozi",
+              "src": "machine",
+              "h": "847e8d483db8"
+            },
+            "enablePopupsNoneLayerModes": {
+              "t": "Omogući popup prozore (None/Layer mode)",
+              "src": "machine",
+              "h": "24b8f70c0981"
+            },
+            "defaultSourceIndex1All": {
+              "t": "Uobičajeni indeks izvora (-1 = sve)",
+              "src": "machine",
+              "h": "4c7e7ab3b394"
+            },
+            "rememberRecentSearches": {
+              "t": "Ne mogu učitati %s: %s",
+              "src": "machine",
+              "h": "70df3267f736"
+            },
+            "howManyToRemember": {
+              "t": "Koliko da zapamtim?",
+              "src": "machine",
+              "h": "7cb36cb45a99"
+            },
+            "howManyRecentSearchesToRemember": {
+              "t": "Koliko nedavnih pretraga treba zapamtiti",
+              "src": "machine",
+              "h": "83ac51b12066"
+            },
+            "recentSearchesAreStoredOnlyIn": {
+              "t": "Nedavne pretrage su pohranjene samo u ovom pregledniku (lokalno skladištenje) i prikazane su kao brzi čipovi ispod okvira za pretraživanje. Svaki posjetitelj vidi svoje; ništa nije poslano bilo gdje.",
+              "src": "machine",
+              "h": "bd79a2b28487"
+            },
+            "resultNavigation": {
+              "t": "Navigacija rezultata",
+              "src": "machine",
+              "h": "f7cef9a0dd57"
+            },
+            "zoomToResultOnSelect": {
+              "t": "Uvećaj da bi rezultirao odabirom",
+              "src": "machine",
+              "h": "81fb45a370ff"
+            },
+            "howTheMapMovesToA": {
+              "t": "Način na koji mapa prelazi na rezultat",
+              "src": "machine",
+              "h": "66cf874e107c"
+            },
+            "zoomToFixedScale": {
+              "t": "Uvećaj na fiksnu skalu",
+              "src": "machine",
+              "h": "83f31f4d823f"
+            },
+            "fitToResultExtent": {
+              "t": "Podesi u opsegu rezultata",
+              "src": "machine",
+              "h": "7616ff9a98b4"
+            },
+            "fitToResultExtentFramesThe": {
+              "t": "Uklapa se u meru rezultata uokvirena je čitava osobina (parcel, okrug, ulica). Rezultati tačaka još uvijek koriste fiksnu skalu.",
+              "src": "machine",
+              "h": "bad417c143f8"
+            },
+            "animateTheZoom": {
+              "t": "Animiraj uvećanje",
+              "src": "machine",
+              "h": "0fdbe9352774"
+            },
+            "animationDurationMs": {
+              "t": "Trajanje animacije",
+              "src": "machine",
+              "h": "9101bf414463"
+            },
+            "openPopupOnResultSelect": {
+              "t": "Otvori popup pri izboru rezultata",
+              "src": "machine",
+              "h": "b60e03be0826"
+            },
+            "whereTheSearchBoxAppears": {
+              "t": "Gdje se pojavljuje okvir za pretragu",
+              "src": "machine",
+              "h": "6aac60eb8bd6"
+            },
+            "inTheWidgetWherePlaced": {
+              "t": "U grafički element (gdje se nalazi)",
+              "src": "machine",
+              "h": "5450c490a06e"
+            },
+            "dockedOnTheMap": {
+              "t": "Pristajanje na mapi",
+              "src": "machine",
+              "h": "7e4a66115c91"
+            },
+            "mapPosition": {
+              "t": "Pozicija mape",
+              "src": "machine",
+              "h": "06ee39c1e532"
+            },
+            "manual": {
+              "t": "Ručno",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "searchBarStyle": {
+              "t": "_Pretrage",
+              "src": "machine",
+              "h": "57a35ee37912"
+            },
+            "defaultNative": {
+              "t": "Uobičajeno",
+              "src": "machine",
+              "h": "2e7ddfb38537"
+            },
+            "squareSharpCorners": {
+              "t": "Kvadrat (oštri uglovi)",
+              "src": "machine",
+              "h": "4c243bde40c5"
+            },
+            "curveRoundedPill": {
+              "t": "Okvir (okružena / pilula)",
+              "src": "machine",
+              "h": "3a739aae9f0b"
+            },
+            "linearUnderlineOnly": {
+              "t": "Linearno (samo podvučeno)",
+              "src": "machine",
+              "h": "e893ae8137b0"
+            },
+            "floatingElevatedCard": {
+              "t": "Plutajuće (dizala karta)",
+              "src": "machine",
+              "h": "0cbda0c4c916"
+            },
+            "softFilledPill": {
+              "t": "Meka (punjena pilula)",
+              "src": "machine",
+              "h": "6eac2bf0e54d"
+            },
+            "searchBarSize": {
+              "t": "_Pretrage",
+              "src": "machine",
+              "h": "5bafb5af4d9f"
+            },
+            "comfortable": {
+              "t": "Udobno",
+              "src": "machine",
+              "h": "2313707a4e5c"
+            },
+            "accentColor": {
+              "t": "Boja akcenta",
+              "src": "machine",
+              "h": "e49578edcffe"
+            },
+            "accentColorHex": {
+              "t": "Boja akcenta (hex)",
+              "src": "machine",
+              "h": "a7242615c33b"
+            },
+            "styleAndSizeAreVisualThemes": {
+              "t": "Stil i veličina su vizuelne teme koje se primjenjuju uživo na okvir za pretraživanje;Default ostavlja domorodački izgled netaknut. Akcentna boja pokreće fokusni prsten i dugme lebdi preko ne-default stilova.",
+              "src": "machine",
+              "h": "fc867d799db1"
+            },
+            "searchSources": {
+              "t": "_Pretrage",
+              "src": "machine",
+              "h": "93386c629711"
+            },
+            "eachEntryIsOneOptionIn": {
+              "t": "Svaki unos je jedna opcija u padu okvira za pretragu. Povucite ručku da prepravite redoslijed; kliknite red da je proširite ili srušite.",
+              "src": "machine",
+              "h": "a1fbcb4ed623"
+            },
+            "layerSource": {
+              "t": "+ Slojevi",
+              "src": "machine",
+              "h": "e785a53f2080"
+            },
+            "geocodeSource": {
+              "t": "+ Geocode izvor",
+              "src": "machine",
+              "h": "b3191b6bb308"
+            },
+            "dataSource": {
+              "t": "+ Izvor podataka",
+              "src": "machine",
+              "h": "e837686815df"
+            },
+            "pickOneOrMoreFeatureLayers": {
+              "t": "Izaberite jedan ili više slojeva osobina iz izvora podataka ove aplikacije; svaki se dodaje kao izvor za pretragu ispod. Veze su specifične za aplikaciju i ne prenose se XML izvozom.",
+              "src": "machine",
+              "h": "31dd1dc6cd29"
+            },
+            "sourcesCountSource": {
+              "t": "{sourcesCount} izvor",
+              "src": "machine",
+              "h": "f52b16e18f5f"
+            },
+            "sourcesCountSources": {
+              "t": "{sourcesCount} izvori",
+              "src": "machine",
+              "h": "88f6949aa97e"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Povuci na drugi redoslijed",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "unnamed": {
+              "t": "(neimenovano)",
+              "src": "machine",
+              "h": "fedbd2001524"
+            },
+            "boundToAppDataSource": {
+              "t": "Vezan za izvor podataka aplikacije",
+              "src": "machine",
+              "h": "051a8ed59549"
+            },
+            "manageWhichDataSourcesAreAvailable": {
+              "t": ". Upravljajte koji su izvori podataka dostupni uApp izvori podataka berač ispod.",
+              "src": "machine",
+              "h": "7771a0443acb"
+            },
+            "serviceUrl": {
+              "t": "Servis",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
+            "prefix": {
+              "t": "Prefiks",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Sufiks",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "suggestionsForThisSource": {
+              "t": "Prijedlozi za ovaj izvor",
+              "src": "machine",
+              "h": "382b424d97df"
+            },
+            "onlyWithinCurrentMapView": {
+              "t": "Samo unutar trenutnog pogleda na mapu",
+              "src": "machine",
+              "h": "182bf2ca8f2d"
+            },
+            "filterWhereClause": {
+              "t": "Filtriraj (gdje je klauzula)",
+              "src": "machine",
+              "h": "f58ed7bd09ba"
+            },
+            "searchFieldsComma": {
+              "t": "Polja za pretragu (comma)",
+              "src": "machine",
+              "h": "02861d33b301"
+            },
+            "resultSymbolColorRGB": {
+              "t": "Boja rezultata [r,g,b,a] (opcionalni JSON)",
+              "src": "machine",
+              "h": "67cf9585a302"
+            },
+            "customArcadePopupForThisSource": {
+              "t": "Prilagođeni Arcade popup za ovaj izvor (opcionalno; premošćuje djeljeni)",
+              "src": "machine",
+              "h": "73d5e29dd4b7"
+            },
+            "customArcadePopupExpressionForThis": {
+              "t": "Prilagođeni arcade popup izraz za ovaj izvor",
+              "src": "machine",
+              "h": "7e0906ca63e0"
+            },
+            "leaveBlankToUseTheShared": {
+              "t": "Ostavi prazno za korištenje zajedničkog popup izraza...",
+              "src": "machine",
+              "h": "166cd9c29211"
+            },
+            "singleLineField": {
+              "t": "Polje za jednokratnu liniju",
+              "src": "machine",
+              "h": "2c234de4d67e"
+            },
+            "countryCodeS": {
+              "t": "Country(i)",
+              "src": "machine",
+              "h": "bee355d68820"
+            },
+            "categoriesComma": {
+              "t": "Kategorije (comma)",
+              "src": "machine",
+              "h": "3eea732a6a49"
+            },
+            "searchTemplate": {
+              "t": "_Pretrage",
+              "src": "machine",
+              "h": "976065a56265"
+            },
+            "locationType": {
+              "t": "Tip lokacije",
+              "src": "machine",
+              "h": "8bab2712e213"
+            },
+            "rooftop": {
+              "t": "Krov",
+              "src": "machine",
+              "h": "84c7360a0cb7"
+            },
+            "popupDisplay": {
+              "t": "Popup prikaz",
+              "src": "machine",
+              "h": "8cb74b36283f"
+            },
+            "controlsTheMapPopupUsedBy": {
+              "t": "Kontroliše skočni prikaz mape koji se koristi u rezultatima pretrage (dijeljeni MapView popup). Primjenjuje gore izabrano ponašanje bilo kojeg popup-a.",
+              "src": "machine",
+              "h": "f4e6e6953b96"
+            },
+            "dockThePopup": {
+              "t": "Dock popup",
+              "src": "machine",
+              "h": "6c287fcfec00"
+            },
+            "autoDockOnSmallScreens": {
+              "t": "Automatsko pristajanje na malim ekranima",
+              "src": "machine",
+              "h": "13e309942aca"
+            },
+            "showDockUndockButton": {
+              "t": "Pokaži sidro/undok dugme",
+              "src": "machine",
+              "h": "0a8a2646c9da"
+            },
+            "showDockOrUndockButton": {
+              "t": "Pokaži sidro ili otkopčaj dugme",
+              "src": "machine",
+              "h": "237ae0291857"
+            },
+            "collapsiblePopup": {
+              "t": "Kolapsni popup",
+              "src": "machine",
+              "h": "7a59b286f1d0"
+            },
+            "highlightSelectedFeature": {
+              "t": "Istakni izabranu osobinu",
+              "src": "machine",
+              "h": "1139fad9680a"
+            },
+            "openAutomaticallyOnSelect": {
+              "t": "Otvori automatski pri odabiru",
+              "src": "machine",
+              "h": "73c49fee88da"
+            },
+            "maxInlineActions": {
+              "t": "Maksimalne dodatne akcije",
+              "src": "machine",
+              "h": "25ca5af14463"
+            },
+            "visiblePartsOfThePopup": {
+              "t": "Vidljivi dijelovi popup-a",
+              "src": "machine",
+              "h": "a51905a2cb1f"
+            },
+            "closeButton": {
+              "t": "Dugme",
+              "src": "machine",
+              "h": "6260c410860e"
+            },
+            "showCloseButton": {
+              "t": "Pokaži dugme za zatvaranje",
+              "src": "machine",
+              "h": "d09310380c6e"
+            },
+            "showCollapseButton": {
+              "t": "Pokaži dugme za rušenje",
+              "src": "machine",
+              "h": "69552ce5fb6c"
+            },
+            "featureNavigationPaging": {
+              "t": "Navigacija osobina (pagiranje)",
+              "src": "machine",
+              "h": "d657484ef550"
+            },
+            "showFeatureNavigation": {
+              "t": "Prikaži navigaciju osobina",
+              "src": "machine",
+              "h": "82e73518239e"
+            },
+            "headingTitle": {
+              "t": "Zaglavlje (naslov)",
+              "src": "machine",
+              "h": "e0ca67dc7fda"
+            },
+            "showHeading": {
+              "t": "Pokaži zaglavlje",
+              "src": "machine",
+              "h": "2c97ed7fdbe9"
+            },
+            "actionBar": {
+              "t": "Radnja",
+              "src": "machine",
+              "h": "5efb248ea045"
+            },
+            "showActionBar": {
+              "t": "Pokaži traku akcije",
+              "src": "machine",
+              "h": "34c61f0b7a4b"
+            },
+            "loadingSpinner": {
+              "t": "Učitavam okretač",
+              "src": "machine",
+              "h": "7296aa4a4837"
+            },
+            "showLoadingSpinner": {
+              "t": "Prikaži okretač za učitavanje",
+              "src": "machine",
+              "h": "a7329bd1bb2e"
+            },
+            "noteTheseConfigureTheMapS": {
+              "t": "Napomena: ovi konfigurišu dijeljeni popup karte, tako da također utječu na druge popup-ove otvorene na istoj karti.",
+              "src": "machine",
+              "h": "17d4b36aef59"
+            },
+            "layerPopupArcade": {
+              "t": "Sloj skočni (Arkada)",
+              "src": "machine",
+              "h": "66d3fa24eced"
+            },
+            "popupTitleTemplate": {
+              "t": "Šablon za crtanje naslova",
+              "src": "machine",
+              "h": "eab40211ce16"
+            },
+            "arcadeExpression": {
+              "t": "Arcade izraz",
+              "src": "machine",
+              "h": "237084494bd9"
+            },
+            "autoGenerateFromSettings": {
+              "t": "Automatsko generiranje iz postavki",
+              "src": "machine",
+              "h": "1b8d95934228"
+            },
+            "customWriteMyOwn": {
+              "t": "Prilagođeno",
+              "src": "machine",
+              "h": "a6314e1065f3"
+            },
+            "excludedFieldsComma": {
+              "t": "Isključena polja (comma)",
+              "src": "machine",
+              "h": "76be66be2a0b"
+            },
+            "theWidgetBuildsThePopupExpression": {
+              "t": "Grafički element gradi skočni izraz za vas od gore navedenih opcija: svako polje na sloju je navedeno (osim isključenih), i bilo koju vrijednost koja odgovara a",
+              "src": "machine",
+              "h": "d08d7fa5fc40"
+            },
+            "isTurnedIntoALinkThe": {
+              "t": "je pretvoren u link. Tačan izraz koji će koristiti je prikazan ispod.",
+              "src": "machine",
+              "h": "1cb5ecddc825"
+            },
+            "urlFormattingRule": {
+              "t": "Pravilo formatiranja URL-a",
+              "src": "machine",
+              "h": "ff30dd4662d9"
+            },
+            "generatedArcadeExpressionReadOnlyPreview": {
+              "t": "Generisani Arcade izraz (samo za čitanje)",
+              "src": "machine",
+              "h": "7d7a2d630097"
+            },
+            "generatedArcadePopupExpressionReadOnly": {
+              "t": "Generisao skočni izraz (samo za čitanje)",
+              "src": "machine",
+              "h": "9f341fda1a44"
+            },
+            "editThisExpressionSwitchToCustom": {
+              "t": "Izmijeni ovaj izraz",
+              "src": "machine",
+              "h": "cb7ebe452f1a"
+            },
+            "switchingToCustomCopiesThisGenerated": {
+              "t": "Prebacujem na Prilagođene kopije ovaj generirani izraz u okvir koji se može mijenjati tako da ga možete podesiti; nakon toga se više ne mijenja kada izmijenite gore navedene opcije.",
+              "src": "machine",
+              "h": "4bac09927092"
+            },
+            "youAreWritingTheArcadeExpression": {
+              "t": "Sami pišete izraz Arcade. Koristite dugme da ga resetujete iz auto-generirane verzije u svakom trenutku.",
+              "src": "machine",
+              "h": "848301d40054"
+            },
+            "resetFromAutoGenerated": {
+              "t": "Resetuj iz auto-generisanog",
+              "src": "machine",
+              "h": "8d3d19ecd0ae"
+            },
+            "backToAutoGenerate": {
+              "t": "Nazad na automatsko generiranje",
+              "src": "machine",
+              "h": "9f153048aeed"
+            },
+            "customArcadePopupExpression": {
+              "t": "Proizvoljni arcade popup izraz",
+              "src": "machine",
+              "h": "091567fcaf1c"
+            },
+            "enterAnArcadeExpressionThatReturns": {
+              "t": "Unesite Arcade izraz koji vraća popup HTML...",
+              "src": "machine",
+              "h": "5f570172ae6f"
+            },
+            "tipTheExpressionShouldReturnA": {
+              "t": "Savjet: izraz treba vratiti string (HTML dozvoljen). Koristite $feature za čitanje atributa.",
+              "src": "machine",
+              "h": "a6d8882a5732"
+            },
+            "spatialLookupRules": {
+              "t": "Pravila za traženje prostora",
+              "src": "machine",
+              "h": "c8c7e1a6fcfa"
+            },
+            "popupTitle": {
+              "t": "Popup naslov",
+              "src": "machine",
+              "h": "b5c01cc9a130"
+            },
+            "onSelectEachRuleRunsAn": {
+              "t": "Pri odabiru, svako pravilo pokreće upit presijecanja i pridodaje HTML popup-u. Tokens:",
+              "src": "machine",
+              "h": "3f183576132a"
+            },
+            "ruleIOutputType": {
+              "t": "Pravilo {i}: {outputType}",
+              "src": "machine",
+              "h": "0f7b332dba62"
+            },
+            "enabled": {
+              "t": "Uključeno",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "layerUrl": {
+              "t": "URL sloja",
+              "src": "machine",
+              "h": "b6f224410889"
+            },
+            "outputType": {
+              "t": "Tip ispisa",
+              "src": "machine",
+              "h": "82fb4ce1cc57"
+            },
+            "insideOutsideMessage": {
+              "t": "Poruka servera:",
+              "src": "machine",
+              "h": "6c9ab7734b2f"
+            },
+            "fieldList": {
+              "t": "Lista polja",
+              "src": "machine",
+              "h": "4e34e3bbe0a4"
+            },
+            "insideMessage": {
+              "t": "Šifrujem poruku",
+              "src": "machine",
+              "h": "bce39166c96c"
+            },
+            "outsideMessage": {
+              "t": "Poruka servera:",
+              "src": "machine",
+              "h": "49fe358c214a"
+            },
+            "staticLinesOptionalJsonArrayOf": {
+              "t": "Statičke linije (opcionalni JSON niz",
+              "src": "machine",
+              "h": "e5285b31ec69"
+            },
+            "sectionHeading": {
+              "t": "Sekcija",
+              "src": "machine",
+              "h": "210af2f0730e"
+            },
+            "includeAllFields": {
+              "t": "Uključi sva polja",
+              "src": "machine",
+              "h": "07c063729d8e"
+            },
+            "explicitFieldsJsonArrayOf": {
+              "t": "Eksplicitna polja (JSON niz",
+              "src": "machine",
+              "h": "cf30ad7f49f4"
+            },
+            "noResultMessage": {
+              "t": "Poruka servera:",
+              "src": "machine",
+              "h": "28566c8ab57f"
+            },
+            "addLookupRule": {
+              "t": "+Dodaj pravilo pretraživanja",
+              "src": "machine",
+              "h": "d88c4c87837c"
+            },
+            "urlFormattingRules": {
+              "t": "Pravila formatiranja URL-a",
+              "src": "machine",
+              "h": "e24fc89b361a"
+            },
+            "fieldValuesMatchingARuleRender": {
+              "t": "Vrijednosti polja koje odgovaraju pravilima iscrtavanja kao linkovi. Praznibazni URL koristi vrijednost as-is.",
+              "src": "machine",
+              "h": "01d67e8b36fe"
+            },
+            "matchType": {
+              "t": "Tip poklapanja",
+              "src": "machine",
+              "h": "3407c03de39e"
+            },
+            "pattern": {
+              "t": "Šablon",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Osnovni URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
+            },
+            "linkText": {
+              "t": "Tekst linka",
+              "src": "machine",
+              "h": "502f872db333"
+            },
+            "addUrlRule": {
+              "t": "+ Dodaj pravilo URL-a",
+              "src": "machine",
+              "h": "7e30c598d7d1"
+            },
+            "configurationExported": {
+              "t": "Konfiguracija izvezena.",
+              "src": "machine",
+              "h": "8c0605411fb8"
+            },
+            "configurationImportedAndApplied": {
+              "t": "Konfiguracija uvezena i primijenjena.",
+              "src": "machine",
+              "h": "c976875e88cd"
+            },
+            "couldNotReadTheSelectedFile": {
+              "t": "Nisam mogao pročitati izabranu datoteku",
+              "src": "machine",
+              "h": "ec63f7b5577c"
+            },
+            "location": {
+              "t": "{LOCATION}",
+              "src": "machine",
+              "h": "96a680aff28f"
+            },
+            "result": {
+              "t": "{result}",
+              "src": "machine",
+              "h": "1c4ecae47e72"
+            },
+            "text": {
+              "t": "{Oznaka, vrijednost, je li Link?,href?}",
+              "src": "machine",
+              "h": "3a0336caeae4"
+            },
+            "text2": {
+              "t": "Polje, label?",
+              "src": "machine",
+              "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Izvoz nije uspio: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Neuspješno učitavanje datoteke '%s': {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Uvoz nije uspio: %s",
+              "src": "machine",
+              "h": "3d4acf618bf3"
+            }
+          }
         },
         "ca": {
           "file": "4560148c881a",
@@ -14130,18 +15206,904 @@
           }
         },
         "hr": {
-          "file": "4b729304cb1f",
+          "file": "68ab3dc26f39",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 177,
             "stale": 0,
-            "missing": 178
+            "missing": 1
           },
-          "entries": {}
+          "entries": {
+            "advancedConfigurationValueJson": {
+              "t": "Napredna konfiguracijska vrijednost (JSON)",
+              "src": "machine",
+              "h": "8a6e5efcf23f"
+            },
+            "mapWidget": {
+              "t": "Grafički element mape",
+              "src": "machine",
+              "h": "8b918e901bfa"
+            },
+            "transferSettingsXml": {
+              "t": "Postavke prijenosa (XML)",
+              "src": "machine",
+              "h": "0a0483016120"
+            },
+            "moveThisExactConfigurationBetweenApps": {
+              "t": "Pomaknite ovu točnu konfiguraciju između aplikacija. Izvezite prijenosnu XML datoteku, a zatim je uvezite u drugu tražilicu (Custom) widget.",
+              "src": "machine",
+              "h": "39d1d0a8788f"
+            },
+            "exportXmlFile": {
+              "t": "Izvezi XML datoteku",
+              "src": "machine",
+              "h": "89e94d285df6"
+            },
+            "importViewXml": {
+              "t": "Uvezi / prikaz XML",
+              "src": "machine",
+              "h": "c12e1fd5f8eb"
+            },
+            "importFromFile": {
+              "t": "Uvoz iz datoteke",
+              "src": "machine",
+              "h": "b337930e9dc5"
+            },
+            "chooseXmlFile": {
+              "t": "Odaberite .xml datoteku ...",
+              "src": "machine",
+              "h": "9ef5e84c29a2"
+            },
+            "orPasteXmlAndApply": {
+              "t": "Zalijepi XML i primijeni",
+              "src": "machine",
+              "h": "d264e6db9145"
+            },
+            "pasteConfigurationXmlToImport": {
+              "t": "Umetni konfiguracijski XML za uvoz",
+              "src": "machine",
+              "h": "8806e8ffbd3f"
+            },
+            "pasteExportedLtSearchCustomConfigGtXml": {
+              "t": "Zalijepite izvezeno &lt;searchCustomConfig&gt; XML ovdje...",
+              "src": "machine",
+              "h": "c7a26dd0cced"
+            },
+            "applyPastedXml": {
+              "t": "Primijeni zaljepljeni XML",
+              "src": "machine",
+              "h": "c4278aedb255"
+            },
+            "currentConfigurationReadOnly": {
+              "t": "Trenutna konfiguracija (samo za čitanje)",
+              "src": "machine",
+              "h": "24201e1fe6bf"
+            },
+            "currentConfigurationAsXmlReadOnly": {
+              "t": "Trenutna konfiguracija kao XML (samo za čitanje)",
+              "src": "machine",
+              "h": "d31bf7ebce46"
+            },
+            "enableCustomSearch": {
+              "t": "Omogući vlastitu pretragu",
+              "src": "machine",
+              "h": "fb98f9610d33"
+            },
+            "allPlaceholder": {
+              "t": "All mjestodržač",
+              "src": "machine",
+              "h": "a0912b25ea7a"
+            },
+            "zoomScaleOnResult": {
+              "t": "Povećaj skalu na rezultatu",
+              "src": "machine",
+              "h": "3add2494da81"
+            },
+            "popupBehavior": {
+              "t": "Popup ponašanje",
+              "src": "machine",
+              "h": "724b7bb35461"
+            },
+            "noneZoomOnly": {
+              "t": "Nijedan (samo zoom)",
+              "src": "machine",
+              "h": "674c5c624bf0"
+            },
+            "useTheLayerSOwnPopup": {
+              "t": "Koristi vlastiti popup sloja (s web karte)",
+              "src": "machine",
+              "h": "f6b40fdb258e"
+            },
+            "layerAutoFieldPopupArcade": {
+              "t": "Sloj automatskog skočnog polja (Arcade)",
+              "src": "machine",
+              "h": "aadda7e605b9"
+            },
+            "spatialLookupPopup": {
+              "t": "Prostorno pretraživanje popup",
+              "src": "machine",
+              "h": "121eb029bbad"
+            },
+            "eachResultOpensThePopupAlready": {
+              "t": "Svaki rezultat otvara popup već konfiguriran na svom sloju. Za",
+              "src": "machine",
+              "h": "d2fb8a41fceb"
+            },
+            "sourcesThisIsThePopupFrom": {
+              "t": "Izvori ovo je skočni sa web karte; za servis-URL izvore SDK gradi zadani skočni skočni skočni skočni skočni skočni skočni skočni skočni skočni skočni switch.",
+              "src": "machine",
+              "h": "e1c856c71b88"
+            },
+            "appDataSource": {
+              "t": "izvor podataka aplikacije",
+              "src": "machine",
+              "h": "8af0a32b3e03"
+            },
+            "initialSearchTerm": {
+              "t": "Početni izraz za pretragu",
+              "src": "machine",
+              "h": "a556fd1f9a89"
+            },
+            "searchBehavior": {
+              "t": "Ponašanje pretraživanja",
+              "src": "machine",
+              "h": "2b2cbe59e161"
+            },
+            "theseMapDirectlyToTheArcGIS": {
+              "t": "Ove karte izravno na ArcGIS tražili widget opcije.",
+              "src": "machine",
+              "h": "2971e8d2f037"
+            },
+            "autoSelectFirstResult": {
+              "t": "Automatski odaberi prvi rezultat",
+              "src": "machine",
+              "h": "748257656214"
+            },
+            "showAllSearchEverySource": {
+              "t": "Prikaži Sve (pretraži svaki izvor)",
+              "src": "machine",
+              "h": "d18860cca87b"
+            },
+            "showUseCurrentLocation": {
+              "t": "Prikaži Koristi trenutnu lokaciju",
+              "src": "machine",
+              "h": "23935e47e087"
+            },
+            "drawResultGraphic": {
+              "t": "Crtaj grafiku rezultata",
+              "src": "machine",
+              "h": "3423ce05590f"
+            },
+            "enableSuggestions": {
+              "t": "Omogući prijedloge",
+              "src": "machine",
+              "h": "4d7c43140abe"
+            },
+            "minSuggestCharacters": {
+              "t": "Min. predlaže znakove",
+              "src": "machine",
+              "h": "86e39f4e66c8"
+            },
+            "maxResults": {
+              "t": "Maksimalni rezultati",
+              "src": "machine",
+              "h": "ffdf1ea4ad31"
+            },
+            "maxSuggestions": {
+              "t": "Maksimalni prijedlozi",
+              "src": "machine",
+              "h": "847e8d483db8"
+            },
+            "enablePopupsNoneLayerModes": {
+              "t": "Omogući skočne prozore (nijedan/slojniji načini)",
+              "src": "machine",
+              "h": "24b8f70c0981"
+            },
+            "defaultSourceIndex1All": {
+              "t": "Uobičajeni indeks izvora (-1 = sve)",
+              "src": "machine",
+              "h": "4c7e7ab3b394"
+            },
+            "rememberRecentSearches": {
+              "t": "Zapamti nedavne pretrage",
+              "src": "machine",
+              "h": "70df3267f736"
+            },
+            "howManyToRemember": {
+              "t": "Koliko ih se treba sjećati?",
+              "src": "machine",
+              "h": "7cb36cb45a99"
+            },
+            "howManyRecentSearchesToRemember": {
+              "t": "Koliko nedavnih pretraga za pamćenje",
+              "src": "machine",
+              "h": "83ac51b12066"
+            },
+            "recentSearchesAreStoredOnlyIn": {
+              "t": "Nedavne pretrage su pohranjene samo u ovom pregledniku (lokalno skladištenje) i prikazane su kao brzi čipovi ispod okvira za pretraživanje. Svaki posjetitelj vidi svoje; ništa se ne šalje nigdje.",
+              "src": "machine",
+              "h": "bd79a2b28487"
+            },
+            "resultNavigation": {
+              "t": "Navigacija rezultata",
+              "src": "machine",
+              "h": "f7cef9a0dd57"
+            },
+            "zoomToResultOnSelect": {
+              "t": "Uvećaj da bi rezultirao odabirom",
+              "src": "machine",
+              "h": "81fb45a370ff"
+            },
+            "howTheMapMovesToA": {
+              "t": "Kako karta prelazi na rezultat",
+              "src": "machine",
+              "h": "66cf874e107c"
+            },
+            "zoomToFixedScale": {
+              "t": "Uvećaj na fiksnu skalu",
+              "src": "machine",
+              "h": "83f31f4d823f"
+            },
+            "fitToResultExtent": {
+              "t": "Uklapa se u opseg rezultata",
+              "src": "machine",
+              "h": "7616ff9a98b4"
+            },
+            "fitToResultExtentFramesThe": {
+              "t": "Uklapaju se u mjerilu rezultata uokviruje cijelu značajku (parcel, okrug, ulica). Rezultati bodova još uvijek koriste fiksnu skalu.",
+              "src": "machine",
+              "h": "bad417c143f8"
+            },
+            "animateTheZoom": {
+              "t": "Animiraj uvećanje",
+              "src": "machine",
+              "h": "0fdbe9352774"
+            },
+            "animationDurationMs": {
+              "t": "Trajanje animacije (ms)",
+              "src": "machine",
+              "h": "9101bf414463"
+            },
+            "openPopupOnResultSelect": {
+              "t": "Otvori skočni pri odabiru rezultata",
+              "src": "machine",
+              "h": "b60e03be0826"
+            },
+            "whereTheSearchBoxAppears": {
+              "t": "Gdje se pojavljuje okvir za pretraživanje",
+              "src": "machine",
+              "h": "6aac60eb8bd6"
+            },
+            "inTheWidgetWherePlaced": {
+              "t": "U widgetu (gdje se nalazi)",
+              "src": "machine",
+              "h": "5450c490a06e"
+            },
+            "dockedOnTheMap": {
+              "t": "Usidren na karti",
+              "src": "machine",
+              "h": "7e4a66115c91"
+            },
+            "mapPosition": {
+              "t": "Položaj mape",
+              "src": "machine",
+              "h": "06ee39c1e532"
+            },
+            "manual": {
+              "t": "Ručno",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "searchBarStyle": {
+              "t": "Stil trake za pretraživanje",
+              "src": "machine",
+              "h": "57a35ee37912"
+            },
+            "defaultNative": {
+              "t": "Uobičajeno (nacionalno)",
+              "src": "machine",
+              "h": "2e7ddfb38537"
+            },
+            "squareSharpCorners": {
+              "t": "Kvadrat (oštri kutovi)",
+              "src": "machine",
+              "h": "4c243bde40c5"
+            },
+            "curveRoundedPill": {
+              "t": "Krivulja (okružena / tableta)",
+              "src": "machine",
+              "h": "3a739aae9f0b"
+            },
+            "linearUnderlineOnly": {
+              "t": "Linearno (samo podcrtano)",
+              "src": "machine",
+              "h": "e893ae8137b0"
+            },
+            "floatingElevatedCard": {
+              "t": "Plutajući (dizana karta)",
+              "src": "machine",
+              "h": "0cbda0c4c916"
+            },
+            "softFilledPill": {
+              "t": "Meka (punjena tableta)",
+              "src": "machine",
+              "h": "6eac2bf0e54d"
+            },
+            "searchBarSize": {
+              "t": "Veličina trake za pretraživanje",
+              "src": "machine",
+              "h": "5bafb5af4d9f"
+            },
+            "comfortable": {
+              "t": "Udobno",
+              "src": "machine",
+              "h": "2313707a4e5c"
+            },
+            "accentColor": {
+              "t": "Boja akcenta",
+              "src": "machine",
+              "h": "e49578edcffe"
+            },
+            "accentColorHex": {
+              "t": "Boja naglaska (hex)",
+              "src": "machine",
+              "h": "a7242615c33b"
+            },
+            "styleAndSizeAreVisualThemes": {
+              "t": "Stil i veličina su vizualne teme primijenjene uživo na okvir za pretraživanje;Default ostavlja domorodački izgled netaknut. Naglasak boja pokreće fokus prsten i gumb lebdi preko ne-default stilova.",
+              "src": "machine",
+              "h": "fc867d799db1"
+            },
+            "searchSources": {
+              "t": "Izvori za pretraživanje",
+              "src": "machine",
+              "h": "93386c629711"
+            },
+            "eachEntryIsOneOptionIn": {
+              "t": "Svaki unos je jedna opcija u kutiji za pretraživanje pada dolje. Povucite ručku za preuređivanje; kliknite red za proširenje ili urušavanje ga.",
+              "src": "machine",
+              "h": "a1fbcb4ed623"
+            },
+            "layerSource": {
+              "t": "@ info: whatsthis",
+              "src": "machine",
+              "h": "e785a53f2080"
+            },
+            "geocodeSource": {
+              "t": "+ Geocode izvor",
+              "src": "machine",
+              "h": "b3191b6bb308"
+            },
+            "dataSource": {
+              "t": "+ Izvor podataka",
+              "src": "machine",
+              "h": "e837686815df"
+            },
+            "pickOneOrMoreFeatureLayers": {
+              "t": "Odaberite jedan ili više značajki slojeva iz izvora podataka ove aplikacije; svaki se dodaje kao izvor pretraživanja u nastavku. Veze su specifične za aplikaciju i ne prenose se XML izvozom.",
+              "src": "machine",
+              "h": "31dd1dc6cd29"
+            },
+            "sourcesCountSource": {
+              "t": "{sourcesCount} izvor",
+              "src": "machine",
+              "h": "f52b16e18f5f"
+            },
+            "sourcesCountSources": {
+              "t": "{sourcesCount} izvori",
+              "src": "machine",
+              "h": "88f6949aa97e"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Povuci na preusmjeravanje",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "unnamed": {
+              "t": "(neimenovano)",
+              "src": "machine",
+              "h": "fedbd2001524"
+            },
+            "boundToAppDataSource": {
+              "t": "Vezano na izvor podataka aplikacije",
+              "src": "machine",
+              "h": "051a8ed59549"
+            },
+            "manageWhichDataSourcesAreAvailable": {
+              "t": ". Upravljajte koji su izvori podataka dostupni uPrijavi izvore podataka berač u nastavku.",
+              "src": "machine",
+              "h": "7771a0443acb"
+            },
+            "serviceUrl": {
+              "t": "URL servisa",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
+            "prefix": {
+              "t": "Prefiks",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "Sufiks",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "suggestionsForThisSource": {
+              "t": "Prijedlozi za ovaj izvor",
+              "src": "machine",
+              "h": "382b424d97df"
+            },
+            "onlyWithinCurrentMapView": {
+              "t": "Samo unutar trenutnog pogleda mape",
+              "src": "machine",
+              "h": "182bf2ca8f2d"
+            },
+            "filterWhereClause": {
+              "t": "Filtar (gdje je klauzula)",
+              "src": "machine",
+              "h": "f58ed7bd09ba"
+            },
+            "searchFieldsComma": {
+              "t": "Polja za pretraživanje (comma)",
+              "src": "machine",
+              "h": "02861d33b301"
+            },
+            "resultSymbolColorRGB": {
+              "t": "Boja rezultata [r,g,b,a] (opcionalni JSON)",
+              "src": "machine",
+              "h": "67cf9585a302"
+            },
+            "customArcadePopupForThisSource": {
+              "t": "Prilagođeni Arcade popup za ovaj izvor (opcionalno; premošćuje zajednički)",
+              "src": "machine",
+              "h": "73d5e29dd4b7"
+            },
+            "customArcadePopupExpressionForThis": {
+              "t": "Prilagođeni arcade skočni izraz za ovaj izvor",
+              "src": "machine",
+              "h": "7e0906ca63e0"
+            },
+            "leaveBlankToUseTheShared": {
+              "t": "Ostavite prazno za korištenje zajedničkog skočnog izraza ...",
+              "src": "machine",
+              "h": "166cd9c29211"
+            },
+            "singleLineField": {
+              "t": "Polje s jednom crtom",
+              "src": "machine",
+              "h": "2c234de4d67e"
+            },
+            "countryCodeS": {
+              "t": "CRR-a.",
+              "src": "machine",
+              "h": "bee355d68820"
+            },
+            "categoriesComma": {
+              "t": "Kategorije (comma)",
+              "src": "machine",
+              "h": "3eea732a6a49"
+            },
+            "searchTemplate": {
+              "t": "Predložak za pretraživanje",
+              "src": "machine",
+              "h": "976065a56265"
+            },
+            "locationType": {
+              "t": "Vrsta lokacije",
+              "src": "machine",
+              "h": "8bab2712e213"
+            },
+            "rooftop": {
+              "t": "Krov",
+              "src": "machine",
+              "h": "84c7360a0cb7"
+            },
+            "removeSearchSourceName": {
+              "t": "Ukloni izvor pretrage {name}",
+              "src": "machine",
+              "h": "b155af7103f5"
+            },
+            "popupDisplay": {
+              "t": "Skočni prikaz",
+              "src": "machine",
+              "h": "8cb74b36283f"
+            },
+            "controlsTheMapPopupUsedBy": {
+              "t": "Kontrolira skočnu kartu koju koriste rezultati pretraživanja (dijeljeni MapView popup). Primjećuje na bilo koje skočno ponašanje odabrano gore.",
+              "src": "machine",
+              "h": "f4e6e6953b96"
+            },
+            "dockThePopup": {
+              "t": "Dock popup",
+              "src": "machine",
+              "h": "6c287fcfec00"
+            },
+            "autoDockOnSmallScreens": {
+              "t": "Automatsko pristajanje na malim zaslonima",
+              "src": "machine",
+              "h": "13e309942aca"
+            },
+            "showDockUndockButton": {
+              "t": "Prikaži gumb sidro/undock",
+              "src": "machine",
+              "h": "0a8a2646c9da"
+            },
+            "showDockOrUndockButton": {
+              "t": "Prikaži pristanište ili otkopčaj gumb",
+              "src": "machine",
+              "h": "237ae0291857"
+            },
+            "collapsiblePopup": {
+              "t": "Kolapsni popup",
+              "src": "machine",
+              "h": "7a59b286f1d0"
+            },
+            "highlightSelectedFeature": {
+              "t": "Istakni odabranu osobinu",
+              "src": "machine",
+              "h": "1139fad9680a"
+            },
+            "openAutomaticallyOnSelect": {
+              "t": "Otvori automatski pri odabiru",
+              "src": "machine",
+              "h": "73c49fee88da"
+            },
+            "maxInlineActions": {
+              "t": "Maksimalne dodatne radnje",
+              "src": "machine",
+              "h": "25ca5af14463"
+            },
+            "visiblePartsOfThePopup": {
+              "t": "Vidljivi dijelovi popup-a",
+              "src": "machine",
+              "h": "a51905a2cb1f"
+            },
+            "closeButton": {
+              "t": "Tipka za zatvaranje",
+              "src": "machine",
+              "h": "6260c410860e"
+            },
+            "showCloseButton": {
+              "t": "Pokaži gumb zatvaranja",
+              "src": "machine",
+              "h": "d09310380c6e"
+            },
+            "showCollapseButton": {
+              "t": "Pokaži gumb za rušenje",
+              "src": "machine",
+              "h": "69552ce5fb6c"
+            },
+            "featureNavigationPaging": {
+              "t": "Navigacija značajki (pagiranje)",
+              "src": "machine",
+              "h": "d657484ef550"
+            },
+            "showFeatureNavigation": {
+              "t": "Prikaži navigaciju značajki",
+              "src": "machine",
+              "h": "82e73518239e"
+            },
+            "headingTitle": {
+              "t": "Zaglavlje (naslov)",
+              "src": "machine",
+              "h": "e0ca67dc7fda"
+            },
+            "showHeading": {
+              "t": "Pokaži zaglavlje",
+              "src": "machine",
+              "h": "2c97ed7fdbe9"
+            },
+            "actionBar": {
+              "t": "Radnja",
+              "src": "machine",
+              "h": "5efb248ea045"
+            },
+            "showActionBar": {
+              "t": "Prikaži traku s akcijama",
+              "src": "machine",
+              "h": "34c61f0b7a4b"
+            },
+            "loadingSpinner": {
+              "t": "Učitavanje okretača",
+              "src": "machine",
+              "h": "7296aa4a4837"
+            },
+            "showLoadingSpinner": {
+              "t": "Prikaži učitavanje okretača",
+              "src": "machine",
+              "h": "a7329bd1bb2e"
+            },
+            "noteTheseConfigureTheMapS": {
+              "t": "Napomena: ovi konfiguriraju dijeljeni popup karte, tako da također utječu na druge popupove otvorene na istoj karti.",
+              "src": "machine",
+              "h": "17d4b36aef59"
+            },
+            "layerPopupArcade": {
+              "t": "Sloj skočni (Arcade)",
+              "src": "machine",
+              "h": "66d3fa24eced"
+            },
+            "popupTitleTemplate": {
+              "t": "Iskačući naslov naslova",
+              "src": "machine",
+              "h": "eab40211ce16"
+            },
+            "arcadeExpression": {
+              "t": "Arcade izraz",
+              "src": "machine",
+              "h": "237084494bd9"
+            },
+            "autoGenerateFromSettings": {
+              "t": "Automatski generiraj iz postavki",
+              "src": "machine",
+              "h": "1b8d95934228"
+            },
+            "customWriteMyOwn": {
+              "t": "Prilagođeno (napisati svoje)",
+              "src": "machine",
+              "h": "a6314e1065f3"
+            },
+            "excludedFieldsComma": {
+              "t": "Isključena polja (comma)",
+              "src": "machine",
+              "h": "76be66be2a0b"
+            },
+            "theWidgetBuildsThePopupExpression": {
+              "t": "Grafički element gradi skočni izraz za vas od gore navedenih opcija: svako polje na sloju je navedeno (osim isključenih), i bilo koju vrijednost koja odgovara a",
+              "src": "machine",
+              "h": "d08d7fa5fc40"
+            },
+            "isTurnedIntoALinkThe": {
+              "t": "je pretvoren u link. Točan izraz koji će koristiti prikazan je ispod.",
+              "src": "machine",
+              "h": "1cb5ecddc825"
+            },
+            "urlFormattingRule": {
+              "t": "Pravilo formatiranja URL- a",
+              "src": "machine",
+              "h": "ff30dd4662d9"
+            },
+            "generatedArcadeExpressionReadOnlyPreview": {
+              "t": "Generirani Arcade izraz (pregled samo za čitanje)",
+              "src": "machine",
+              "h": "7d7a2d630097"
+            },
+            "generatedArcadePopupExpressionReadOnly": {
+              "t": "Generiran Arcade skočni izraz (samo za čitanje)",
+              "src": "machine",
+              "h": "9f341fda1a44"
+            },
+            "editThisExpressionSwitchToCustom": {
+              "t": "Uredi ovaj izraz (namjesti na prilagođeno)",
+              "src": "machine",
+              "h": "cb7ebe452f1a"
+            },
+            "switchingToCustomCopiesThisGenerated": {
+              "t": "Prebacivanje na Prilagođene kopije ovog generiranog izraza u uređivački okvir tako da ga možete podesiti; nakon toga se više ne mijenja kada uređujete gore navedene opcije.",
+              "src": "machine",
+              "h": "4bac09927092"
+            },
+            "youAreWritingTheArcadeExpression": {
+              "t": "Sami pišete Arcade izraz. On se pokreće kao skočni sadržaj za svaki izvor značajki-sloja i pohranjen je u postavkama ovog grafičkog elementa (i XML izvoza). Koristite gumb da ga resetirate iz auto-generirane verzije u bilo koje vrijeme.",
+              "src": "machine",
+              "h": "848301d40054"
+            },
+            "resetFromAutoGenerated": {
+              "t": "Resetiraj iz automatskog generiranja",
+              "src": "machine",
+              "h": "8d3d19ecd0ae"
+            },
+            "backToAutoGenerate": {
+              "t": "Natrag na automatsko generiranje",
+              "src": "machine",
+              "h": "9f153048aeed"
+            },
+            "customArcadePopupExpression": {
+              "t": "Prilagođeni arcade skočni izraz",
+              "src": "machine",
+              "h": "091567fcaf1c"
+            },
+            "enterAnArcadeExpressionThatReturns": {
+              "t": "Unesite Arcade izraz koji vraća skočni HTML...",
+              "src": "machine",
+              "h": "5f570172ae6f"
+            },
+            "tipTheExpressionShouldReturnA": {
+              "t": "Savjet: izraz treba vratiti string (HTML dopušteno). Koristite $feature za čitanje atributa.",
+              "src": "machine",
+              "h": "a6d8882a5732"
+            },
+            "spatialLookupRules": {
+              "t": "Pravila za traženje prostora",
+              "src": "machine",
+              "h": "c8c7e1a6fcfa"
+            },
+            "popupTitle": {
+              "t": "Skočni naslov",
+              "src": "machine",
+              "h": "b5c01cc9a130"
+            },
+            "onSelectEachRuleRunsAn": {
+              "t": "Pri odabiru, svako pravilo pokreće intersect upit i dodaje svoj HTML na skočni. Tokens:",
+              "src": "machine",
+              "h": "3f183576132a"
+            },
+            "ruleIOutputType": {
+              "t": "Pravilo {i}: {outputType}",
+              "src": "machine",
+              "h": "0f7b332dba62"
+            },
+            "removeLookupRuleI": {
+              "t": "Ukloni pravilo traženja {i}",
+              "src": "machine",
+              "h": "7a490aa23973"
+            },
+            "enabled": {
+              "t": "Omogućeno",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "layerUrl": {
+              "t": "URL sloja",
+              "src": "machine",
+              "h": "b6f224410889"
+            },
+            "outputType": {
+              "t": "Tip ispisa",
+              "src": "machine",
+              "h": "82fb4ce1cc57"
+            },
+            "insideOutsideMessage": {
+              "t": "Poruke unutar/van",
+              "src": "machine",
+              "h": "6c9ab7734b2f"
+            },
+            "fieldList": {
+              "t": "Popis polja",
+              "src": "machine",
+              "h": "4e34e3bbe0a4"
+            },
+            "insideMessage": {
+              "t": "Poruke",
+              "src": "machine",
+              "h": "bce39166c96c"
+            },
+            "outsideMessage": {
+              "t": "Poruke",
+              "src": "machine",
+              "h": "49fe358c214a"
+            },
+            "staticLinesOptionalJsonArrayOf": {
+              "t": "Statičke linije (opcijski JSON niz",
+              "src": "machine",
+              "h": "e5285b31ec69"
+            },
+            "sectionHeading": {
+              "t": "Sekcija za naslov",
+              "src": "machine",
+              "h": "210af2f0730e"
+            },
+            "includeAllFields": {
+              "t": "Uključi sva polja",
+              "src": "machine",
+              "h": "07c063729d8e"
+            },
+            "explicitFieldsJsonArrayOf": {
+              "t": "Eksplicitna polja (JSON niz",
+              "src": "machine",
+              "h": "cf30ad7f49f4"
+            },
+            "noResultMessage": {
+              "t": "Nema rezultate poruke",
+              "src": "machine",
+              "h": "28566c8ab57f"
+            },
+            "addLookupRule": {
+              "t": "+ Dodaj pravilo traženja",
+              "src": "machine",
+              "h": "d88c4c87837c"
+            },
+            "urlFormattingRules": {
+              "t": "Pravila oblikovanja URL- a",
+              "src": "machine",
+              "h": "e24fc89b361a"
+            },
+            "fieldValuesMatchingARuleRender": {
+              "t": "Vrijednosti polja koje odgovaraju pravilu iscrtavaju se kao poveznice. Prazniosnovni URL koristi vrijednost as-is.",
+              "src": "machine",
+              "h": "01d67e8b36fe"
+            },
+            "removeUrlRuleI": {
+              "t": "Ukloni pravilo URL-a {i}",
+              "src": "machine",
+              "h": "d1f3d7e790b3"
+            },
+            "matchType": {
+              "t": "Tip poklapanja",
+              "src": "machine",
+              "h": "3407c03de39e"
+            },
+            "pattern": {
+              "t": "Obrazac",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Osnovni URL",
+              "src": "machine",
+              "h": "1dbd61f556fe"
+            },
+            "linkText": {
+              "t": "Tekst veze",
+              "src": "machine",
+              "h": "502f872db333"
+            },
+            "addUrlRule": {
+              "t": "+ Dodaj pravilo URL-a",
+              "src": "machine",
+              "h": "7e30c598d7d1"
+            },
+            "configurationExported": {
+              "t": "Konfiguracija izvezena.",
+              "src": "machine",
+              "h": "8c0605411fb8"
+            },
+            "configurationImportedAndApplied": {
+              "t": "Konfiguracija uvezena i primijenjena.",
+              "src": "machine",
+              "h": "c976875e88cd"
+            },
+            "couldNotReadTheSelectedFile": {
+              "t": "Ne mogu pročitati odabranu datoteku.",
+              "src": "machine",
+              "h": "ec63f7b5577c"
+            },
+            "location": {
+              "t": "{LOCATION}",
+              "src": "machine",
+              "h": "96a680aff28f"
+            },
+            "result": {
+              "t": "{result}",
+              "src": "machine",
+              "h": "1c4ecae47e72"
+            },
+            "text": {
+              "t": "{oznaka, vrijednost, je li Link?,href?}",
+              "src": "machine",
+              "h": "3a0336caeae4"
+            },
+            "text2": {
+              "t": "{polje, oznaka?}",
+              "src": "machine",
+              "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Izvoz nije uspio: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Uvoz nije uspio: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Uvoz nije uspio:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
+            }
+          }
         },
         "hu": {
           "file": "545c24c7acb9",
@@ -28559,18 +30521,909 @@
           }
         },
         "sr": {
-          "file": "faa1f7625899",
+          "file": "e070e02e2a4a",
           "counts": {
             "esri": 56,
             "esri-check": 2,
             "community": 0,
             "manual": 0,
             "existing": 0,
-            "machine": 0,
+            "machine": 178,
             "stale": 0,
-            "missing": 178
+            "missing": 0
           },
-          "entries": {}
+          "entries": {
+            "advancedConfigurationValueJson": {
+              "t": "Napredna konfiguraciona vrednost (JSON)",
+              "src": "machine",
+              "h": "8a6e5efcf23f"
+            },
+            "mapWidget": {
+              "t": "Мапа виџетаQShortcut",
+              "src": "machine",
+              "h": "8b918e901bfa"
+            },
+            "transferSettingsXml": {
+              "t": "Поставке преноса (XML)",
+              "src": "machine",
+              "h": "0a0483016120"
+            },
+            "moveThisExactConfigurationBetweenApps": {
+              "t": "Premestite ovu tačnu konfiguraciju između aplikacija. Izvezite prenosni XML fajl, a zatim ga uvedite u drugi grafički element Search (Custom).",
+              "src": "machine",
+              "h": "39d1d0a8788f"
+            },
+            "exportXmlFile": {
+              "t": "Извези XML фајл",
+              "src": "machine",
+              "h": "89e94d285df6"
+            },
+            "importViewXml": {
+              "t": "Увези / приказ XML",
+              "src": "machine",
+              "h": "c12e1fd5f8eb"
+            },
+            "importFromFile": {
+              "t": "Увези из фајлаQShortcut",
+              "src": "machine",
+              "h": "b337930e9dc5"
+            },
+            "chooseXmlFile": {
+              "t": "Izaberite .xml datoteku...",
+              "src": "machine",
+              "h": "9ef5e84c29a2"
+            },
+            "orPasteXmlAndApply": {
+              "t": "Ili zalepi XML i primeni",
+              "src": "machine",
+              "h": "d264e6db9145"
+            },
+            "pasteConfigurationXmlToImport": {
+              "t": "Umetni konfiguracioni XML za uvoz",
+              "src": "machine",
+              "h": "8806e8ffbd3f"
+            },
+            "pasteExportedLtSearchCustomConfigGtXml": {
+              "t": "Налепи извезено &lt;searchCustomConfig&gt; XML овде...",
+              "src": "machine",
+              "h": "c7a26dd0cced"
+            },
+            "applyPastedXml": {
+              "t": "Примени залепљени XMLQShortcut",
+              "src": "machine",
+              "h": "c4278aedb255"
+            },
+            "currentConfigurationReadOnly": {
+              "t": "Тренутна конфигурација (само за читање)",
+              "src": "machine",
+              "h": "24201e1fe6bf"
+            },
+            "currentConfigurationAsXmlReadOnly": {
+              "t": "Trenutna konfiguracija kao XML (само за читање)",
+              "src": "machine",
+              "h": "d31bf7ebce46"
+            },
+            "enableCustomSearch": {
+              "t": "Omogući vlastitu pretragu",
+              "src": "machine",
+              "h": "fb98f9610d33"
+            },
+            "allPlaceholder": {
+              "t": "- Sve - držaè za mesto",
+              "src": "machine",
+              "h": "a0912b25ea7a"
+            },
+            "zoomScaleOnResult": {
+              "t": "Zoom scale na rezultatu",
+              "src": "machine",
+              "h": "3add2494da81"
+            },
+            "popupBehavior": {
+              "t": "Popup ponašanje",
+              "src": "machine",
+              "h": "724b7bb35461"
+            },
+            "noneZoomOnly": {
+              "t": "Nijedan (samo zoom)",
+              "src": "machine",
+              "h": "674c5c624bf0"
+            },
+            "useTheLayerSOwnPopup": {
+              "t": "Koristi lični popup sloja (iz veb mape)",
+              "src": "machine",
+              "h": "f6b40fdb258e"
+            },
+            "layerAutoFieldPopupArcade": {
+              "t": "Слој ауто-поље искачући (Arcade)",
+              "src": "machine",
+              "h": "aadda7e605b9"
+            },
+            "spatialLookupPopup": {
+              "t": "Prostorno pretraživanje popup",
+              "src": "machine",
+              "h": "121eb029bbad"
+            },
+            "eachResultOpensThePopupAlready": {
+              "t": "Svaki rezultat otvara popup veæ konfigurisan na svom sloju.",
+              "src": "machine",
+              "h": "d2fb8a41fceb"
+            },
+            "sourcesThisIsThePopupFrom": {
+              "t": "Izvori ovo je popup sa veb mape; za servis-URL izvore SDK gradi podrazumevani iskakanje polja. Grafički element dodaje da nema sopstvenog iskakanja.",
+              "src": "machine",
+              "h": "e1c856c71b88"
+            },
+            "appDataSource": {
+              "t": "izvor podataka aplikacije",
+              "src": "machine",
+              "h": "8af0a32b3e03"
+            },
+            "initialSearchTerm": {
+              "t": "Почетни термин за претрагу@ info: whatsthis",
+              "src": "machine",
+              "h": "a556fd1f9a89"
+            },
+            "searchBehavior": {
+              "t": "Ponašanje pretraživanja",
+              "src": "machine",
+              "h": "2b2cbe59e161"
+            },
+            "theseMapDirectlyToTheArcGIS": {
+              "t": "Ove mape direktno na ArcGIS opcije pretraživanja widgeta.",
+              "src": "machine",
+              "h": "2971e8d2f037"
+            },
+            "autoSelectFirstResult": {
+              "t": "Automatski izaberi prvi rezultat",
+              "src": "machine",
+              "h": "748257656214"
+            },
+            "showAllSearchEverySource": {
+              "t": "ShowAll (тражи сваки извор)",
+              "src": "machine",
+              "h": "d18860cca87b"
+            },
+            "showUseCurrentLocation": {
+              "t": "PrikažiKoristi trenutnu lokaciju",
+              "src": "machine",
+              "h": "23935e47e087"
+            },
+            "drawResultGraphic": {
+              "t": "Nacrtaj grafiku rezultata",
+              "src": "machine",
+              "h": "3423ce05590f"
+            },
+            "enableSuggestions": {
+              "t": "Omogući predloge",
+              "src": "machine",
+              "h": "4d7c43140abe"
+            },
+            "minSuggestCharacters": {
+              "t": "Min. sugeriše likove",
+              "src": "machine",
+              "h": "86e39f4e66c8"
+            },
+            "maxResults": {
+              "t": "Maksimalni rezultati.",
+              "src": "machine",
+              "h": "ffdf1ea4ad31"
+            },
+            "maxSuggestions": {
+              "t": "Maks sugestije.",
+              "src": "machine",
+              "h": "847e8d483db8"
+            },
+            "enablePopupsNoneLayerModes": {
+              "t": "Укључи искачуће (None/Layer modes)",
+              "src": "machine",
+              "h": "24b8f70c0981"
+            },
+            "defaultSourceIndex1All": {
+              "t": "Подразум ијевани индекс извора (-1 = све)",
+              "src": "machine",
+              "h": "4c7e7ab3b394"
+            },
+            "rememberRecentSearches": {
+              "t": "Setite se nedavnih pretraga.",
+              "src": "machine",
+              "h": "70df3267f736"
+            },
+            "howManyToRemember": {
+              "t": "Koliko njih treba da se setiš?",
+              "src": "machine",
+              "h": "7cb36cb45a99"
+            },
+            "howManyRecentSearchesToRemember": {
+              "t": "Koliko se nedavnih pretraga treba setiti?",
+              "src": "machine",
+              "h": "83ac51b12066"
+            },
+            "recentSearchesAreStoredOnlyIn": {
+              "t": "Nedavne pretrage su pohranjene samo u ovom pretraživaču (lokalnom skladištu) i prikazane su kao brzi čipovi ispod okvira za pretraživanje. Svaki posetilac vidi svoje; ništa se ne šalje nigde.",
+              "src": "machine",
+              "h": "bd79a2b28487"
+            },
+            "resultNavigation": {
+              "t": "Навигација резултата",
+              "src": "machine",
+              "h": "f7cef9a0dd57"
+            },
+            "zoomToResultOnSelect": {
+              "t": "Zumiraj da bi rezultirao odabirom",
+              "src": "machine",
+              "h": "81fb45a370ff"
+            },
+            "howTheMapMovesToA": {
+              "t": "Kako mapa prelazi na rezultat",
+              "src": "machine",
+              "h": "66cf874e107c"
+            },
+            "zoomToFixedScale": {
+              "t": "Zumiraj na fiksnu skalu",
+              "src": "machine",
+              "h": "83f31f4d823f"
+            },
+            "fitToResultExtent": {
+              "t": "Uklapa se u meru rezultata",
+              "src": "machine",
+              "h": "7616ff9a98b4"
+            },
+            "fitToResultExtentFramesThe": {
+              "t": "Uklapa se u meru rezultata uokvirena je čitava osobina (parcel, okrug, ulica). Rezultati tačaka još uvek koriste fiksnu skalu.",
+              "src": "machine",
+              "h": "bad417c143f8"
+            },
+            "animateTheZoom": {
+              "t": "Animiraj zum",
+              "src": "machine",
+              "h": "0fdbe9352774"
+            },
+            "animationDurationMs": {
+              "t": "Трајање анимације (мс)",
+              "src": "machine",
+              "h": "9101bf414463"
+            },
+            "openPopupOnResultSelect": {
+              "t": "Otvori skočni pri odabiru rezultata",
+              "src": "machine",
+              "h": "b60e03be0826"
+            },
+            "whereTheSearchBoxAppears": {
+              "t": "Gde se pojavljuje okvir za pretragu",
+              "src": "machine",
+              "h": "6aac60eb8bd6"
+            },
+            "inTheWidgetWherePlaced": {
+              "t": "U grafičkom elementu (gde se nalazi)",
+              "src": "machine",
+              "h": "5450c490a06e"
+            },
+            "dockedOnTheMap": {
+              "t": "Usidren na mapi",
+              "src": "machine",
+              "h": "7e4a66115c91"
+            },
+            "mapPosition": {
+              "t": "Pozicija mape",
+              "src": "machine",
+              "h": "06ee39c1e532"
+            },
+            "manual": {
+              "t": "Ručno",
+              "src": "machine",
+              "h": "4e836fdc2572"
+            },
+            "searchBarStyle": {
+              "t": "Stil trake za pretragu",
+              "src": "machine",
+              "h": "57a35ee37912"
+            },
+            "defaultNative": {
+              "t": "Podrazumevano (nacionalno)",
+              "src": "machine",
+              "h": "2e7ddfb38537"
+            },
+            "squareSharpCorners": {
+              "t": "Kvadrat (oštri uglovi)",
+              "src": "machine",
+              "h": "4c243bde40c5"
+            },
+            "curveRoundedPill": {
+              "t": "Krivulja (okružena / pilula)",
+              "src": "machine",
+              "h": "3a739aae9f0b"
+            },
+            "linearUnderlineOnly": {
+              "t": "Linearno (samo podcrtano)",
+              "src": "machine",
+              "h": "e893ae8137b0"
+            },
+            "floatingElevatedCard": {
+              "t": "Lebdenje (dizana karta)",
+              "src": "machine",
+              "h": "0cbda0c4c916"
+            },
+            "softFilledPill": {
+              "t": "Mekana (punjena pilula)",
+              "src": "machine",
+              "h": "6eac2bf0e54d"
+            },
+            "searchBarSize": {
+              "t": "Величина траке за претрагуQShortcut",
+              "src": "machine",
+              "h": "5bafb5af4d9f"
+            },
+            "comfortable": {
+              "t": "Udobno.",
+              "src": "machine",
+              "h": "2313707a4e5c"
+            },
+            "accentColor": {
+              "t": "Boja akcenta",
+              "src": "machine",
+              "h": "e49578edcffe"
+            },
+            "accentColorHex": {
+              "t": "Boja akcenta (hex)",
+              "src": "machine",
+              "h": "a7242615c33b"
+            },
+            "styleAndSizeAreVisualThemes": {
+              "t": "Stil i veličina su vizuelne teme koje se primenjuju uživo na okvir za pretraživanje;Default ostavlja domorodački izgled netaknut. Akcentna boja pokreće fokusni prsten i dugme lebdi preko ne-default stilova.",
+              "src": "machine",
+              "h": "fc867d799db1"
+            },
+            "searchSources": {
+              "t": "Pretraga izvora",
+              "src": "machine",
+              "h": "93386c629711"
+            },
+            "eachEntryIsOneOptionIn": {
+              "t": "Svaki unos je jedna opcija u kutiji za pretragu koja pada. Povucite ručku da preuredite; kliknite red da je proširite ili srušite.",
+              "src": "machine",
+              "h": "a1fbcb4ed623"
+            },
+            "layerSource": {
+              "t": "+ Slojevi",
+              "src": "machine",
+              "h": "e785a53f2080"
+            },
+            "geocodeSource": {
+              "t": "+ Geocode izvor",
+              "src": "machine",
+              "h": "b3191b6bb308"
+            },
+            "dataSource": {
+              "t": "+ Izvor podataka",
+              "src": "machine",
+              "h": "e837686815df"
+            },
+            "pickOneOrMoreFeatureLayers": {
+              "t": "Odaberite jedan ili više slojeva značajki iz izvora podataka ove aplikacije; svaki se dodaje kao izvor pretraživanja ispod. Veze su specifične za aplikaciju i ne prenose se XML izvozom.",
+              "src": "machine",
+              "h": "31dd1dc6cd29"
+            },
+            "sourcesCountSource": {
+              "t": "{sourcesCount} izvor",
+              "src": "machine",
+              "h": "f52b16e18f5f"
+            },
+            "sourcesCountSources": {
+              "t": "{sourcesCount} izvori",
+              "src": "machine",
+              "h": "88f6949aa97e"
+            },
+            "geocode": {
+              "t": "Geocode",
+              "src": "machine",
+              "h": "b305bd57abc9"
+            },
+            "dragToReorder": {
+              "t": "Povuci na preuređivanje",
+              "src": "machine",
+              "h": "e7541faf0a7e"
+            },
+            "sourceName": {
+              "t": "Извор {name}",
+              "src": "machine",
+              "h": "1ed4e381b0ae"
+            },
+            "unnamed": {
+              "t": "(neimenovano)",
+              "src": "machine",
+              "h": "fedbd2001524"
+            },
+            "boundToAppDataSource": {
+              "t": "Vezan za izvor podataka aplikacije",
+              "src": "machine",
+              "h": "051a8ed59549"
+            },
+            "manageWhichDataSourcesAreAvailable": {
+              "t": ". Upravljajte koji su izvori podataka dostupni uApp izvori podataka berač ispod.",
+              "src": "machine",
+              "h": "7771a0443acb"
+            },
+            "serviceUrl": {
+              "t": "УРЛ сервисаQShortcut",
+              "src": "machine",
+              "h": "077225837f3d"
+            },
+            "prefix": {
+              "t": "Prefiks",
+              "src": "machine",
+              "h": "90eceb016c51"
+            },
+            "suffix": {
+              "t": "СуфиксQShortcut",
+              "src": "machine",
+              "h": "885db975a310"
+            },
+            "suggestionsForThisSource": {
+              "t": "Sugestije za ovaj izvor",
+              "src": "machine",
+              "h": "382b424d97df"
+            },
+            "onlyWithinCurrentMapView": {
+              "t": "Samo unutar trenutnog pregleda mape",
+              "src": "machine",
+              "h": "182bf2ca8f2d"
+            },
+            "filterWhereClause": {
+              "t": "Filter (gde je klauzula)",
+              "src": "machine",
+              "h": "f58ed7bd09ba"
+            },
+            "searchFieldsComma": {
+              "t": "Поља за претрагу (comma)",
+              "src": "machine",
+              "h": "02861d33b301"
+            },
+            "resultSymbolColorRGB": {
+              "t": "Боја симбола резултата [r,g,b,a] (опционални ЈСОН)",
+              "src": "machine",
+              "h": "67cf9585a302"
+            },
+            "customArcadePopupForThisSource": {
+              "t": "Prilagođeni Arcade popup za ovaj izvor (opcionalno; premošćuje zajednički)",
+              "src": "machine",
+              "h": "73d5e29dd4b7"
+            },
+            "customArcadePopupExpressionForThis": {
+              "t": "Prilagođeni arcade skočni izraz za ovaj izvor",
+              "src": "machine",
+              "h": "7e0906ca63e0"
+            },
+            "leaveBlankToUseTheShared": {
+              "t": "Ostavi prazno da se koristi zajednièki izraz...",
+              "src": "machine",
+              "h": "166cd9c29211"
+            },
+            "singleLineField": {
+              "t": "Polje jedne linije",
+              "src": "machine",
+              "h": "2c234de4d67e"
+            },
+            "countryCodeS": {
+              "t": "Country code(s)",
+              "src": "machine",
+              "h": "bee355d68820"
+            },
+            "categoriesComma": {
+              "t": "Kategorije (comma)",
+              "src": "machine",
+              "h": "3eea732a6a49"
+            },
+            "searchTemplate": {
+              "t": "Шаблон за претрагуQShortcut",
+              "src": "machine",
+              "h": "976065a56265"
+            },
+            "locationType": {
+              "t": "Tip lokacije",
+              "src": "machine",
+              "h": "8bab2712e213"
+            },
+            "rooftop": {
+              "t": "Krov na krovu",
+              "src": "machine",
+              "h": "84c7360a0cb7"
+            },
+            "removeSearchSourceName": {
+              "t": "Ukloni izvor pretrage {name}",
+              "src": "machine",
+              "h": "b155af7103f5"
+            },
+            "popupDisplay": {
+              "t": "Попуп приказ@ info: whatsthis",
+              "src": "machine",
+              "h": "8cb74b36283f"
+            },
+            "controlsTheMapPopupUsedBy": {
+              "t": "Kontroliše skočnu mapu koju koriste rezultati pretrage (deljeni MapView skočni). Primećuje na bilo koje skočno ponašanje koje je gore izabrano.",
+              "src": "machine",
+              "h": "f4e6e6953b96"
+            },
+            "dockThePopup": {
+              "t": "Dock popup",
+              "src": "machine",
+              "h": "6c287fcfec00"
+            },
+            "autoDockOnSmallScreens": {
+              "t": "Automatsko pristajanje na malim ekranima",
+              "src": "machine",
+              "h": "13e309942aca"
+            },
+            "showDockUndockButton": {
+              "t": "Прикажи пристаниште/ундок дугме",
+              "src": "machine",
+              "h": "0a8a2646c9da"
+            },
+            "showDockOrUndockButton": {
+              "t": "Прикажи док или откачи дугме",
+              "src": "machine",
+              "h": "237ae0291857"
+            },
+            "collapsiblePopup": {
+              "t": "Kolapsni popup",
+              "src": "machine",
+              "h": "7a59b286f1d0"
+            },
+            "highlightSelectedFeature": {
+              "t": "Истакни изабрану могућностQShortcut",
+              "src": "machine",
+              "h": "1139fad9680a"
+            },
+            "openAutomaticallyOnSelect": {
+              "t": "Otvori automatski pri odabiru",
+              "src": "machine",
+              "h": "73c49fee88da"
+            },
+            "maxInlineActions": {
+              "t": "Maks inline akcije",
+              "src": "machine",
+              "h": "25ca5af14463"
+            },
+            "visiblePartsOfThePopup": {
+              "t": "Vidljivi delovi popup-a",
+              "src": "machine",
+              "h": "a51905a2cb1f"
+            },
+            "closeButton": {
+              "t": "Затвори дугмеQShortcut",
+              "src": "machine",
+              "h": "6260c410860e"
+            },
+            "showCloseButton": {
+              "t": "Прикажи дугме за затварање@ info: whatsthis",
+              "src": "machine",
+              "h": "d09310380c6e"
+            },
+            "showCollapseButton": {
+              "t": "Prikaži dugme kolapsa",
+              "src": "machine",
+              "h": "69552ce5fb6c"
+            },
+            "featureNavigationPaging": {
+              "t": "Navigacija osobina (pagiranje)",
+              "src": "machine",
+              "h": "d657484ef550"
+            },
+            "showFeatureNavigation": {
+              "t": "Прикажи навигацију могућности",
+              "src": "machine",
+              "h": "82e73518239e"
+            },
+            "headingTitle": {
+              "t": "Naslov (naslov)",
+              "src": "machine",
+              "h": "e0ca67dc7fda"
+            },
+            "showHeading": {
+              "t": "Pokažite kurs",
+              "src": "machine",
+              "h": "2c97ed7fdbe9"
+            },
+            "actionBar": {
+              "t": "Traka akcije",
+              "src": "machine",
+              "h": "5efb248ea045"
+            },
+            "showActionBar": {
+              "t": "Прикажи траку радње@ info: whatsthis",
+              "src": "machine",
+              "h": "34c61f0b7a4b"
+            },
+            "loadingSpinner": {
+              "t": "Учитавам вртачуQShortcut",
+              "src": "machine",
+              "h": "7296aa4a4837"
+            },
+            "showLoadingSpinner": {
+              "t": "Прикажи учитавање вртилицаQShortcut",
+              "src": "machine",
+              "h": "a7329bd1bb2e"
+            },
+            "noteTheseConfigureTheMapS": {
+              "t": "Napomena: ovi konfigurišu skočni prikaz mape, tako da takođe utiču na druge popupove otvorene na istoj mapi.",
+              "src": "machine",
+              "h": "17d4b36aef59"
+            },
+            "layerPopupArcade": {
+              "t": "Слој искачући (Arcade)",
+              "src": "machine",
+              "h": "66d3fa24eced"
+            },
+            "popupTitleTemplate": {
+              "t": "Шаблон наслова искачућа@ info: whatsthis",
+              "src": "machine",
+              "h": "eab40211ce16"
+            },
+            "arcadeExpression": {
+              "t": "Arcade izraz",
+              "src": "machine",
+              "h": "237084494bd9"
+            },
+            "autoGenerateFromSettings": {
+              "t": "Automatski generiraj iz postavki",
+              "src": "machine",
+              "h": "1b8d95934228"
+            },
+            "customWriteMyOwn": {
+              "t": "Prilagođeno (napisati svoje)",
+              "src": "machine",
+              "h": "a6314e1065f3"
+            },
+            "excludedFieldsComma": {
+              "t": "Искључена поља (comma)",
+              "src": "machine",
+              "h": "76be66be2a0b"
+            },
+            "theWidgetBuildsThePopupExpression": {
+              "t": "Grafički element gradi skočni izraz za vas od gore navedenih opcija: svako polje na sloju je navedeno (osim isključenih), i bilo koju vrednost koja odgovara a",
+              "src": "machine",
+              "h": "d08d7fa5fc40"
+            },
+            "isTurnedIntoALinkThe": {
+              "t": "Pretvoren je u link. Tačan izraz koji će koristiti prikazan je ispod.",
+              "src": "machine",
+              "h": "1cb5ecddc825"
+            },
+            "urlFormattingRule": {
+              "t": "Pravilo formatiranja URL- a",
+              "src": "machine",
+              "h": "ff30dd4662d9"
+            },
+            "generatedArcadeExpressionReadOnlyPreview": {
+              "t": "Generisani Arcade izraz (само за читање)",
+              "src": "machine",
+              "h": "7d7a2d630097"
+            },
+            "generatedArcadePopupExpressionReadOnly": {
+              "t": "Generisani arcade skočni izraz (само за читање)",
+              "src": "machine",
+              "h": "9f341fda1a44"
+            },
+            "editThisExpressionSwitchToCustom": {
+              "t": "Уреди овај израз (switch to Custom)",
+              "src": "machine",
+              "h": "cb7ebe452f1a"
+            },
+            "switchingToCustomCopiesThisGenerated": {
+              "t": "Prebacujem na Prilagođene kopije ovaj generisani izraz u uređivački okvir tako da ga možete podesiti; nakon toga se više ne menja kada uređujete gore navedene opcije.",
+              "src": "machine",
+              "h": "4bac09927092"
+            },
+            "youAreWritingTheArcadeExpression": {
+              "t": "Sami pišete Arcade izraz. On se pokreće kao skočni sadržaj za svaki izvor koji ima značajke i nalazi se u postavkama ovog grafičkog elementa (i XML izvoza). Koristite dugme da ga resetujete iz auto-generisane verzije u bilo kom trenutku.",
+              "src": "machine",
+              "h": "848301d40054"
+            },
+            "resetFromAutoGenerated": {
+              "t": "Resetuj iz auto-generisanog",
+              "src": "machine",
+              "h": "8d3d19ecd0ae"
+            },
+            "backToAutoGenerate": {
+              "t": "Nazad na auto-generaciju.",
+              "src": "machine",
+              "h": "9f153048aeed"
+            },
+            "customArcadePopupExpression": {
+              "t": "Прилагођен аркадни искачући израз",
+              "src": "machine",
+              "h": "091567fcaf1c"
+            },
+            "enterAnArcadeExpressionThatReturns": {
+              "t": "Unesite Arcade izraz koji vraća skočni HTML...",
+              "src": "machine",
+              "h": "5f570172ae6f"
+            },
+            "tipTheExpressionShouldReturnA": {
+              "t": "Savjet: izraz treba da vrati string (HTML dozvoljen). Koristite $feature za čitanje atributa.",
+              "src": "machine",
+              "h": "a6d8882a5732"
+            },
+            "spatialLookupRules": {
+              "t": "Pravila prostornog pretraživanja",
+              "src": "machine",
+              "h": "c8c7e1a6fcfa"
+            },
+            "popupTitle": {
+              "t": "Искачући наслов@ info: whatsthis",
+              "src": "machine",
+              "h": "b5c01cc9a130"
+            },
+            "onSelectEachRuleRunsAn": {
+              "t": "Na odabiru, svako pravilo pokreće upit ukrštanja i dodaje svoj HTML na skočni. Tokens:",
+              "src": "machine",
+              "h": "3f183576132a"
+            },
+            "ruleIOutputType": {
+              "t": "Pravilo {i}: {outputType}",
+              "src": "machine",
+              "h": "0f7b332dba62"
+            },
+            "removeLookupRuleI": {
+              "t": "Уклони правило потраживања {i}",
+              "src": "machine",
+              "h": "7a490aa23973"
+            },
+            "enabled": {
+              "t": "Omogućeno",
+              "src": "machine",
+              "h": "df174a3f2faa"
+            },
+            "layerUrl": {
+              "t": "УРЛ слојаQShortcut",
+              "src": "machine",
+              "h": "b6f224410889"
+            },
+            "outputType": {
+              "t": "Tip izlaza",
+              "src": "machine",
+              "h": "82fb4ce1cc57"
+            },
+            "insideOutsideMessage": {
+              "t": "Poruke iznutra/van",
+              "src": "machine",
+              "h": "6c9ab7734b2f"
+            },
+            "fieldList": {
+              "t": "Lista polja",
+              "src": "machine",
+              "h": "4e34e3bbe0a4"
+            },
+            "insideMessage": {
+              "t": "Inside message",
+              "src": "machine",
+              "h": "bce39166c96c"
+            },
+            "outsideMessage": {
+              "t": "Spoljna poruka",
+              "src": "machine",
+              "h": "49fe358c214a"
+            },
+            "staticLinesOptionalJsonArrayOf": {
+              "t": "Статичне линије (опционални ЈСОН низ",
+              "src": "machine",
+              "h": "e5285b31ec69"
+            },
+            "sectionHeading": {
+              "t": "Kurs sekcije",
+              "src": "machine",
+              "h": "210af2f0730e"
+            },
+            "includeAllFields": {
+              "t": "Uključi sva polja",
+              "src": "machine",
+              "h": "07c063729d8e"
+            },
+            "explicitFieldsJsonArrayOf": {
+              "t": "Eksplicitna polja (JSON niz",
+              "src": "machine",
+              "h": "cf30ad7f49f4"
+            },
+            "noResultMessage": {
+              "t": "Nema rezultatne poruke",
+              "src": "machine",
+              "h": "28566c8ab57f"
+            },
+            "addLookupRule": {
+              "t": "+ Додај правило потраживања",
+              "src": "machine",
+              "h": "d88c4c87837c"
+            },
+            "urlFormattingRules": {
+              "t": "Pravila formatiranja URL- a",
+              "src": "machine",
+              "h": "e24fc89b361a"
+            },
+            "fieldValuesMatchingARuleRender": {
+              "t": "Vrednosti polja koje odgovaraju pravilu iscrtavaju se kao linkovi. Praznibase URL koristi vrednost as-is.",
+              "src": "machine",
+              "h": "01d67e8b36fe"
+            },
+            "removeUrlRuleI": {
+              "t": "Уклони URL правило {i}",
+              "src": "machine",
+              "h": "d1f3d7e790b3"
+            },
+            "matchType": {
+              "t": "Tip poklapanja",
+              "src": "machine",
+              "h": "3407c03de39e"
+            },
+            "pattern": {
+              "t": "Uzorak",
+              "src": "machine",
+              "h": "1fff6a31661b"
+            },
+            "baseUrl": {
+              "t": "Основни URLQShortcut",
+              "src": "machine",
+              "h": "1dbd61f556fe"
+            },
+            "linkText": {
+              "t": "Текст везе",
+              "src": "machine",
+              "h": "502f872db333"
+            },
+            "addUrlRule": {
+              "t": "+ Додај УРЛ правилоQShortcut",
+              "src": "machine",
+              "h": "7e30c598d7d1"
+            },
+            "configurationExported": {
+              "t": "Konfiguracija izvezena.",
+              "src": "machine",
+              "h": "8c0605411fb8"
+            },
+            "configurationImportedAndApplied": {
+              "t": "Konfiguracija uvezena i primenjena.",
+              "src": "machine",
+              "h": "c976875e88cd"
+            },
+            "couldNotReadTheSelectedFile": {
+              "t": "Ne mogu da pročitam odabranu datoteku.",
+              "src": "machine",
+              "h": "ec63f7b5577c"
+            },
+            "location": {
+              "t": "{LOCATION}",
+              "src": "machine",
+              "h": "96a680aff28f"
+            },
+            "result": {
+              "t": "{result}",
+              "src": "machine",
+              "h": "1c4ecae47e72"
+            },
+            "text": {
+              "t": "Oznaka, vrednost, je li Link?, hef?",
+              "src": "machine",
+              "h": "3a0336caeae4"
+            },
+            "text2": {
+              "t": "Polje, label?",
+              "src": "machine",
+              "h": "2e3dd0ad7911"
+            },
+            "exportFailedValue1": {
+              "t": "Извоз није успео: {value1}",
+              "src": "machine",
+              "h": "b07308c50f71"
+            },
+            "importFailedValue1": {
+              "t": "Uvoz nije uspio: {value1}",
+              "src": "machine",
+              "h": "5b83712b6f0e"
+            },
+            "importFailed": {
+              "t": "Uvoz nije uspio:",
+              "src": "machine",
+              "h": "3d4acf618bf3"
+            }
+          }
         },
         "sv": {
           "file": "b209c12d9e7b",

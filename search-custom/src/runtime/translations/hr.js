@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Nedavne pretrage",
         searchIn: "Pretraži u {value}",
         searchResults: "Rezultat pretraživanja",
-        uiMapSearch: "Map search",
-        uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiMapSearch: "Traži po karti",
+        uiSearchAgainFor: "Traži ponovo {t}",
+        uiClearRecentSearchHistory: "Očisti skorašnju povijest pretraživanja",
+        uiClearRecentSearches: "Očisti skorašnje pretrage",
+        openLink: "Otvori poveznicu",
+        noMapLinkedOpenThisWidget: "Karta nije povezana. Otvorite postavke ovog grafičkog elementa i odaberite kartu pod “Map widget”.",
+        customSearchIsTurnedOffIn: "Vlastita pretraga je isključena u postavkama.",
         location: "{LOCATION}",
         search: "Pretraživanje",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Pretraga nije mogla biti napravljena. Pogledajte konzolu preglednika.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Ova konfiguracija pretraživanja nije mogla biti izgrađena. Ako je samo uvezena, ponovno provjerite izvore i skočne postavke u ovom widgetu.",
+        theMapViewDidNotFinish: "Prikaz mape nije završio s učitavanjem.",
+        unknownError: "nepoznata greška",
+        unserializableError: "Neserijalizacijska greška"
       })
     }
   }

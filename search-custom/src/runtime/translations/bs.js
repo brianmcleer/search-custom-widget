@@ -16,21 +16,21 @@ System.register([], function (e) {
         clearRecentSearches: "Nedavne pretrage",
         searchIn: "Pretraži u {value}",
         searchResults: "Rezultat pretraživanja",
-        uiMapSearch: "Map search",
+        uiMapSearch: "_Pretrage",
         uiSearchAgainFor: "Search again for {t}",
-        uiClearRecentSearchHistory: "Clear recent search history",
-        uiClearRecentSearches: "Clear recent searches",
-        openLink: "Open link",
-        noMapLinkedOpenThisWidget: "No map linked. Open this widget’s settings and choose your map under “Map widget”.",
-        customSearchIsTurnedOffIn: "Custom search is turned off in settings.",
+        uiClearRecentSearchHistory: "Očisti historiju skorašnje pretrage",
+        uiClearRecentSearches: "_Očisti skorašnje pretrage",
+        openLink: "Otvori link",
+        noMapLinkedOpenThisWidget: "Nijedna mapa nije povezana. Otvori postavke ovog grafičkog elementa i izaberi svoju kartu pod \\\"Map widget\\\".",
+        customSearchIsTurnedOffIn: "Vlastita pretraga je isključena u postavkama.",
         location: "{LOCATION}",
         search: "Pretraživanje",
-        searchCouldNotBeCreatedSee: "Search could not be created. See the browser console.",
+        searchCouldNotBeCreatedSee: "Nije moguće napraviti pretragu. Pogledajte konzolu preglednika.",
         result: "{result}",
-        thisSearchConfigurationCouldNotBe: "This search configuration could not be built. If it was just imported, re-check the sources and popup settings in this widget.",
-        theMapViewDidNotFinish: "The map view did not finish loading.",
-        unknownError: "unknown error",
-        unserializableError: "unserializable error"
+        thisSearchConfigurationCouldNotBe: "Ova konfiguracija pretraživanja nije mogla biti izgrađena. Da je samo uvezena, ponovo provjerite izvore i popup postavke u ovom grafičkom elementu.",
+        theMapViewDidNotFinish: "Prikaz mape nije završio učitavanje.",
+        unknownError: "nepoznata greška",
+        unserializableError: "Neserijalizacijska greška"
       })
     }
   }
