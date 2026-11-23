@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { React, jsx, type AllWidgetProps, DataSourceManager, DataSourceComponent } from 'jimu-core'
 import { JimuMapViewComponent, type JimuMapView } from 'jimu-arcgis'
-import Search from 'esri/widgets/Search'
+// Registers <arcgis-search> through Experience Builder's shared bundle (nothing is bundled here).
+import 'arcgis-map-components'
 import FeatureLayer from 'esri/layers/FeatureLayer'
 import Color from 'esri/Color'
 import * as reactiveUtils from 'esri/core/reactiveUtils'
@@ -36,11 +37,123 @@ const __t = (id: string, values?: { [key: string]: any }): string => {
 
 const { useEffect, useRef, useState } = React
 
+/* ----------------------------------------------------------------------------
+   <arcgis-search> in place of the Search widget class (deprecated in SDK 5.0).
+   ---------------------------------------------------------------------------- */
+
+// The rest of this file keeps the option names the Search widget class used.
+// On <arcgis-search> these booleans are inverted ("...Disabled"), so every
+// option is set through setSearchOption.
+const INVERTED_SEARCH_PROPS: { [option: string]: string } = {
+    includeDefaultSources: 'includeDefaultSourcesDisabled',
+    autoSelect: 'autoSelectDisabled',
+    searchAllEnabled: 'searchAllDisabled',
+    resultGraphicEnabled: 'resultGraphicDisabled',
+    locationEnabled: 'locationDisabled',
+    suggestionsEnabled: 'suggestionsDisabled',
+    autoNavigate: 'autoNavigateDisabled',
+    popupEnabled: 'popupDisabled'
+}
+const setSearchOption = (el: any, option: string, value: any): void => {
+    const inverted = INVERTED_SEARCH_PROPS[option]
+    if (inverted) el[inverted] = !value
+    else el[option] = value
+}
+
+// Resolves once <arcgis-search> is registered. Rejects after 15 seconds so a
+// missing component shows the "could not be created" message, not a blank box.
+const whenSearchComponent = (): Promise<void> => new Promise<void>((resolve, reject) => {
+    const timer = setTimeout(() => { reject(new Error('arcgis-search is not registered')) }, 15000)
+    customElements.whenDefined('arcgis-search').then(
+        () => { clearTimeout(timer); resolve() },
+        (e) => { clearTimeout(timer); reject(e) }
+    )
+})
+
+// The component renders in its own shadow root, where widget.scss cannot
+// reach. These rules carry over the widget.scss rules that styled the Search
+// widget's own frame (.esri-search -> .root, .esri-search__container ->
+// .container, .esri-search__form -> .form). They key off classes set on the
+// element, and read the --sc-* custom properties from .search-styled, which
+// inherit into the shadow root.
+const SEARCH_SHADOW_CSS = `
+:host(.sc-in-widget) { display: block; width: 100% !important; }
+:host(.sc-in-widget) .root,
+:host(.sc-in-widget) .container { width: 100% !important; background-color: #ffffff !important; }
+:host(.sc-in-widget:not(.bar-default)) .form:focus-within { box-shadow: 0 0 0 2px var(--sc-accent) !important; }
+
+:host(.sc-in-widget.bar-square) .root,
+:host(.sc-in-widget.bar-square) .container,
+:host(.sc-in-widget.bar-square) .form { border-radius: 0 !important; }
+:host(.sc-in-widget.bar-square) .form { border: 1px solid #b7bcc0 !important; }
+
+:host(.sc-in-widget.bar-curve) .root,
+:host(.sc-in-widget.bar-curve) .container,
+:host(.sc-in-widget.bar-curve) .form { border-radius: var(--r) !important; overflow: hidden !important; }
+:host(.sc-in-widget.bar-curve) .form { border: 1px solid #c7ccd0 !important; }
+
+:host(.sc-in-widget.bar-linear) .root,
+:host(.sc-in-widget.bar-linear) .container,
+:host(.sc-in-widget.bar-linear) .form { border-radius: 0 !important; box-shadow: none !important; }
+:host(.sc-in-widget.bar-linear) .form { border: none !important; border-bottom: 2px solid #9aa0a6 !important; background: transparent !important; }
+:host(.sc-in-widget.bar-linear) .form:focus-within { box-shadow: none !important; border-bottom-color: var(--sc-accent) !important; }
+
+:host(.sc-in-widget.bar-floating) .root,
+:host(.sc-in-widget.bar-floating) .container,
+:host(.sc-in-widget.bar-floating) .form { border-radius: var(--r) !important; overflow: hidden !important; }
+:host(.sc-in-widget.bar-floating) .form { border: 1px solid rgba(0, 0, 0, 0.06) !important; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18), 0 1px 2px rgba(0, 0, 0, 0.10) !important; background: #ffffff !important; transition: box-shadow 0.15s ease !important; }
+:host(.sc-in-widget.bar-floating) .form:focus-within { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22), 0 0 0 2px var(--sc-accent) !important; }
+
+:host(.sc-in-widget.bar-soft) .root,
+:host(.sc-in-widget.bar-soft) .container,
+:host(.sc-in-widget.bar-soft) .form { border-radius: var(--r) !important; overflow: hidden !important; }
+:host(.sc-in-widget.bar-soft) .form { border: 1px solid transparent !important; background: #eef1f4 !important; }
+:host(.sc-in-widget.bar-soft) .form:focus-within { background: #ffffff !important; box-shadow: 0 0 0 2px var(--sc-accent) !important; }
+`
+
+// Adds SEARCH_SHADOW_CSS to the component's shadow root. Best-effort: with no
+// shadow root the search still works, with the component's default look.
+const styleSearchElement = (el: any): void => {
+    try {
+        const root: any = el?.shadowRoot
+        if (!root || root.__scStyled) return
+        root.__scStyled = true
+        try {
+            const sheet = new CSSStyleSheet()
+            sheet.replaceSync(SEARCH_SHADOW_CSS)
+            root.adoptedStyleSheets = [...(root.adoptedStyleSheets || []), sheet]
+        } catch {
+            const style = document.createElement('style')
+            style.textContent = SEARCH_SHADOW_CSS
+            root.appendChild(style)
+        }
+    } catch { /* noop */ }
+}
+
+// Mirrors the bar-* look class from the .search-styled wrapper onto the
+// element so SEARCH_SHADOW_CSS can key off it.
+const setSearchBarClass = (el: any, barStyle: string, inWidget: boolean): void => {
+    try {
+        const keep = Array.from(el.classList as DOMTokenList).filter((c: string) => c !== 'sc-in-widget' && !c.startsWith('bar-'))
+        el.className = keep.concat(inWidget ? ['sc-in-widget', `bar-${barStyle || 'default'}`] : []).join(' ')
+    } catch { /* noop */ }
+}
+
+// Takes the element off the map / out of the widget and destroys it.
+const disposeSearchElement = (el: any, view: any, dockOnMap: boolean): void => {
+    if (!el) return
+    try { if (dockOnMap) view?.ui?.remove(el) } catch { /* noop */ }
+    // destroy() returns a promise on the component
+    try { Promise.resolve(el.destroy && el.destroy()).catch((): void => undefined) } catch { /* noop */ }
+    try { el.remove() } catch { /* noop */ }
+}
+
 const Widget = (props: AllWidgetProps<IMConfig>) => {
   __setIntl((props as any).intl)
   __i18nIntl = (props as any).intl
     const { useMapWidgetIds, config } = props
-    const searchWidgetRef = useRef<Search | null>(null)
+    // The <arcgis-search> element (null until it is built).
+    const searchWidgetRef = useRef<any>(null)
     const searchContainerRef = useRef<HTMLDivElement | null>(null)
     const [jimuMapView, setJimuMapView] = useState<JimuMapView | null>(null)
     const [statusMsg, setStatusMsg] = useState<string>('Initializing…')
@@ -113,9 +226,9 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
         runHistorySearch(term)
     }
 
-    // Whether the search box is currently empty. Reads the Search widget's own
-    // searchTerm rather than the DOM input, because the JS API 5.0 Search renders
-    // its input inside a Calcite shadow DOM that querySelector cannot see.
+    // Whether the search box is currently empty. Reads the search component's own
+    // searchTerm rather than the DOM input, because the input is rendered
+    // inside a Calcite shadow DOM that querySelector cannot see.
     const isBoxEmpty = (): boolean => {
         const term = (searchWidgetRef.current as any)?.searchTerm
         return !term || !String(term).length
@@ -207,10 +320,9 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
 
         const dockOnMap = (custom.placement || 'widget') === 'map'
 
-        // Defensive: clear any prior instance so we never stack two widgets.
+        // Defensive: clear any prior instance so we never stack two search boxes.
         if (searchWidgetRef.current) {
-            try { if (dockOnMap) view.ui.remove(searchWidgetRef.current) } catch { /* noop */ }
-            try { searchWidgetRef.current.destroy() } catch { /* noop */ }
+            disposeSearchElement(searchWidgetRef.current, view, dockOnMap)
             searchWidgetRef.current = null
         }
         if (searchContainerRef.current) {
@@ -409,7 +521,6 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                     includeDefaultSources: useDefaultSources,
                     sources
                 }
-                if (!dockOnMap) searchOptions.container = searchContainerRef.current as HTMLDivElement
                 if (custom.allPlaceholder) searchOptions.allPlaceholder = custom.allPlaceholder
                 if (custom.autoSelect != null) searchOptions.autoSelect = custom.autoSelect
                 if (custom.searchAllEnabled != null) searchOptions.searchAllEnabled = custom.searchAllEnabled
@@ -442,18 +553,43 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                     }
                 }
 
-                let searchWidget: Search
+                let searchWidget: any
                 try {
-                    searchWidget = new Search(searchOptions)
+                    await whenSearchComponent()
+                    if (cancelled || !searchContainerRef.current) return
+                    searchWidget = document.createElement('arcgis-search')
+                    // Every option is set before the element is attached, so the
+                    // component starts with the full configuration and binds to this
+                    // view instead of looking for a parent <arcgis-map>.
+                    Object.keys(searchOptions).forEach((option) => { setSearchOption(searchWidget, option, searchOptions[option]) })
                 } catch (err) {
-                    console.error('[Search Custom] Failed to create the Search widget:', err)
+                    console.error('[Search Custom] Failed to create the search component:', err)
                     setStatusMsg(__t("searchCouldNotBeCreatedSee"))
                     return
                 }
 
                 if (dockOnMap) {
                     try { view.ui.add(searchWidget, custom.mapPosition || 'top-left') } catch (e) { console.error('[Search Custom] view.ui.add failed:', e) }
+                } else {
+                    setSearchBarClass(searchWidget, custom.barStyle as any, true)
+                    searchContainerRef.current.appendChild(searchWidget)
                 }
+
+                // Wait for the component to load (bounded), so the active source is
+                // set after its sources exist and its shadow root can be styled.
+                try {
+                    if (typeof searchWidget.componentOnReady === 'function') {
+                        await Promise.race([
+                            Promise.resolve(searchWidget.componentOnReady()).catch((): void => undefined),
+                            new Promise(resolve => setTimeout(resolve, 8000))
+                        ])
+                    }
+                } catch { /* noop */ }
+                if (cancelled) {
+                    disposeSearchElement(searchWidget, view, dockOnMap)
+                    return
+                }
+                if (!dockOnMap) styleSearchElement(searchWidget)
 
                 // Set the active source AFTER construction. -1 selects "All" (and is what
                 // makes the "All" placeholder show); 0..maxIdx selects a specific source;
@@ -469,7 +605,8 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
 
                 // LayerTemplate / None: zoom to the matched result.
                 if (popupMode !== CustomPopupMode.SpatialLookup) {
-                    searchWidget.on('search-complete', (event: any) => {
+                    searchWidget.addEventListener('arcgisSearchComplete', (evt: any) => {
+                        const event = evt?.detail
                         const n = navRef.current
                         if (!n.autoNavigate) return
                         const firstResult = event?.results?.[0]?.results?.[0]
@@ -503,7 +640,8 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                 // Record selected results into recent-search history (any popup mode).
                 // Always attached; gated live by the history toggle so flipping it on/off
                 // never rebuilds the widget.
-                searchWidget.on('select-result', (event: any) => {
+                searchWidget.addEventListener('arcgisSelectResult', (evt: any) => {
+                    const event = evt?.detail
                     beaconRef.current?.action('search')
                     if (!histCfgRef.current.enabled) return
                     const name = event?.result?.name
@@ -517,7 +655,8 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
                     for (const r of rules) {
                         if (!ruleLayers[r.layerUrl]) ruleLayers[r.layerUrl] = new FeatureLayer({ url: r.layerUrl, outFields: ['*'] })
                     }
-                    searchWidget.on('select-result', async (event: any) => {
+                    searchWidget.addEventListener('arcgisSelectResult', async (evt: any) => {
+                        const event = evt?.detail
                         beaconRef.current?.action('lookup')
                         const resultName = event?.result?.name || 'Search result'
                         const feature = event?.result?.feature
@@ -601,31 +740,39 @@ const Widget = (props: AllWidgetProps<IMConfig>) => {
             try { termWatchRef.current?.remove?.() } catch { /* noop */ }
             termWatchRef.current = null
             if (searchWidgetRef.current) {
-                try { if (dockOnMap) view.ui.remove(searchWidgetRef.current) } catch { /* noop */ }
-                try { searchWidgetRef.current.destroy() } catch { /* noop */ }
+                disposeSearchElement(searchWidgetRef.current, view, dockOnMap)
                 searchWidgetRef.current = null
             }
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [jimuMapView, structuralKey, useMapWidgetIds, dsReadyTick])
 
+    // Keep the look class on the element in step with the Bar style setting
+    // (it is not part of the rebuild key).
+    useEffect(() => {
+        const w = searchWidgetRef.current as any
+        if (!w || !custom) return
+        setSearchBarClass(w, custom.barStyle as any, (custom.placement || 'widget') !== 'map')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [custom?.barStyle, custom?.placement])
+
     // Apply simple, live-updatable options without a rebuild.
     useEffect(() => {
         const w = searchWidgetRef.current as any
         if (!w || !custom) return
-        if (custom.autoSelect != null) w.autoSelect = custom.autoSelect
-        if (custom.searchAllEnabled != null) w.searchAllEnabled = custom.searchAllEnabled
-        if (custom.resultGraphicEnabled != null) w.resultGraphicEnabled = custom.resultGraphicEnabled
-        if (custom.locationEnabled != null) w.locationEnabled = custom.locationEnabled
-        if (custom.suggestionsEnabled != null) w.suggestionsEnabled = custom.suggestionsEnabled
+        if (custom.autoSelect != null) setSearchOption(w, 'autoSelect', custom.autoSelect)
+        if (custom.searchAllEnabled != null) setSearchOption(w, 'searchAllEnabled', custom.searchAllEnabled)
+        if (custom.resultGraphicEnabled != null) setSearchOption(w, 'resultGraphicEnabled', custom.resultGraphicEnabled)
+        if (custom.locationEnabled != null) setSearchOption(w, 'locationEnabled', custom.locationEnabled)
+        if (custom.suggestionsEnabled != null) setSearchOption(w, 'suggestionsEnabled', custom.suggestionsEnabled)
         if (custom.minSuggestCharacters != null) w.minSuggestCharacters = custom.minSuggestCharacters
         if (custom.maxResults != null) w.maxResults = custom.maxResults
         if (custom.maxSuggestions != null) w.maxSuggestions = custom.maxSuggestions
         if (custom.popupEnabled != null && custom.popupMode !== CustomPopupMode.SpatialLookup &&
             custom.popupMode !== CustomPopupMode.InheritWebMap) {
-            w.popupEnabled = custom.popupEnabled
+            setSearchOption(w, 'popupEnabled', custom.popupEnabled)
         }
-        if (custom.autoNavigate != null) w.autoNavigate = custom.autoNavigate
+        if (custom.autoNavigate != null) setSearchOption(w, 'autoNavigate', custom.autoNavigate)
         // Placeholder and active source are volatile, display-only settings; apply
         // them live so editing them never rebuilds (and blanks) the Search.
         if (custom.allPlaceholder != null) w.allPlaceholder = custom.allPlaceholder

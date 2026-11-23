@@ -2,6 +2,12 @@
 
 Newest first. Every release bumps `manifest.json` and `package.json` together.
 
+## 1.22.0 (2026-11-23)
+
+- Changed: the search box is now the Maps SDK `arcgis-search` component instead of the `Search` widget class. Reason: Esri deprecated the widgets in the ArcGIS Maps SDK for JavaScript at version 5.0 and plans to remove them as early as Q1 2027, so anything built on them stops working on an Experience Builder release that ships without them. See [Deprecation: Widgets in ArcGIS Maps SDK for JavaScript](https://support.esri.com/en-us/knowledge-base/deprecation-widgets-in-arcgis-maps-sdk-for-javascript-000040437).
+- Settings are unchanged. The widget keeps its option names and maps them onto the component (several component properties are inverted, for example `autoSelect` is `autoSelectDisabled`). Result events come from `arcgisSearchComplete` and `arcgisSelectResult`.
+- Bar styles (Square, Curve, Linear, Floating, Soft) and the accent focus ring are applied inside the component's shadow root, where `widget.scss` cannot reach.
+
 ## 1.21.3 (2026-09-18)
 
 - Security: the beacon's session id now falls back to `crypto.getRandomValues` and then to a clock value instead of `Math.random`, which CodeQL flags as insecure randomness (shared beacon 1.1.1). The id only groups one page load's events; it is never a secret or a credential.
